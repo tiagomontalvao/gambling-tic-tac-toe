@@ -5,9 +5,9 @@ class Move:
         Creates a Move object, responsible for placing a player's move into the board.
         It can receive one of:
             . the coordinates of the movement in the board: {0,1,2}x{0,1,2}
-            . a letter representing the movement in the board, together with kind='letter' or kind='human'
+            . a letter representing the movement in the board, together with kind='human'
         """
-        if kind=='letter' or kind=='human':
+        if kind=='human':
             if y is not None: raise Exception(f'In kind {kind}, it should receive only a letter representing the movement.')
             try:
                 x, y = [(index, row.index(x)) for index, row in enumerate(self.KEYS) if x in row][0]
@@ -15,6 +15,8 @@ class Move:
                 msg = f'Letter {x} not accepted'
                 print(msg)
                 raise ValueError(msg)
+        elif y is None:
+            raise ValueError('Both row and column should be provided if agent is not human')
         self.x = x
         self.y = y
 
