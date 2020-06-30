@@ -12,7 +12,9 @@ class Move:
             try:
                 x, y = [(index, row.index(x)) for index, row in enumerate(self.KEYS) if x in row][0]
             except IndexError:
-                raise Exception(f'Letter {x} not accepted')
+                msg = f'Letter {x} not accepted'
+                print(msg)
+                raise ValueError(msg)
         self.x = x
         self.y = y
 

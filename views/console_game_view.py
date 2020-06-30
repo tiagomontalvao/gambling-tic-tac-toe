@@ -1,19 +1,18 @@
 from colorama import Fore, Back, Style
 
 class ConsoleGameView:
-    BOARD_PADDING = 13
+    BOARD_PADDING = 17
     BOARD_COLOR = Fore.GREEN
     CELL_CHAR = ' ', 'X', 'O'
 
-    def __init__(self, board, coins_p1, coins_p2, player=None, keys=None):
+    def __init__(self, board, coins, player=None, keys=None):
         self.board = board
-        self.coins_p1 = coins_p1
-        self.coins_p2 = coins_p2
+        self.coins = coins if len(coins) == 3 else [None] + coins
         self.player = player
         self.keys = keys
 
     def _get_cell_value(self, i, j):
-        value = self.CELL_CHAR[self.board[i][j]]
+        value = self.board[i][j]
         if value == ' ' and self.keys is not None:
             value = Style.RESET_ALL + Style.DIM + self.keys[i][j] + Style.RESET_ALL + self.BOARD_COLOR + Style.BRIGHT
         return value
@@ -34,12 +33,12 @@ class ConsoleGameView:
 
     def _players_view(self):
         ret = ''
-        for i in range(1, 3):
-            coins = getattr(self, f'coins_p{i}')
-            ret += 'Player {}: {:3}'.format(i, coins)
-            ret += [' '*11, '\n'][i-1]
+        for player in range(1, 3):
+            coins = self.coins[player]
+            ret += 'Player {} ({}): {:3}'.format(player, self.CELL_CHAR[player], coins)
+            ret += [None, ' '*11, '\n'][player]
         if self.player is not None:
-            ret += ' '*ret.find('Player {}'.format(self.player)) + '-'*self.BOARD_PADDING + '\n'
+            ret += ' '*ret.find('Player {} ({})'.format(self.player, self.CELL_CHAR[player])) + '-'*self.BOARD_PADDING + '\n'
         return ret
 
     def render_view(self):
@@ -60,6 +59,6 @@ class ConsoleGameView:
 if __name__ == '__main__':
     board = [[0,1,0],[0,1,0],[0,0,2]]
     keys = [['q','w','e'],['a','s','d'],['z','x','c']]
-    coins_p1, coins_p2, player = 105, 95, None
-    console_game_view = ConsoleGameView(board, coins_p1, coins_p2, player, keys)
+    coins, player = [105, 95], None
+    console_game_view = ConsoleGameView(board, coins, player, keys)
     console_game_view.render_view()
