@@ -64,3 +64,10 @@ class Game:
     def validate_bid(self, bid, player):
         """Validates if bid made by player is valid, i.e., is in the range [0, coins[player]]"""
         return 0 <= bid <= self.coins[player]
+
+    def get_state_array(self):
+        """Get single array with [*self.board.flatten(), *self.coins]"""
+        return [
+            *[item for row in self.board for item in row],
+            *self.coins
+        ]
