@@ -2,10 +2,9 @@
 import copy
 
 from models.move import Move
-from views.console_game_view import ConsoleGameView
 
 class Game:
-    N, INITIAL_COINS, EMPTY, *PLAYERS = 3, 100, *ConsoleGameView.CELL_CHAR
+    N, INITIAL_COINS, EMPTY = 3, 100, -1
 
     def __init__(self, board=None, coins=None):
         self.board = copy.deepcopy(board) if board is not None else [[Game.EMPTY]*Game.N for _ in range(Game.N)]
@@ -17,7 +16,7 @@ class Game:
         if not valid:
             raise Exception('Movement not valid')
         # make move
-        self.board[move.x][move.y] = self.PLAYERS[player]
+        self.board[move.x][move.y] = player
 
     def update_coins(self, player, bids):
         """Update players coins, taking from the winner and giving to the loser"""
@@ -31,8 +30,8 @@ class Game:
         """
         Returns info about game ending (is_game_finished, winner_player).
         The possible returns are:
-            . (True, Game.PLAYERS[0]): Player 0 won the game
-            . (True, Game.PLAYERS[1]): Player 1 won the game
+            . (True, 0): Player 0 won the game
+            . (True, 1): Player 1 won the game
             . (True, None): The game endeded in a tie
             . (False, None): Game is not over yet
         """

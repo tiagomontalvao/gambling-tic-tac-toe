@@ -34,7 +34,7 @@ class GameController:
             bids = []
             for player in range(2):
                 while True:
-                    print(f'Player {self.players[player].__class__.__name__}({Game.PLAYERS[player]}) bidding: ', end='')
+                    print(f'Player {self.players[player].__class__.__name__}({ConsoleGameView.PLAYERS[player]}) bidding: ', end='')
                     bid = self.players[player].get_bid(game_clone)
                     print(bid)
                     if self.game.validate_bid(bid, player):
@@ -52,7 +52,7 @@ class GameController:
                 if bids[0] > bids[1] or (bids[0] == bids[1] and self.game.coins[0] > self.game.coins[1]): player = 0
                 else: player = 1
 
-            print(f'Player {self.players[player].__class__.__name__}({Game.PLAYERS[player]}) won the bet')
+            print(f'Player {self.players[player].__class__.__name__}({ConsoleGameView.PLAYERS[player]}) won the bet')
 
             # update players coins
             self.game.update_coins(player, bids)
@@ -75,12 +75,10 @@ class GameController:
 
     def _end_game(self, winner):
         print('')
-        if winner == Game.PLAYERS[0]:
-            print('Player ' + self.players[0].__class__.__name__ + '(' + Game.PLAYERS[0] + ') won')
-        elif winner == Game.PLAYERS[1]:
-            print('Player ' + self.players[1].__class__.__name__ + '(' + Game.PLAYERS[1] + ') won')
-        else:
+        if winner is None:
             print('Game ended in a tie')
+        else:
+            print('Player ' + self.players[winner].__class__.__name__ + '(' + ConsoleGameView.PLAYERS[winner] + ') won')
 
     def _select_player(self, player):
         players = glob.glob('./models/players/*_player.py')

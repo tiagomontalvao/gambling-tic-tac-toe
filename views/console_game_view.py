@@ -4,13 +4,14 @@ class ConsoleGameView:
     BOARD_PADDING = 17
     BOARD_COLOR = Fore.GREEN
     CELL_CHAR = ' ', 'X', 'O'
+    PLAYERS = 'X', 'O'
 
     def __init__(self, game, keys=None):
         self.game = game
         self.keys = keys
 
     def _get_cell_value(self, i, j):
-        value = self.game.board[i][j]
+        value = self.CELL_CHAR[self.game.board[i][j]+1]
         if value == ' ' and self.keys is not None:
             value = Style.RESET_ALL + Style.DIM + self.keys[i][j] + Style.RESET_ALL + self.BOARD_COLOR + Style.BRIGHT
         return value
