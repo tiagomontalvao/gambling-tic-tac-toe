@@ -6,7 +6,7 @@ from models.game import Game
 from models.move import Move
 from views.console_game_view import ConsoleGameView
 
-INITIAL_COINS = [None, 100, 100]
+INITIAL_COINS = [100, 100]
 MAX_EQUAL_BIDS = 3
 
 class GameController:
@@ -15,10 +15,10 @@ class GameController:
         self.view = ConsoleGameView(self.game.get_clone(), INITIAL_COINS)
 
     def init_game(self):
-        self.players = [None] + [self._select_player(player) for player in range(1, 3)]
+        self.players = [self._select_player(player) for player in range(2)]
 
         keys = Move.KEYS \
-            if self.players[1].__class__.__name__ == 'HumanPlayer' or self.players[2].__class__.__name__ == 'HumanPlayer' \
+            if self.players[0].__class__.__name__ == 'HumanPlayer' or self.players[1].__class__.__name__ == 'HumanPlayer' \
             else None
 
         # os.system('clear')
@@ -31,10 +31,9 @@ class GameController:
             if equal_bids == MAX_EQUAL_BIDS:
                 break
 
-            bids = [None]
-            for player in range(1, 3):
+            bids = []
+            for player in range(2):
                 while True:
-                    # print(f'Player {player} bidding: ', end='')
                     print(f'Player {self.players[player].__class__.__name__}({Game.PLAYERS[player]}) bidding: ', end='')
                     bid = self.players[player].get_bid(game_clone)
                     print(bid)
@@ -43,15 +42,15 @@ class GameController:
                         break
                     print(f'Invalid bid value. It should be in the range [0, {game_clone.coins[player]}]...')
 
-            if bids[1] == bids[2]:
+            if bids[0] == bids[1] and self.game.coins[0] == self.game.coins[1]:
                 equal_bids += 1
                 if equal_bids < MAX_EQUAL_BIDS:
-                    print(f'Equal bids. Retry #{equal_bids}/{MAX_EQUAL_BIDS-1}')
+                    print(f'Equal bids with equal coins. Retry #{equal_bids}/{MAX_EQUAL_BIDS-1}')
                 continue
             else:
                 equal_bids = 0
-                if bids[1] > bids[2]: player = 1
-                else: player = 2
+                if bids[0] > bids[1] or (bids[0] == bids[1] and self.game.coins[0] > self.game.coins[1]): player = 0
+                else: player = 1
 
             print(f'Player {self.players[player].__class__.__name__}({Game.PLAYERS[player]}) won the bet')
 
@@ -76,10 +75,10 @@ class GameController:
 
     def _end_game(self, winner):
         print('')
-        if winner == Game.PLAYERS[1]:
+        if winner == Game.PLAYERS[0]:
+            print('Player ' + self.players[0].__class__.__name__ + '(' + Game.PLAYERS[0] + ') won')
+        elif winner == Game.PLAYERS[1]:
             print('Player ' + self.players[1].__class__.__name__ + '(' + Game.PLAYERS[1] + ') won')
-        elif winner == Game.PLAYERS[2]:
-            print('Player ' + self.players[2].__class__.__name__ + '(' + Game.PLAYERS[2] + ') won')
         else:
             print('Game ended in a tie')
 

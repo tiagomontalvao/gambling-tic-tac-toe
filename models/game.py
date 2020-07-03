@@ -5,16 +5,15 @@ from models.move import Move
 from views.console_game_view import ConsoleGameView
 
 class Game:
-    N, INITIAL_COINS, EMPTY, *PLAYERS = 3, 100, ' ', *ConsoleGameView.CELL_CHAR
+    N, INITIAL_COINS, EMPTY, *PLAYERS = 3, 100, *ConsoleGameView.CELL_CHAR
 
     def __init__(self, board=None, coins=None):
         self.board = copy.deepcopy(board) if board is not None else [[Game.EMPTY]*Game.N for _ in range(Game.N)]
-        if coins is not None and len(coins) == 2: coins = [None] + coins
-        self.coins = coins if coins is not None else [None, self.INITIAL_COINS, self.INITIAL_COINS]
+        self.coins = coins if coins is not None else [self.INITIAL_COINS, self.INITIAL_COINS]
 
     def play(self, move, player):
         """Make move in the board"""
-        valid = (player == 1 or player == 2) and (0 <= move.x < Game.N and 0 <= move.y < Game.N)
+        valid = (player == 0 or player == 1) and (0 <= move.x < Game.N and 0 <= move.y < Game.N)
         if not valid:
             raise Exception('Movement not valid')
         # make move
@@ -22,9 +21,9 @@ class Game:
 
     def update_coins(self, player, bids):
         """Update players coins, taking from the winner and giving to the loser"""
-        if not all([self.validate_bid(bids[player], player) for player in range(1, 3)]):
+        if not all([self.validate_bid(bids[player], player) for player in range(2)]):
             raise Exception('Bid not valid')
-        for player_to_update in range(1, 3):
+        for player_to_update in range(2):
             if player_to_update == player: self.coins[player_to_update] -= bids[player]
             else: self.coins[player_to_update] += bids[player]
 
@@ -32,8 +31,8 @@ class Game:
         """
         Returns info about game ending (is_game_finished, winner_player).
         The possible returns are:
+            . (True, Game.PLAYERS[0]): Player 0 won the game
             . (True, Game.PLAYERS[1]): Player 1 won the game
-            . (True, Game.PLAYERS[2]): Player 2 won the game
             . (True, None): The game endeded in a tie
             . (False, None): Game is not over yet
         """

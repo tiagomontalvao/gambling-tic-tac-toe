@@ -29,10 +29,10 @@ class ConsoleGameView:
 
     def _players_view(self):
         ret = ''
-        for player in range(1, 3):
+        for player in range(2):
             coins = self.game.coins[player]
-            ret += 'Player {} ({}): {:3}'.format(player, self.CELL_CHAR[player], coins)
-            ret += [None, ' '*11, '\n'][player]
+            ret += 'Player {} ({}): {:3}'.format(player+1, self.CELL_CHAR[player+1], coins)
+            ret += [' '*11, '\n'][player]
         return ret
 
     def render_view(self):
