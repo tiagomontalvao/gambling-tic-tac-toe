@@ -28,10 +28,10 @@ class BasePlayer(ABC):
         """
         pass
 
-    def sinalize_end(self, winner_player):
+    def sinalize_done(self, winner):
         """Sinalize that game ended and who is the winner
         Params
         ======
-            winner_player (int): id of winning player
+            winner (int): id of winning player
         """
         pass

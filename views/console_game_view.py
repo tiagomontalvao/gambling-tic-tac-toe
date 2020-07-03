@@ -3,8 +3,8 @@ from colorama import Fore, Back, Style
 class ConsoleGameView:
     BOARD_PADDING = 17
     BOARD_COLOR = Fore.GREEN
-    CELL_CHAR = ' ', 'X', 'O'
     PLAYERS = 'X', 'O'
+    CELL_CHAR = ' ', *PLAYERS
 
     def __init__(self, game, keys=None):
         self.game = game
