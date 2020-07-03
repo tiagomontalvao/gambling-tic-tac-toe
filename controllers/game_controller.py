@@ -85,6 +85,9 @@ class GameController:
 
     def _select_player(self, player):
         players = glob.glob('./models/players/*_player.py')
+        # filter abstract base player
+        players = [player_name for player_name in players if 'base_player' not in player_name]
+
         print('Select one of the following players to be player', player)
 
         for idx, player_file in enumerate(players):
