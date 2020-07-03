@@ -36,16 +36,20 @@ class Game:
             . (False, None): Game is not over yet
         """
         for i in range(Game.N):
+            # check row
             if len(set([self.board[i][j] for j in range(Game.N)])) == 1 and self.board[i][0] != Game.EMPTY:
                 return True, self.board[i][0]
+            # check column
             if len(set([self.board[j][i] for j in range(Game.N)])) == 1 and self.board[0][i] != Game.EMPTY:
                 return True, self.board[0][i]
+        # check first diagonal
         if len(set([self.board[i][i] for i in range(Game.N)])) == 1 and self.board[0][0] != Game.EMPTY:
             return True, self.board[0][0]
+        # check second diagonal
         if len(set([self.board[i][Game.N-1-i] for i in range(Game.N)])) == 1 and self.board[0][Game.N-1] != Game.EMPTY:
             return True, self.board[0][Game.N-1]
         if len([self.board[i][j] for i in range(Game.N) for j in range(Game.N) if self.board[i][j] == Game.EMPTY]) == 0:
-            return True, Game.EMPTY
+            return True, None
         return False, None
 
     def get_clone(self):
