@@ -40,7 +40,7 @@ class GameController:
                     if self.game.validate_bid(bid, player):
                         bids.append(bid)
                         break
-                    print(f'Invalid bid value. It should be in the range [0, {game_clone.coins[player]}]...')
+                    print(f'Invalid bid value of {bid}. It should be in the range [0, {game_clone.coins[player]}]...')
 
             if bids[0] == bids[1] and self.game.coins[0] == self.game.coins[1]:
                 equal_bids += 1
@@ -57,9 +57,15 @@ class GameController:
             # update players coins
             self.game.update_coins(player, bids)
 
-            # get baord move
+            # get board move
             game_clone = self.game.get_clone()
             move = self.players[player].get_board_move(game_clone)
+
+            # validate move
+            valid_moves = game_clone.valid_moves()
+            while move not in valid_moves:
+                print('Invalid board move. Try again')
+                move = self.players[player].get_board_move(game_clone)
 
             # make board move
             self.game.play(move, player)
@@ -70,8 +76,10 @@ class GameController:
 
             finished, winner = self.game.game_finished()
 
-        self._end_game(winner)
+        for player in self.players:
+            player.sinalize_done(winner)
 
+        self._end_game(winner)
 
     def _end_game(self, winner):
         print('')
@@ -85,7 +93,7 @@ class GameController:
         # filter abstract base player
         players = [player_name for player_name in players if 'base_player' not in player_name]
 
-        print('Select one of the following players to be player', player)
+        print('Select one of the following players to be player', player+1)
 
         for idx, player_file in enumerate(players):
             print(f'{idx} - {player_file}')
@@ -93,4 +101,4 @@ class GameController:
         chosen_player = input("Input desired player number: ")
         module_globals = {}
         exec(open(players[int(chosen_player)]).read(), module_globals)
-        return module_globals[list(module_globals.keys())[len(module_globals.keys()) - 1]](player)
+        return module_globals[list(module_globals.keys())[len(module_globals.keys()) - 1]](player, self.game.get_clone())

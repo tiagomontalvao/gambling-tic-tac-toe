@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 class BasePlayer(ABC):
     """Abstract base player that must be extended by all implemented players"""
-    def __init__(self, player):
+    def __init__(self, player, game=None):
         """BasePlayer constructor
         Params
         ======
