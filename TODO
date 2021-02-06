@@ -1,0 +1,13 @@
+TODO
+- Change state coins from (..., coins[0], coins[1]) to (..., coins[player], coins[opponent])
+- Create training loop for agent
+- Add asserts
+- Add docstrings
+- Check TODOs
+
+DOING:
+
+
+DONE:
+- Invalidate invalid movements
+- Normalize bid in NN input to [0, 2*initial_value], so that all bids are transformed (bid/(2*initial_value)) and are mapped to the range [0,1).
