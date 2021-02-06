@@ -7,7 +7,7 @@ from models.move import Move
 from models.players.base_player import BasePlayer
 
 class DRLPlayer(BasePlayer):
-    def __init__(self, player, game, train_mode=False):
+    def __init__(self, player, game, agent, train_mode=False):
         super(DRLPlayer, self).__init__(player)
 
         # checkpoint_path='../../drl/checkpoints/checkpoint.pt'
@@ -19,7 +19,8 @@ class DRLPlayer(BasePlayer):
         self.sum_coins = sum(game.coins)
 
         self.player = player
-        self.agent = DRLAgent(state_size=game.N*game.N+2, bid_action_size=1, board_action_size=game.N*game.N, seed=seed, checkpoint_path=checkpoint_path)
+        self.agent = agent
+        # self.agent = DRLAgent(state_size=game.N*game.N+2, bid_action_size=1, board_action_size=game.N*game.N, seed=seed, checkpoint_path=checkpoint_path)
         self.train_mode = train_mode
 
         self.curr_state = None

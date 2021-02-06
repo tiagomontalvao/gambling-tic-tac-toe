@@ -26,18 +26,13 @@ class DRLAgent():
     def act(self, state):
         return self.agent.act(state)
 
-        # state = torch.from_numpy(np.array(state)).float().unsqueeze(0).to(device)
-
-        # self.network.eval()
-        # with torch.no_grad():
-        #     bid, board_move, value = self.network(state)
-        # self.network.train()
-
-        # bid = int(bid)
-        # board_move = torch.max(board_move, dim=1)[1]
-
-        # return bid, board_move, value
-
-    # def step(self, state, action_bid, action_board_move, reward, next_state, done):
     def step(self, state, action, reward, next_state, done):
         return self.agent.step(state, action, reward, next_state, done)
+
+    def load_model(self, checkpoint_path=None):
+        """Load model's checkpoint"""
+        return self.agent.load_model(checkpoint_path)
+
+    def save_model(self, checkpoint_path=None):
+        """Save model's checkpoint"""
+        return self.agent.save_model(checkpoint_path)

@@ -25,7 +25,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 class DDPGAgent():
     """Interacts with and learns from the environment."""
 
-    def __init__(self, state_size, bid_action_size, board_action_size, seed=None, checkpoint_path=None):
+    def __init__(self, state_size, bid_action_size, board_action_size, seed=None, checkpoint_path=None, initial_checkpoint=None):
         """Initialize an Agent object.
 
         Params
@@ -59,9 +59,12 @@ class DDPGAgent():
         # Initialize time step (for updating every UPDATE_EVERY steps)
         self.t_step = 0
 
-        # Load model if
-        if checkpoint_path:
-            self.load_model(checkpoint_path)
+        # Path to save checkpoints
+        self.checkpoint_path = checkpoint_path
+
+        # Load model if initial checkpoint exists
+        if initial_checkpoint:
+            self.load_model(initial_checkpoint)
 
     def step(self, state, action, reward, next_state, done):
         """Save experience in replay memory, and use random sample from buffer to learn."""
@@ -85,7 +88,7 @@ class DDPGAgent():
             actions = self.actor_local(state).cpu().data.numpy()
         self.actor_local.train()
         if add_noise:
-            # TODO: make sure probabilities sum up to 1
+            # TODO: make sure probabilities sum up to 1 (?)
             zero_indices = actions==0
             actions += self.noise.sample()
             actions[zero_indices] = 0
@@ -150,8 +153,11 @@ class DDPGAgent():
         for target_param, local_param in zip(target_model.parameters(), local_model.parameters()):
             target_param.data.copy_(tau*local_param.data + (1.0-tau)*target_param.data)
 
-    def load_model(self, checkpoint_path):
+    def load_model(self, checkpoint_path=None):
         """Load model's checkpoint"""
+        if checkpoint_path is None:
+            checkpoint_path = self.checkpoint_path
+
         checkpoint = torch.load(checkpoint_path)
 
         self.t_step = checkpoint['t_step']
@@ -166,6 +172,8 @@ class DDPGAgent():
 
     def save_model(self, checkpoint_path):
         """Save model's checkpoint"""
+        if checkpoint_path is None:
+            checkpoint_path = self.checkpoint_path
 
         checkpoint = {
             't_step': self.t_step,
@@ -176,12 +184,12 @@ class DDPGAgent():
             'critic_target': self.critic_target.state_dict(),
             'critic_optimizer': self.critic_optimizer.state_dict(),
         }
-        torch.save(checkpoint, checkpoint_path)
+        torch.save(checkpoint, self.checkpoint_path)
 
 class OUNoise:
     """Ornstein-Uhlenbeck process."""
 
-    def __init__(self, size, seed, mu=0., theta=0.15, sigma=0.2):
+    def __init__(self, size, seed, mu=0., theta=0.2, sigma=0.025):
         """Initialize parameters and noise process."""
         self.mu = mu * np.ones(size)
         self.theta = theta

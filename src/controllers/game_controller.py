@@ -2,12 +2,13 @@ import copy
 import glob
 import os
 
+from collections import deque
+
 from models.game import Game
 from models.move import Move
 from models.players.drl_player import DRLPlayer
 from models.players.random_player import RandomPlayer
 from views.console_game_view import ConsoleGameView
-
 from utils import is_windows
 
 INITIAL_COINS = [100, 100]
@@ -89,51 +90,50 @@ class GameController:
         self._end_game(winner)
 
 
-    def init_train(self, train_args=None):
+    def init_train(self, drl_player, train_args=None):
+        n_episodes = 2
+        checkpoint_each = 1000
+        print_each = 1
 
-        # agent, n_episodes=500, checkpoint_each=500, print_each=100,
-        #         solve_window_size=100, solve_score=30
-
-        self._load_train()
-        self._run_episode()
-        return
+        self._load_train(drl_player)
 
         scores = []
-        scores_window = deque(maxlen=solve_window_size)
+        scores_window = deque(maxlen=100)
         for i in range(1, n_episodes+1):
-            state = env.reset()
-            agent.reset()
+            self.game = self.game.reset()
+            self._run_episode(train_mode=True)
+            # agent.reset()
             
-            score = run_episode(agent, train_mode=True)
-            scores.append(score)
-            scores_window.append(score)
+            # score = self._run_episode(train_mode=True)
+            # scores.append(score)
+            # scores_window.append(score)
             
-            avg_score = np.mean(scores_window)
-            end = '\n' if (i%print_each == 0 or avg_score >= solve_score) else ''
-            print("\rEpisode #{:3d}  |  "
-                "Score: {:+6.2f}  |  "
-                "Avg. Score: {:+6.2f}".format(i, score, avg_score),
-                end=end
-            )
-            if i%checkpoint_each == 0:
-                torch.save(agent.actor_local.state_dict(), 'checkpoint_actor.pt')
-                torch.save(agent.critic_local.state_dict(), 'checkpoint_critic.pt')
-                print('Checkpoint saved!')
-            if avg_score >= solve_score and i >= solve_window_size:
-                print('Environment solved in {} episodes!'.format(i))
-                break
+            # avg_score = np.mean(scores_window)
+            # end = '\n' if (i%print_each == 0 or avg_score >= solve_score) else ''
+            # print("\rEpisode #{:3d}  |  "
+            #     "Score: {:+6.2f}  |  "
+            #     "Avg. Score: {:+6.2f}".format(i, score, avg_score),
+            #     end=end
+            # )
+            # if i%checkpoint_each == 0:
+            #     drl_player.agent.save_model()
+            #     # torch.save(agent.actor_local.state_dict(), 'checkpoint_actor.pt')
+            #     # torch.save(agent.critic_local.state_dict(), 'checkpoint_critic.pt')
+            #     print('Checkpoint saved!')
 
         # save model after all episodes
-        torch.save(agent.actor_local.state_dict(), 'model_actor.pt')
-        torch.save(agent.critic_local.state_dict(), 'model_critic.pt')
+        # drl_player.agent.save_model()
         print('Model saved!')
-        
-        if np.mean(scores_window) < solve_score:
-            print('Agent could not solve the environment in {} episodes'.format(n_episodes))
-        
+
         return scores
 
-    def _run_episode(self):
+    def _load_train(self, drl_player):
+        self.players = [
+            drl_player,
+            RandomPlayer(1, self.game.get_clone())
+        ]
+
+    def _run_episode(self, train_mode=False):
         equal_bids = 0
         finished, winner = self.game.game_finished()
         game_clone = self.game.get_clone()
@@ -190,12 +190,6 @@ class GameController:
             player.sinalize_done(winner)
 
         self._end_game(winner)        
-
-    def _load_train(self):
-        self.players = [
-            DRLPlayer(0, self.game.get_clone(), train_mode=True),
-            RandomPlayer(1, self.game.get_clone())
-        ]
 
     def _end_game(self, winner):
         print('')

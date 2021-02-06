@@ -75,3 +75,7 @@ class Game:
             *self.coins,
             *[item for row in self.board for item in row],
         ]
+
+    def reset(self):
+        """Reset game so that players can play another game one after another"""
+        raise NotImplementedError("NotImplementedError")
