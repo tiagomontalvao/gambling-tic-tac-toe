@@ -7,8 +7,9 @@ class Game:
     N, INITIAL_COINS, EMPTY = 3, 100, -1
 
     def __init__(self, board=None, coins=None):
-        self.board = copy.deepcopy(board) if board is not None else [[Game.EMPTY]*Game.N for _ in range(Game.N)]
-        self.coins = coins if coins is not None else [self.INITIAL_COINS, self.INITIAL_COINS]
+        self._board = board
+        self._coins = coins
+        self.reset()
 
     def play(self, move, player):
         """Make move in the board"""
@@ -78,4 +79,5 @@ class Game:
 
     def reset(self):
         """Reset game so that players can play another game one after another"""
-        raise NotImplementedError("NotImplementedError")
+        self.board = copy.deepcopy(self._board) if self._board is not None else [[Game.EMPTY]*Game.N for _ in range(Game.N)]
+        self.coins = self._coins if self._coins is not None else [self.INITIAL_COINS, self.INITIAL_COINS]

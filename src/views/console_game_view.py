@@ -10,9 +10,10 @@ class ConsoleGameView:
     BRIGHT = '' if is_windows() else Style.BRIGHT
     DIM = '' if is_windows() else Style.DIM
 
-    def __init__(self, game, keys=None):
+    def __init__(self, game, keys=None, print_function=print):
         self.game = game
         self.keys = keys
+        self.print_function = print_function
 
     def _get_cell_value(self, i, j):
         value = self.CELL_CHAR[self.game.board[i][j]+1]
@@ -48,7 +49,7 @@ class ConsoleGameView:
         # players
         view += self._players_view()
         # render view
-        print(view)
+        self.print_function(view)
 
     def update_view(self, **kw):
         """Update view properties and re-render this view"""

@@ -1,7 +1,9 @@
 import copy
 import glob
 import os
-
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 from collections import deque
 
 from models.game import Game
@@ -9,7 +11,7 @@ from models.move import Move
 from models.players.drl_player import DRLPlayer
 from models.players.random_player import RandomPlayer
 from views.console_game_view import ConsoleGameView
-from utils import is_windows
+from utils import print_not_train, is_windows
 
 INITIAL_COINS = [100, 100]
 MAX_EQUAL_BIDS = 3
@@ -23,10 +25,7 @@ class GameController:
         self.players = [self._select_player(player) for player in range(2)]
 
         keys = Move.KEYS \
-            if (
-                self.players[0].__class__.__name__ == 'HumanPlayer'
-                    or self.players[1].__class__.__name__ == 'HumanPlayer'
-            ) and is_windows() \
+            if any(self.players[i].__class__.__name__ == 'HumanPlayer' for i in range(2)) and is_windows() \
             else None
 
         # os.system('clear')
@@ -87,21 +86,24 @@ class GameController:
         for player in self.players:
             player.sinalize_done(winner)
 
-        self._end_game(winner)
+        self._end_game(winner, train_mode=False)
 
 
     def init_train(self, drl_player, train_args=None):
-        n_episodes = 2
-        checkpoint_each = 1000
-        print_each = 1
+        n_episodes = 1000
+        checkpoint_each = 100
+        print_each = 10
 
+        self.view.update_view(print_function=lambda *args, **kwargs: print_not_train(*args, train_mode=True, **kwargs))
         self._load_train(drl_player)
 
         scores = []
         scores_window = deque(maxlen=100)
         for i in range(1, n_episodes+1):
-            self.game = self.game.reset()
-            self._run_episode(train_mode=True)
+            self.game.reset()
+            score = self._run_episode(train_mode=True)
+            scores.append(score)
+            scores_window.append(score)
             # agent.reset()
             
             # score = self._run_episode(train_mode=True)
@@ -115,6 +117,12 @@ class GameController:
             #     "Avg. Score: {:+6.2f}".format(i, score, avg_score),
             #     end=end
             # )
+            if i%print_each == 0:
+                avg_score = np.mean(scores_window)
+                print("\rEpisode #{:3d}  |  "
+                    "Score: {:+6.2f}  |  "
+                    "Avg. Score: {:+6.2f}".format(i, score, avg_score)
+                )
             # if i%checkpoint_each == 0:
             #     drl_player.agent.save_model()
             #     # torch.save(agent.actor_local.state_dict(), 'checkpoint_actor.pt')
@@ -124,6 +132,10 @@ class GameController:
         # save model after all episodes
         # drl_player.agent.save_model()
         print('Model saved!')
+        fig, ax = plt.subplots()
+        ax.plot(scores)
+        pd.Series(scores).rolling(20, 1).mean().plot(ax=ax, label='MA(100)')
+        plt.show()
 
         return scores
 
@@ -144,25 +156,25 @@ class GameController:
             bids = []
             for player in range(2):
                 while True:
-                    print(f'Player {self.players[player].__class__.__name__}({ConsoleGameView.PLAYERS[player]}) bidding: ', end='')
+                    print_not_train(f'Player {self.players[player].__class__.__name__}({ConsoleGameView.PLAYERS[player]}) bidding: ', end='', train_mode=train_mode)
                     bid = self.players[player].get_bid(game_clone)
-                    print(bid)
+                    print_not_train(bid, train_mode=train_mode)
                     if self.game.validate_bid(bid, player):
                         bids.append(bid)
                         break
-                    print(f'Invalid bid value of {bid}. It should be in the range [0, {game_clone.coins[player]}]...')
+                    print_not_train(f'Invalid bid value of {bid}. It should be in the range [0, {game_clone.coins[player]}]...', train_mode=train_mode)
 
             if bids[0] == bids[1] and self.game.coins[0] == self.game.coins[1]:
                 equal_bids += 1
                 if equal_bids < MAX_EQUAL_BIDS:
-                    print(f'Equal bids with equal coins. Retry #{equal_bids}/{MAX_EQUAL_BIDS-1}')
+                    print_not_train(f'Equal bids with equal coins. Retry #{equal_bids}/{MAX_EQUAL_BIDS-1}', train_mode=train_mode)
                 continue
             else:
                 equal_bids = 0
                 if bids[0] > bids[1] or (bids[0] == bids[1] and self.game.coins[0] > self.game.coins[1]): player = 0
                 else: player = 1
 
-            print(f'Player {self.players[player].__class__.__name__}({ConsoleGameView.PLAYERS[player]}) won the bet')
+            print_not_train(f'Player {self.players[player].__class__.__name__}({ConsoleGameView.PLAYERS[player]}) won the bet', train_mode=train_mode)
 
             # update players coins
             self.game.update_coins(player, bids)
@@ -174,7 +186,7 @@ class GameController:
             # validate move
             valid_moves = game_clone.valid_moves()
             while move not in valid_moves:
-                print(f'Invalid board move: ({move.x}, {move.y}). Try again')
+                print_not_train(f'Invalid board move: ({move.x}, {move.y}). Try again', train_mode=train_mode)
                 move = self.players[player].get_board_move(game_clone)
 
             # make board move
@@ -189,14 +201,19 @@ class GameController:
         for player in self.players:
             player.sinalize_done(winner)
 
-        self._end_game(winner)        
+        self._end_game(winner, train_mode)
 
-    def _end_game(self, winner):
-        print('')
+        if winner == 0: return 1
+        if winner == 1: return -1
+        return 0
+
+
+    def _end_game(self, winner, train_mode):
+        print_not_train('', train_mode=train_mode)
         if winner is None:
-            print('Game ended in a tie')
+            print_not_train('Game ended in a tie', train_mode=train_mode)
         else:
-            print('Player ' + self.players[winner].__class__.__name__ + '(' + ConsoleGameView.PLAYERS[winner] + ') won')
+            print_not_train('Player ' + self.players[winner].__class__.__name__ + '(' + ConsoleGameView.PLAYERS[winner] + ') won', train_mode=train_mode)
 
     def _select_player(self, player):
         players = glob.glob('./models/players/*_player.py')

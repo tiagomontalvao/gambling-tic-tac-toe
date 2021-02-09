@@ -5,3 +5,7 @@ def get_os():
 
 def is_windows():
     return get_os().lower() == 'windows'
+
+def print_not_train(*args, train_mode, **kwargs):
+    if not train_mode:
+        print(*args, **kwargs)
