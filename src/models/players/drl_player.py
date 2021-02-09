@@ -5,6 +5,7 @@ from typing import List
 from drl.agent import DRLAgent
 from models.move import Move
 from models.players.base_player import BasePlayer
+from utils import get_reward_from_winner
 
 class DRLPlayer(BasePlayer):
     def __init__(self, player, game, agent, train_mode=False):
@@ -59,7 +60,7 @@ class DRLPlayer(BasePlayer):
 
     def sinalize_done(self, winner):
         """Perform step in the agent if self.train_mode=True after game is finished"""
-        reward = 1 if winner == self.player else -1
+        reward = get_reward_from_winner(self.player, winner)
         self._get_experience_tuple_then_step(reward=reward, done=True)
 
     def _get_experience_tuple_then_step(self, reward, done):
