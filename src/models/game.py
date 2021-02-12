@@ -3,6 +3,7 @@ import copy
 
 from models.move import Move
 
+
 class Game:
     N, INITIAL_COINS, EMPTY = 3, 100, -1
 
@@ -10,10 +11,16 @@ class Game:
         self._board = board
         self._coins = coins
         self.reset()
+        if self._board is None:
+            self._board = copy.deepcopy(self.board)
+            print(self._board)
+        if self._coins is None:
+            self._coins = copy.deepcopy(self.coins)
 
     def play(self, move, player):
         """Make move in the board"""
-        valid = (player == 0 or player == 1) and (0 <= move.x < Game.N and 0 <= move.y < Game.N)
+        valid = (player == 0 or player == 1) and (
+            0 <= move.x < Game.N and 0 <= move.y < Game.N)
         if not valid:
             raise Exception('Movement not valid')
         # make move
@@ -24,8 +31,10 @@ class Game:
         if not all([self.validate_bid(bids[player], player) for player in range(2)]):
             raise Exception('Bid not valid')
         for player_to_update in range(2):
-            if player_to_update == player: self.coins[player_to_update] -= bids[player]
-            else: self.coins[player_to_update] += bids[player]
+            if player_to_update == player:
+                self.coins[player_to_update] -= bids[player]
+            else:
+                self.coins[player_to_update] += bids[player]
 
     def game_finished(self):
         """
@@ -79,5 +88,7 @@ class Game:
 
     def reset(self):
         """Reset game so that players can play another game one after another"""
-        self.board = copy.deepcopy(self._board) if self._board is not None else [[Game.EMPTY]*Game.N for _ in range(Game.N)]
-        self.coins = self._coins if self._coins is not None else [self.INITIAL_COINS, self.INITIAL_COINS]
+        self.board = copy.deepcopy(self._board) if self._board is not None else [
+            [Game.EMPTY]*Game.N for _ in range(Game.N)]
+        self.coins = copy.deepcopy(self._coins) if self._coins is not None else [
+            self.INITIAL_COINS, self.INITIAL_COINS]

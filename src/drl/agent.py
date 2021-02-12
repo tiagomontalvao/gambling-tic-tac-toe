@@ -1,11 +1,11 @@
 import numpy as np
 import random
+import torch
+import torch.nn.functional as F
 from collections import namedtuple, deque
 
 from drl.ddpg_agent import DDPGAgent
 
-import torch
-import torch.nn.functional as F
 
 class DRLAgent():
     """Interacts with and learns from the environment."""
@@ -21,7 +21,8 @@ class DRLAgent():
             seed (int): Random seed of PRNG engines
             checkpoint_path (string): Directory with saved model checkpoints
         """
-        self.agent = DDPGAgent(state_size, bid_action_size, board_action_size, seed, checkpoint_path)
+        self.agent = DDPGAgent(state_size, bid_action_size,
+                               board_action_size, seed, checkpoint_path)
 
     def act(self, state):
         return self.agent.act(state)

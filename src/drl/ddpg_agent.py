@@ -90,8 +90,8 @@ class DDPGAgent():
         if add_noise:
             # TODO: make sure probabilities sum up to 1 (?)
             zero_indices = actions==0
-            actions += self.noise.sample()
-            actions[zero_indices] = 0
+            # actions += self.noise.sample()
+            # actions[zero_indices] = 0
         return np.clip(actions, 0, 1)
 
     def reset(self):
@@ -184,7 +184,7 @@ class DDPGAgent():
             'critic_target': self.critic_target.state_dict(),
             'critic_optimizer': self.critic_optimizer.state_dict(),
         }
-        torch.save(checkpoint, self.checkpoint_path)
+        torch.save(checkpoint, checkpoint_path)
 
 class OUNoise:
     """Ornstein-Uhlenbeck process."""

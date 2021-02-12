@@ -7,9 +7,10 @@ from models.move import Move
 from models.players.base_player import BasePlayer
 from utils import get_reward_from_winner
 
+
 class DRLPlayer(BasePlayer):
-    def __init__(self, player, game, agent, train_mode=False):
-        super(DRLPlayer, self).__init__(player)
+    def __init__(self, player, game, agent=None, train_mode=False):
+        super().__init__(player, game)
 
         # checkpoint_path='../../drl/checkpoints/checkpoint.pt'
         checkpoint_path = None
@@ -20,8 +21,12 @@ class DRLPlayer(BasePlayer):
         self.sum_coins = sum(game.coins)
 
         self.player = player
+
+        if agent is None:
+            agent = DRLAgent(state_size=game.N*game.N+2, bid_action_size=1,
+                             board_action_size=game.N*game.N, seed=seed, checkpoint_path='../../../checkpoint/checkpoint.pth')
         self.agent = agent
-        # self.agent = DRLAgent(state_size=game.N*game.N+2, bid_action_size=1, board_action_size=game.N*game.N, seed=seed, checkpoint_path=checkpoint_path)
+
         self.train_mode = train_mode
 
         self.curr_state = None
@@ -44,19 +49,24 @@ class DRLPlayer(BasePlayer):
         self.last_state = self.curr_state
         self.last_action = self.curr_action
 
-        self.bid, self.board_move = self._get_action_from_agent(self.curr_action, game.coins[self.player])
+        self.bid, self.board_move = self._get_action_from_agent(
+            self.curr_action, game.coins[self.player])
 
         return self.bid
 
     def get_board_move(self, game):
         """
-        Return move already saved in self.board_move.
-        It is saved with a number from 0 to game.N**2-1 (8, if N=3) and is converted to Move(x, y).
+        Return move already saved in self.board_move
+        It is saved with a number from 0 to game.N**2-1 (8, if N=3) and is converted to Move(x, y)
         """
         x = self.board_move // self.game_N
         y = self.board_move % self.game_N
 
         return Move(x, y)
+
+    def update_epsilon(self, epsilon):
+        """Update epsilon used in epsilon-greedy algorithm"""
+        self.epsilon = epsilon
 
     def sinalize_done(self, winner):
         """Perform step in the agent if self.train_mode=True after game is finished"""
@@ -68,7 +78,8 @@ class DRLPlayer(BasePlayer):
         if self.train_mode and self.last_state is not None:
             # add tuple to agent
             last_state = self._format_state_to_agent(self.last_state)
-            last_action = self._format_action_to_agent(self.bid, self.board_move)
+            last_action = self._format_action_to_agent(
+                self.bid, self.board_move)
             curr_state = self._format_state_to_agent(self.curr_state)
             self.agent.step(last_state, last_action, reward, curr_state, done)
 
@@ -95,7 +106,19 @@ class DRLPlayer(BasePlayer):
         # Denormalize bid
         bid = int(action[0].item() * self.sum_coins)
         bid = np.clip(bid, 0, player_coins)
-        # Get board_move from softmax output
-        board_move = action[1:].argmax().item()
-        return bid, board_move
 
+        # Epsilon-greedy choice of action when self.train_mode=True
+        action_probs = action[1:]
+        if not self.train_mode or np.random.random() > self.epsilon:
+            board_move = np.argmax(action_probs)
+        else:
+            # Consider only available positions
+            p = np.ones(len(action_probs))
+            p[action_probs == 0] = 0
+            p /= p.sum()
+            board_move = np.random.choice(np.arange(len(action_probs)), p=p)
+
+        # # Get board_move from softmax output
+        # board_move = action[1:].argmax().item()
+
+        return bid, board_move

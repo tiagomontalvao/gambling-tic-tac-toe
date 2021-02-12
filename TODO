@@ -1,6 +1,6 @@
 TODO
 - Add to training loop
-    - time
+    X time
     - patience
 - Add asserts
 - Add docstrings

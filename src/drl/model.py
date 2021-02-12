@@ -4,6 +4,7 @@ import torch.nn as nn
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
+
 def hidden_init(layer):
     fan_in = layer.weight.data.size()[0]
     lim = 1. / np.sqrt(fan_in)
@@ -84,7 +85,7 @@ class Actor(nn.Module):
             fc2_units (int): Number of nodes in second hidden layer
             seed (int): Random seed of PRNG engines
         """
-        super(Actor, self).__init__()
+        super().__init__()
         if seed:
             torch.manual_seed(seed)
         self.board_action_size = board_action_size
@@ -123,7 +124,7 @@ class Actor(nn.Module):
         x_bid = self.fc3_bid(x)
         x_board = self.fc3_board(x)
 
-        avail = (state[:,2:] == -1).type(torch.FloatTensor).to(device)
+        avail = (state[:, 2:] == -1).type(torch.FloatTensor).to(device)
         x_board[avail == 0] = -float('inf')
 
         x_board = self.softmax_board(x_board)
@@ -145,7 +146,7 @@ class Critic(nn.Module):
             fc2_units (int): Number of nodes in the second hidden layer
             seed (int): Random seed
         """
-        super(Critic, self).__init__()
+        super().__init__()
         if seed:
             torch.manual_seed(seed)
         self.fcs1 = nn.Sequential(
