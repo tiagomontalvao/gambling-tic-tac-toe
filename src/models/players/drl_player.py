@@ -12,8 +12,6 @@ class DRLPlayer(BasePlayer):
     def __init__(self, player, game, agent=None, train_mode=False):
         super().__init__(player, game)
 
-        # checkpoint_path='../../drl/checkpoints/checkpoint.pt'
-        checkpoint_path = None
         # seed = player if train_mode else None
         seed = None
 
@@ -44,7 +42,7 @@ class DRLPlayer(BasePlayer):
         self._get_experience_tuple_then_step(reward=0, done=False)
 
         # get action
-        self.curr_action = self.agent.act(self.curr_state)
+        self.curr_action = self.agent.act(self.curr_state, self.train_mode)
 
         self.last_state = self.curr_state
         self.last_action = self.curr_action
@@ -85,6 +83,10 @@ class DRLPlayer(BasePlayer):
 
     def _format_state_to_agent(self, state: list) -> torch.Tensor:
         state = torch.Tensor(state)
+        # if player is 1, swap 0 with 1 so that is thinks it's player 0
+        if self.player == 1:
+            state[:2] = torch.flip(state[:2], (0,))
+            state[2:][state[2:]>=0] = 1-state[2:][state[2:]>=0]
         state[:2] /= self.sum_coins
         return state
 
@@ -114,7 +116,7 @@ class DRLPlayer(BasePlayer):
         else:
             # Consider only available positions
             p = np.ones(len(action_probs))
-            p[action_probs == 0] = 0
+            p[action_probs <= 1e-8] = 0
             p /= p.sum()
             board_move = np.random.choice(np.arange(len(action_probs)), p=p)
 

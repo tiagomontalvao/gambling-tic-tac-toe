@@ -6,8 +6,8 @@ def get_os():
 def is_windows():
     return get_os().lower() == 'windows'
 
-def print_not_train(*args, train_mode, **kwargs):
-    if not train_mode:
+def print_not_train_or_eval(*args, train_mode=False, eval_mode=False, **kwargs):
+    if not (train_mode or eval_mode):
         print(*args, **kwargs)
 
 def get_reward_from_winner(player, winner):

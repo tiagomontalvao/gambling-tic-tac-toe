@@ -7,6 +7,7 @@ class BasePlayer(ABC):
         Params
         ======
             player (int): id assigned to this player
+            game (models.Game): game object to give info to player of what move to make
         """
         self.player = player
 

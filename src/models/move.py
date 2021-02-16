@@ -1,4 +1,6 @@
 class Move:
+    """Move class, responsible for placing a player's move into the board."""
+
     KEYS = [[str(i*3+j+1) for j in range(3)] for i in range(3)]
 
     def __init__(self, x, y=None, kind='coord'):
@@ -26,10 +28,10 @@ class Move:
         self.y = y
 
     def __getitem__(self, i):
-        if i == 0:
-            return x
-        if i == 1:
-            return y
+        return [self.x, self.y][i]
 
     def __eq__(self, other):
-        return (self and other and self.x == other.x and self.y == other.y)
+        return (self is not None and other is not None and self.x == other.x and self.y == other.y)
+
+    def __str__(self):
+        return f'Move({self.x}, {self.y})'

@@ -13,7 +13,6 @@ class Game:
         self.reset()
         if self._board is None:
             self._board = copy.deepcopy(self.board)
-            print(self._board)
         if self._coins is None:
             self._coins = copy.deepcopy(self.coins)
 

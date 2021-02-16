@@ -24,8 +24,8 @@ class DRLAgent():
         self.agent = DDPGAgent(state_size, bid_action_size,
                                board_action_size, seed, checkpoint_path)
 
-    def act(self, state):
-        return self.agent.act(state)
+    def act(self, state, train_mode=False):
+        return self.agent.act(state, train_mode)
 
     def step(self, state, action, reward, next_state, done):
         return self.agent.step(state, action, reward, next_state, done)
@@ -37,3 +37,7 @@ class DRLAgent():
     def save_model(self, checkpoint_path=None):
         """Save model's checkpoint"""
         return self.agent.save_model(checkpoint_path)
+
+    def get_losses(self):
+        """Return list of losses obtained during training steps"""
+        return self.agent.get_losses()

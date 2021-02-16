@@ -37,6 +37,8 @@ class DDPGAgent():
             checkpoint_path (string): Directory with saved model checkpoints
         """
         self.state_size = state_size
+        self.bid_action_size = bid_action_size
+        self.board_action_size = board_action_size
         self.action_size = bid_action_size + board_action_size
         random.seed(seed)
 
@@ -50,8 +52,12 @@ class DDPGAgent():
         self.critic_target = Critic(state_size, self.action_size, fcs1_units=400, fc2_units=300, seed=seed).to(device)
         self.critic_optimizer = optim.Adam(self.critic_local.parameters(), lr=LR_CRITIC, weight_decay=WEIGHT_DECAY)
 
+        # Lists of losses to keep track of trainin loss
+        self.actor_losses = []
+        self.critic_losses = []
+
         # Noise process
-        self.noise = OUNoise(self.action_size, seed)
+        self.noise = OUNoise(bid_action_size, seed)
 
         # Replay memory
         self.memory = ReplayBuffer(BUFFER_SIZE, BATCH_SIZE, seed)
@@ -80,18 +86,15 @@ class DDPGAgent():
                     experiences = self.memory.sample()
                     self.learn(experiences, GAMMA)
 
-    def act(self, state, add_noise=True):
+    def act(self, state, train_mode=False):
         """Returns actions for given state as per current policy."""
         state = state.unsqueeze(0).to(device)
         self.actor_local.eval()
         with torch.no_grad():
             actions = self.actor_local(state).cpu().data.numpy()
         self.actor_local.train()
-        if add_noise:
-            # TODO: make sure probabilities sum up to 1 (?)
-            zero_indices = actions==0
-            # actions += self.noise.sample()
-            # actions[zero_indices] = 0
+        if train_mode:
+            actions[:, :self.bid_action_size] += self.noise.sample()
         return np.clip(actions, 0, 1)
 
     def reset(self):
@@ -120,6 +123,7 @@ class DDPGAgent():
         # Compute critic loss
         Q_expected = self.critic_local(states, actions)
         critic_loss = F.mse_loss(Q_expected, Q_targets)
+        self.critic_losses.append(critic_loss.item())
         # Minimize the loss
         self.critic_optimizer.zero_grad()
         critic_loss.backward()
@@ -131,6 +135,7 @@ class DDPGAgent():
         # Compute actor loss
         actions_pred = self.actor_local(states)
         actor_loss = -self.critic_local(states, actions_pred).mean()
+        self.actor_losses.append(actor_loss.item())
         # Minimize the loss
         self.actor_optimizer.zero_grad()
         actor_loss.backward()
@@ -185,6 +190,13 @@ class DDPGAgent():
             'critic_optimizer': self.critic_optimizer.state_dict(),
         }
         torch.save(checkpoint, checkpoint_path)
+
+    def get_losses(self):
+        """Return list of losses obtained during training steps"""
+        return {
+            'actor_losses': self.actor_losses,
+            'critic_losses': self.critic_losses
+        }
 
 class OUNoise:
     """Ornstein-Uhlenbeck process."""
