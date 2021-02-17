@@ -117,7 +117,12 @@ class GameController:
 
         return winner
 
-    def _load_train(self, players):
+    def load_train(self, players):
+        self.view.update_view(print_function=lambda *args, **kwargs: 0)
+        self.players = players
+
+    def load_validation(self, players):
+        self.view.update_view(print_function=lambda *args, **kwargs: 0)
         self.players = players
 
     def _end_game(self, winner, train_mode, eval_mode):
