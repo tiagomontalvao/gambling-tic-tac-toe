@@ -86,17 +86,17 @@ class Actor(nn.Module):
             seed (int): Random seed of PRNG engines
         """
         super().__init__()
-        if seed:
+        if seed is not None:
             torch.manual_seed(seed)
         self.board_action_size = board_action_size
         self.fc1 = nn.Sequential(
             nn.Linear(state_size, fc1_units),
-            nn.BatchNorm1d(num_features=fc1_units),
+            # nn.BatchNorm1d(num_features=fc1_units),
             nn.PReLU()
         )
         self.fc2 = nn.Sequential(
             nn.Linear(fc1_units, fc2_units),
-            nn.BatchNorm1d(num_features=fc2_units),
+            # nn.BatchNorm1d(num_features=fc2_units),
             nn.PReLU()
         )
         self.fc3_bid = nn.Sequential(
@@ -147,16 +147,16 @@ class Critic(nn.Module):
             seed (int): Random seed
         """
         super().__init__()
-        if seed:
+        if seed is not None:
             torch.manual_seed(seed)
         self.fcs1 = nn.Sequential(
             nn.Linear(state_size, fcs1_units),
-            nn.BatchNorm1d(num_features=fcs1_units),
+            # nn.BatchNorm1d(num_features=fcs1_units),
             nn.PReLU()
         )
         self.fc2 = nn.Sequential(
             nn.Linear(fcs1_units+action_size, fc2_units),
-            nn.BatchNorm1d(num_features=fc2_units),
+            # nn.BatchNorm1d(num_features=fc2_units),
             nn.PReLU()
         )
         self.fc3 = nn.Linear(fc2_units, 1)

@@ -16,7 +16,7 @@ TAU = 1e-3                # for soft update of target parameters
 LR_ACTOR = 1e-3           # learning rate of the actor
 LR_CRITIC = 1e-3          # learning rate of the critic
 WEIGHT_DECAY = 0          # L2 weight decay
-UPDATE_EVERY = 15         # how often to update the network
+UPDATE_EVERY = 5          # how often to update the network
 N_UPDATES_PER_STEP = 10   # number of updates to perform at each learning step
 CLIP_GRAD_NORM = 5        # Value of gradient to clip while training
 
@@ -48,6 +48,8 @@ class DDPGAgent():
                                  fc1_units=400, fc2_units=300, seed=seed).to(device)
         self.actor_target = Actor(state_size, bid_action_size, board_action_size,
                                   fc1_units=400, fc2_units=300, seed=seed).to(device)
+        # Make target network equal to local network
+        self.hard_update(self.actor_local, self.actor_target)
         self.actor_optimizer = optim.Adam(
             self.actor_local.parameters(), lr=LR_ACTOR)
 
@@ -56,6 +58,8 @@ class DDPGAgent():
             state_size, self.action_size, fcs1_units=400, fc2_units=300, seed=seed).to(device)
         self.critic_target = Critic(
             state_size, self.action_size, fcs1_units=400, fc2_units=300, seed=seed).to(device)
+        # Make target network equal to local network
+        self.hard_update(self.critic_local, self.critic_target)
         self.critic_optimizer = optim.Adam(
             self.critic_local.parameters(), lr=LR_CRITIC, weight_decay=WEIGHT_DECAY)
 
@@ -169,6 +173,17 @@ class DDPGAgent():
             target_param.data.copy_(
                 tau*local_param.data + (1.0-tau)*target_param.data)
 
+    def hard_update(self, local_model, target_model):
+        """Hard update model parameters.
+        θ_target = θ_local
+
+        Inputs:
+            local_model (PyTorch model): weights will be copied from
+            target_model (PyTorch model): weights will be copied to
+        """
+        for target_param, local_param in zip(target_model.parameters(), local_model.parameters()):
+            target_param.data.copy_(local_param.data)
+
     def load_model(self, checkpoint_path=None):
         """Load model's checkpoint"""
         if checkpoint_path is None:
@@ -213,7 +228,7 @@ class DDPGAgent():
 class OUNoise:
     """Ornstein-Uhlenbeck process."""
 
-    def __init__(self, size, seed, mu=0., theta=0.2, sigma=0.025):
+    def __init__(self, size, seed, mu=0., theta=0.2, sigma=0.1):
         """Initialize parameters and noise process."""
         self.mu = mu * np.ones(size)
         self.theta = theta
@@ -271,6 +286,13 @@ class ReplayBuffer:
             [e.done for e in experiences if e is not None]).astype(np.uint8)).float().to(device)
 
         return (states, actions, rewards, next_states, dones)
+
+    def pop(self):
+        """Remove last item from buffer"""
+        item = None
+        if len(self.memory) > 0:
+            item = self.memory.pop()
+        return item
 
     def __len__(self):
         """Return the current size of internal memory."""

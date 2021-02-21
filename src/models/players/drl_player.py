@@ -7,6 +7,8 @@ from models.move import Move
 from models.players.base_player import BasePlayer
 from utils import get_reward_from_winner
 
+REWARD_PER_STEP = -0.05
+
 
 class DRLPlayer(BasePlayer):
     def __init__(self, player, game, agent=None, train_mode=False):
@@ -28,9 +30,7 @@ class DRLPlayer(BasePlayer):
         self.train_mode = train_mode
 
         self.curr_state = None
-        self.curr_action = None
         self.last_state = None
-        self.last_action = None
 
         self.bid = None
         self.board_move = None
@@ -39,16 +39,16 @@ class DRLPlayer(BasePlayer):
         """Update agent's state, make action, save new state and return bid"""
         self.curr_state = self._format_state_to_agent(game.get_state_array())
 
-        self._get_experience_tuple_then_step(reward=0, done=False)
+        self._get_experience_tuple_then_step(
+            reward=REWARD_PER_STEP, done=False)
 
         # get action
-        self.curr_action = self.agent.act(self.curr_state, self.train_mode)
+        action = self.agent.act(self.curr_state, self.train_mode)
 
         self.last_state = self.curr_state
-        self.last_action = self.curr_action
 
         self.bid, self.board_move = self._get_action_from_agent(
-            self.curr_action, game.coins[self.player])
+            action, game.coins[self.player])
 
         return self.bid
 
@@ -75,10 +75,16 @@ class DRLPlayer(BasePlayer):
         """Perform step in the agent if self.train_mode=True"""
         if self.train_mode and self.last_state is not None:
             # add tuple to agent
-            last_state = self._format_state_to_agent(self.last_state)
+            last_state = self.last_state
             last_action = self._format_action_to_agent(
                 self.bid, self.board_move)
-            curr_state = self._format_state_to_agent(self.curr_state)
+            curr_state = self.curr_state
+            # print(f'agent.step()')
+            # print(f'\tlast_state: {last_state}')
+            # print(f'\tlast_action: {last_action}')
+            # print(f'\treward: {reward}')
+            # print(f'\tcurr_state: {curr_state}')
+            # print(f'\tdone: {done}')
             self.agent.step(last_state, last_action, reward, curr_state, done)
 
     def _format_state_to_agent(self, state: list) -> torch.Tensor:
@@ -86,7 +92,7 @@ class DRLPlayer(BasePlayer):
         # if player is 1, swap 0 with 1 so that is thinks it's player 0
         if self.player == 1:
             state[:2] = torch.flip(state[:2], (0,))
-            state[2:][state[2:]>=0] = 1-state[2:][state[2:]>=0]
+            state[2:][state[2:] >= 0] = 1-state[2:][state[2:] >= 0]
         state[:2] /= self.sum_coins
         return state
 

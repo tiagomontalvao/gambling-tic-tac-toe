@@ -1,8 +1,10 @@
+BUGS:
+
 TODO
+- Experiment with different network sizes
 - Add tqdm progress bars to training and validation
-- Add plot loss functions
-- Add noise to agent.action() when choosing bids
-- Try to change coin action of [0, 1] from total current coins to total initial coins. E.g: 0.5 from 150 coins should represent 50, not 75.
+- Implement prioritized experience replay buffer
+- Try to change coin action of [0, 1] from total initial coins to total current coins. E.g: 0.5 from 150 coins should represent 50, not 75.
 - Add to training loop
     X time
     - patience
@@ -11,10 +13,21 @@ TODO
 - Check TODOs
 
 DOING:
-- Create training loop for agent
+- Analyse Critic values for first move
+- Analyse performance without BatchNorm1d
 
 
 DONE:
 - Change state coins from (..., coins[0], coins[1]) to (..., coins[player], coins[opponent])
 - Invalidate invalid movements
 - Normalize bid in NN input to [0, 2*initial_value], so that all bids are transformed (bid/(2*initial_value)) and are mapped to the range [0,1).
+- Create training loop for agent
+- Add noise to agent.action() when choosing bids
+- Add plot loss functions
+- [BUG] Investigate why agent.memory.sample()[0] (state) returns coins in the order of 1e-5
+    - Wrong implementation of utils functions
+- [BUG] Investigate if last_state == curr_state can happen (it did during debug in jupyter notebook)
+    - When both players bid the same value, the state does not change
+- Add -0.05 to every move so that agent tries to finish the game earlier
+- Remove equal bid moves from replay buffer
+    - Equals bids now incur in randomly choosing a player to play, so there is no more problem with this 
