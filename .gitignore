@@ -127,3 +127,6 @@ dmypy.json
 # Animations
 *.mp4
 *.gif
+
+# PyTorch files
+*.pt

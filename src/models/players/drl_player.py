@@ -11,7 +11,7 @@ REWARD_PER_STEP = -0.05
 
 
 class DRLPlayer(BasePlayer):
-    def __init__(self, player, game, agent=None, train_mode=False):
+    def __init__(self, player, game, agent=None, train_mode=False, initial_checkpoint_path='../checkpoints/model_v3.pt'):
         super().__init__(player, game)
 
         # seed = player if train_mode else None
@@ -24,7 +24,8 @@ class DRLPlayer(BasePlayer):
 
         if agent is None:
             agent = DRLAgent(state_size=game.N*game.N+2, bid_action_size=1,
-                             board_action_size=game.N*game.N, seed=seed, checkpoint_path='../../../checkpoint/checkpoint.pth')
+                             board_action_size=game.N*game.N, seed=seed,
+                             initial_checkpoint_path=initial_checkpoint_path)
         self.agent = agent
 
         self.train_mode = train_mode

@@ -26,7 +26,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 class DDPGAgent():
     """Interacts with and learns from the environment."""
 
-    def __init__(self, state_size, bid_action_size, board_action_size, seed=None, checkpoint_path=None, initial_checkpoint=None):
+    def __init__(self, state_size, bid_action_size, board_action_size, seed=None, checkpoint_path=None, initial_checkpoint_path=None):
         """Initialize an Agent object.
 
         Params
@@ -80,8 +80,12 @@ class DDPGAgent():
         self.checkpoint_path = checkpoint_path
 
         # Load model if initial checkpoint exists
-        if initial_checkpoint:
-            self.load_model(initial_checkpoint)
+        if initial_checkpoint_path is not None:
+            import os
+            cwd = os.getcwd()
+            print('current directory: %s' % cwd)
+            print('initial_checkpoint_path: %s' % initial_checkpoint_path)
+            self.load_model(initial_checkpoint_path)
 
     def step(self, state, action, reward, next_state, done):
         """Save experience in replay memory, and use random sample from buffer to learn."""
@@ -192,6 +196,7 @@ class DDPGAgent():
         checkpoint = torch.load(checkpoint_path)
 
         self.t_step = checkpoint['t_step']
+        print('self.t_step', self.t_step, flush=True)
 
         self.actor_local.load_state_dict(checkpoint['actor_local'])
         self.actor_target.load_state_dict(checkpoint['actor_target'])

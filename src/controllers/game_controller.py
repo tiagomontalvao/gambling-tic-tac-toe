@@ -22,8 +22,9 @@ class GameController:
         self.game = Game()
         self.view = ConsoleGameView(self.game.get_clone())
 
-    def init_game(self):
-        self.players = [self._select_player(player) for player in range(2)]
+    def init_game(self, drl_checkpoint_path=None):
+        self.players = [self._select_player(
+            player, drl_checkpoint_path=drl_checkpoint_path) for player in range(2)]
 
         keys = Move.KEYS \
             if any(self.players[i].__class__.__name__ == 'HumanPlayer' for i in range(2)) \
@@ -32,10 +33,10 @@ class GameController:
         self.view.update_view(keys=keys)
         return self.run_episode(train_mode=False)
 
-    def reset_game(self):
+    def reset_game(self, drl_checkpoint_path=None):
         self.game.reset()
         self.view = ConsoleGameView(self.game.get_clone())
-        self.init_game()
+        self.init_game(drl_checkpoint_path=drl_checkpoint_path)
 
     def run_episode(self, train_mode=False, eval_mode=False):
         finished, winner = self.game.game_finished()
@@ -130,7 +131,7 @@ class GameController:
     def _player_str(self, player):
         return f'Player {1+player} {self.players[player].__class__.__name__}({ConsoleGameView.PLAYERS[player]})'
 
-    def _select_player(self, player):
+    def _select_player(self, player, drl_checkpoint_path=None):
         players = glob.glob('./models/players/*_player.py')
         # filter abstract base player
         players = [
@@ -144,4 +145,13 @@ class GameController:
         chosen_player = input("Input desired player number: ")
         module_globals = {}
         exec(open(players[int(chosen_player)]).read(), module_globals)
-        return module_globals[list(module_globals.keys())[len(module_globals.keys()) - 1]](player, self.game.get_clone())
+        player_class = module_globals[list(module_globals.keys())[
+            len(module_globals.keys()) - 1]]
+        player_kwargs = {}
+        print(
+            f'player_class.__class__.__name__ = {player_class.__class__.__name__}')
+        if player_class.__class__.__name__ == 'DRLPlayer':
+            print(
+                f"player_kwargs['initial_checkpoint_path'] = drl_checkpoint_path = {drl_checkpoint_path}")
+            player_kwargs['initial_checkpoint_path'] = drl_checkpoint_path
+        return player_class(player, self.game.get_clone(), **player_kwargs)

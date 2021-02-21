@@ -1,6 +1,7 @@
 BUGS:
 
 TODO
+- Investigate why Agent bids all its money
 - Experiment with different network sizes
 - Add tqdm progress bars to training and validation
 - Implement prioritized experience replay buffer
