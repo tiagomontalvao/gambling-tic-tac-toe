@@ -30,8 +30,10 @@ class DRLPlayer(BasePlayer):
 
         self.train_mode = train_mode
 
+        self.curr_coins = game.coins[self.player]
         self.curr_state = None
         self.last_state = None
+        self.last_action = None
 
         self.bid = None
         self.board_move = None
@@ -44,12 +46,13 @@ class DRLPlayer(BasePlayer):
             reward=REWARD_PER_STEP, done=False)
 
         # get action
-        action = self.agent.act(self.curr_state, self.train_mode)
+        curr_action = self.agent.act(self.curr_state, self.train_mode)
 
+        self.curr_coins = game.coins[self.player]
         self.last_state = self.curr_state
+        self.last_action = curr_action
 
-        self.bid, self.board_move = self._get_action_from_agent(
-            action, game.coins[self.player])
+        self.bid, self.board_move = self._get_action_from_agent(curr_action)
 
         return self.bid
 
@@ -77,15 +80,10 @@ class DRLPlayer(BasePlayer):
         if self.train_mode and self.last_state is not None:
             # add tuple to agent
             last_state = self.last_state
-            last_action = self._format_action_to_agent(
-                self.bid, self.board_move)
+            # last_action = self._format_action_to_agent(
+            #     self.bid, self.board_move) # wrong approach
+            last_action = self.last_action
             curr_state = self.curr_state
-            # print(f'agent.step()')
-            # print(f'\tlast_state: {last_state}')
-            # print(f'\tlast_action: {last_action}')
-            # print(f'\treward: {reward}')
-            # print(f'\tcurr_state: {curr_state}')
-            # print(f'\tdone: {done}')
             self.agent.step(last_state, last_action, reward, curr_state, done)
 
     def _format_state_to_agent(self, state: list) -> torch.Tensor:
@@ -97,24 +95,30 @@ class DRLPlayer(BasePlayer):
         state[:2] /= self.sum_coins
         return state
 
-    def _format_action_to_agent(self, bid: int, board_move: int) -> torch.Tensor:
-        # Normalize bid
-        bid /= self.sum_coins
-        # Create one-hot from board_move
-        board_move_array = [0] * (self.game_N ** 2)
-        board_move_array[board_move] = 1
-        action = torch.Tensor([bid, *board_move_array])
-        return action
+    # def _format_action_to_agent(self, bid: int, board_move: int) -> torch.Tensor:
+    #     # Normalize bid
+    #     bid /= self.curr_coins
+    #     # Create one-hot from board_move # Whyyyyy?
+    #     board_move_array = [0] * (self.game_N ** 2)
+    #     board_move_array[board_move] = 1
+    #     action = torch.Tensor([bid, *board_move_array])
+    #     return action
 
     # def _get_state_from_agent(self, state: torch.Tensor) -> torch.Tensor:
     #     state[:2] *= self.sum_coins
     #     return state
 
-    def _get_action_from_agent(self, action: torch.Tensor, player_coins: int) -> List[int]:
+    def _get_action_from_agent(self, action: torch.Tensor) -> List[int]:
         action = action.squeeze(0)
         # Denormalize bid
-        bid = int(action[0].item() * self.sum_coins)
-        bid = np.clip(bid, 0, player_coins)
+
+        # Relative to total coins
+        bid = int(round(action[0].item() * self.sum_coins))
+        bid = np.clip(bid, 0, self.curr_coins)
+
+        # Relative to current coins
+        # bid = int(round(action[0].item() * self.curr_coins))
+        # bid = np.clip(bid, 0, self.curr_coins)
 
         # Epsilon-greedy choice of action when self.train_mode=True
         action_probs = action[1:]
@@ -131,3 +135,6 @@ class DRLPlayer(BasePlayer):
         # board_move = action[1:].argmax().item()
 
         return bid, board_move
+
+    def print_lr(self):
+        self.agent.print_lr()

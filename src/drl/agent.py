@@ -2,7 +2,6 @@ import numpy as np
 import random
 import torch
 import torch.nn.functional as F
-from collections import namedtuple, deque
 
 from drl.ddpg_agent import DDPGAgent
 
@@ -41,3 +40,6 @@ class DRLAgent():
     def get_losses(self):
         """Return list of losses obtained during training steps"""
         return self.agent.get_losses()
+
+    def print_lr(self):
+        self.agent.print_lr()

@@ -13,8 +13,8 @@ BUFFER_SIZE = int(1e6)    # replay buffer size
 BATCH_SIZE = 1024         # minibatch size
 GAMMA = 1                 # discount factor
 TAU = 1e-3                # for soft update of target parameters
-LR_ACTOR = 1e-3           # learning rate of the actor
-LR_CRITIC = 1e-3          # learning rate of the critic
+LR_ACTOR = 1e-4           # learning rate of the actor
+LR_CRITIC = 1e-4          # learning rate of the critic
 WEIGHT_DECAY = 0          # L2 weight decay
 UPDATE_EVERY = 5          # how often to update the network
 N_UPDATES_PER_STEP = 10   # number of updates to perform at each learning step
@@ -81,9 +81,6 @@ class DDPGAgent():
 
         # Load model if initial checkpoint exists
         if initial_checkpoint_path is not None:
-            import os
-            cwd = os.getcwd()
-            print('current directory: %s' % cwd)
             print('initial_checkpoint_path: %s' % initial_checkpoint_path)
             self.load_model(initial_checkpoint_path)
 
@@ -196,7 +193,6 @@ class DDPGAgent():
         checkpoint = torch.load(checkpoint_path)
 
         self.t_step = checkpoint['t_step']
-        print('self.t_step', self.t_step, flush=True)
 
         self.actor_local.load_state_dict(checkpoint['actor_local'])
         self.actor_target.load_state_dict(checkpoint['actor_target'])
@@ -228,6 +224,10 @@ class DDPGAgent():
             'actor_losses': self.actor_losses,
             'critic_losses': self.critic_losses
         }
+
+    def print_lr(self):
+        print('LR_ACTOR:', LR_ACTOR)
+        print('LR_CRITIC:', LR_CRITIC)
 
 
 class OUNoise:

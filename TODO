@@ -1,6 +1,8 @@
 BUGS:
 
 TODO
+- Retrain v4 and v5 changing drl_player to consider current coins, not sum_cois
+- Try to change model to have a Conv2d layer
 - Investigate why Agent bids all its money
 - Experiment with different network sizes
 - Add tqdm progress bars to training and validation

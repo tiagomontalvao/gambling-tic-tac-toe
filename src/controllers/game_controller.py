@@ -149,9 +149,14 @@ class GameController:
             len(module_globals.keys()) - 1]]
         player_kwargs = {}
         print(
-            f'player_class.__class__.__name__ = {player_class.__class__.__name__}')
-        if player_class.__class__.__name__ == 'DRLPlayer':
+            f'player_class.__name__ = {player_class.__name__}')
+        if player_class.__name__ == 'DRLPlayer':
             print(
                 f"player_kwargs['initial_checkpoint_path'] = drl_checkpoint_path = {drl_checkpoint_path}")
+            if drl_checkpoint_path is None:
+                drl_checkpoint_path = input(
+                    f'Enter model checkpoint or leave it the default (../checkpoints/model.pt): ')
+                if drl_checkpoint_path == '':
+                    drl_checkpoint_path = '../checkpoints/model.pt'
             player_kwargs['initial_checkpoint_path'] = drl_checkpoint_path
         return player_class(player, self.game.get_clone(), **player_kwargs)

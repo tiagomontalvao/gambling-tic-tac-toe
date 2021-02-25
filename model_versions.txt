@@ -1,0 +1,9 @@
+v1 --
+v2 --
+v3 --
+v4 -> selfplay curr_coins
+v5 -> random curr_coins
+v6 -> selfplay sum_coins
+v7 -> random sum_coins
+v8 -> semirandom sum_coins
+v9 -> semirandom curr_coins
