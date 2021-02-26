@@ -1,0 +1,1101 @@
+Episode #  10  |  Val. Score: +0.60  |  Avg. Val. Score: +0.60  |  Epsilon: 0.993  |  Time elapsed: 1.26s
+Episode #  20  |  Val. Score: +0.40  |  Avg. Val. Score: +0.50  |  Epsilon: 0.989  |  Time elapsed: 1.48s
+Episode #  30  |  Val. Score: +0.40  |  Avg. Val. Score: +0.47  |  Epsilon: 0.982  |  Time elapsed: 1.73s
+Episode #  40  |  Val. Score: +0.80  |  Avg. Val. Score: +0.55  |  Epsilon: 0.975  |  Time elapsed: 1.99s
+Episode #  50  |  Val. Score: +0.50  |  Avg. Val. Score: +0.54  |  Epsilon: 0.969  |  Time elapsed: 2.23s
+Episode #  60  |  Val. Score: +0.20  |  Avg. Val. Score: +0.48  |  Epsilon: 0.964  |  Time elapsed: 2.46s
+Episode #  70  |  Val. Score: +0.20  |  Avg. Val. Score: +0.44  |  Epsilon: 0.960  |  Time elapsed: 3.78s
+Episode #  80  |  Val. Score: -0.60  |  Avg. Val. Score: +0.31  |  Epsilon: 0.953  |  Time elapsed: 8.43s
+Episode #  90  |  Val. Score: +0.70  |  Avg. Val. Score: +0.36  |  Epsilon: 0.948  |  Time elapsed: 12.18s
+Episode # 100  |  Val. Score: +0.40  |  Avg. Val. Score: +0.36  |  Epsilon: 0.943  |  Time elapsed: 15.72s
+Checkpoint saved!
+Episode # 110  |  Val. Score: +0.10  |  Avg. Val. Score: +0.34  |  Epsilon: 0.940  |  Time elapsed: 19.20s
+Episode # 120  |  Val. Score: -0.10  |  Avg. Val. Score: +0.30  |  Epsilon: 0.936  |  Time elapsed: 22.67s
+Episode # 130  |  Val. Score: +0.00  |  Avg. Val. Score: +0.28  |  Epsilon: 0.929  |  Time elapsed: 27.29s
+Episode # 140  |  Val. Score: -0.10  |  Avg. Val. Score: +0.25  |  Epsilon: 0.924  |  Time elapsed: 31.12s
+Episode # 150  |  Val. Score: -0.70  |  Avg. Val. Score: +0.19  |  Epsilon: 0.920  |  Time elapsed: 34.17s
+Episode # 160  |  Val. Score: +0.30  |  Avg. Val. Score: +0.19  |  Epsilon: 0.915  |  Time elapsed: 38.46s
+Episode # 170  |  Val. Score: +0.00  |  Avg. Val. Score: +0.18  |  Epsilon: 0.908  |  Time elapsed: 42.75s
+Episode # 180  |  Val. Score: +0.20  |  Avg. Val. Score: +0.18  |  Epsilon: 0.904  |  Time elapsed: 46.31s
+Episode # 190  |  Val. Score: +0.30  |  Avg. Val. Score: +0.19  |  Epsilon: 0.898  |  Time elapsed: 50.64s
+Episode # 200  |  Val. Score: -0.10  |  Avg. Val. Score: +0.17  |  Epsilon: 0.891  |  Time elapsed: 54.85s
+Checkpoint saved!
+Episode # 210  |  Val. Score: -0.40  |  Avg. Val. Score: +0.15  |  Epsilon: 0.885  |  Time elapsed: 59.02s
+Episode # 220  |  Val. Score: +0.00  |  Avg. Val. Score: +0.14  |  Epsilon: 0.879  |  Time elapsed: 62.86s
+Episode # 230  |  Val. Score: -0.40  |  Avg. Val. Score: +0.12  |  Epsilon: 0.873  |  Time elapsed: 67.35s
+Episode # 240  |  Val. Score: -0.70  |  Avg. Val. Score: +0.08  |  Epsilon: 0.867  |  Time elapsed: 72.11s
+Episode # 250  |  Val. Score: -0.50  |  Avg. Val. Score: +0.06  |  Epsilon: 0.860  |  Time elapsed: 76.88s
+Episode # 260  |  Val. Score: -0.40  |  Avg. Val. Score: +0.04  |  Epsilon: 0.854  |  Time elapsed: 81.15s
+Episode # 270  |  Val. Score: -0.40  |  Avg. Val. Score: +0.03  |  Epsilon: 0.847  |  Time elapsed: 85.78s
+Episode # 280  |  Val. Score: -0.60  |  Avg. Val. Score: +0.00  |  Epsilon: 0.841  |  Time elapsed: 90.56s
+Episode # 290  |  Val. Score: -0.30  |  Avg. Val. Score: -0.01  |  Epsilon: 0.834  |  Time elapsed: 95.29s
+Episode # 300  |  Val. Score: -0.60  |  Avg. Val. Score: -0.03  |  Epsilon: 0.828  |  Time elapsed: 100.45s
+Checkpoint saved!
+Episode # 310  |  Val. Score: -0.40  |  Avg. Val. Score: -0.04  |  Epsilon: 0.822  |  Time elapsed: 104.70s
+Episode # 320  |  Val. Score: -0.60  |  Avg. Val. Score: -0.06  |  Epsilon: 0.816  |  Time elapsed: 109.16s
+Episode # 330  |  Val. Score: -0.80  |  Avg. Val. Score: -0.08  |  Epsilon: 0.810  |  Time elapsed: 113.81s
+Episode # 340  |  Val. Score: -0.70  |  Avg. Val. Score: -0.10  |  Epsilon: 0.804  |  Time elapsed: 117.82s
+Episode # 350  |  Val. Score: -1.00  |  Avg. Val. Score: -0.12  |  Epsilon: 0.798  |  Time elapsed: 122.83s
+Episode # 360  |  Val. Score: -0.60  |  Avg. Val. Score: -0.14  |  Epsilon: 0.793  |  Time elapsed: 126.75s
+Episode # 370  |  Val. Score: -1.00  |  Avg. Val. Score: -0.16  |  Epsilon: 0.787  |  Time elapsed: 130.99s
+Episode # 380  |  Val. Score: -0.60  |  Avg. Val. Score: -0.17  |  Epsilon: 0.782  |  Time elapsed: 135.37s
+Episode # 390  |  Val. Score: -0.80  |  Avg. Val. Score: -0.19  |  Epsilon: 0.776  |  Time elapsed: 139.87s
+Episode # 400  |  Val. Score: -0.50  |  Avg. Val. Score: -0.19  |  Epsilon: 0.771  |  Time elapsed: 144.38s
+Checkpoint saved!
+Episode # 410  |  Val. Score: -0.40  |  Avg. Val. Score: -0.20  |  Epsilon: 0.765  |  Time elapsed: 149.46s
+Episode # 420  |  Val. Score: -0.80  |  Avg. Val. Score: -0.21  |  Epsilon: 0.762  |  Time elapsed: 153.48s
+Episode # 430  |  Val. Score: -0.80  |  Avg. Val. Score: -0.23  |  Epsilon: 0.757  |  Time elapsed: 157.92s
+Episode # 440  |  Val. Score: -0.80  |  Avg. Val. Score: -0.24  |  Epsilon: 0.751  |  Time elapsed: 162.50s
+Episode # 450  |  Val. Score: -0.80  |  Avg. Val. Score: -0.25  |  Epsilon: 0.747  |  Time elapsed: 166.41s
+Episode # 460  |  Val. Score: -0.20  |  Avg. Val. Score: -0.25  |  Epsilon: 0.743  |  Time elapsed: 170.33s
+Episode # 470  |  Val. Score: -0.40  |  Avg. Val. Score: -0.26  |  Epsilon: 0.737  |  Time elapsed: 174.83s
+Episode # 480  |  Val. Score: +0.00  |  Avg. Val. Score: -0.25  |  Epsilon: 0.732  |  Time elapsed: 179.54s
+Episode # 490  |  Val. Score: -0.90  |  Avg. Val. Score: -0.26  |  Epsilon: 0.728  |  Time elapsed: 184.29s
+Episode # 500  |  Val. Score: -0.80  |  Avg. Val. Score: -0.27  |  Epsilon: 0.723  |  Time elapsed: 188.74s
+Checkpoint saved!
+Episode # 510  |  Val. Score: -0.70  |  Avg. Val. Score: -0.28  |  Epsilon: 0.719  |  Time elapsed: 193.10s
+Episode # 520  |  Val. Score: -0.60  |  Avg. Val. Score: -0.29  |  Epsilon: 0.716  |  Time elapsed: 197.00s
+Episode # 530  |  Val. Score: +0.40  |  Avg. Val. Score: -0.28  |  Epsilon: 0.712  |  Time elapsed: 200.91s
+Episode # 540  |  Val. Score: -0.60  |  Avg. Val. Score: -0.28  |  Epsilon: 0.708  |  Time elapsed: 204.77s
+Episode # 550  |  Val. Score: -0.60  |  Avg. Val. Score: -0.29  |  Epsilon: 0.704  |  Time elapsed: 208.76s
+Episode # 560  |  Val. Score: -1.00  |  Avg. Val. Score: -0.30  |  Epsilon: 0.701  |  Time elapsed: 212.38s
+Episode # 570  |  Val. Score: -0.70  |  Avg. Val. Score: -0.31  |  Epsilon: 0.696  |  Time elapsed: 216.99s
+Episode # 580  |  Val. Score: -0.80  |  Avg. Val. Score: -0.32  |  Epsilon: 0.692  |  Time elapsed: 221.50s
+Episode # 590  |  Val. Score: -0.60  |  Avg. Val. Score: -0.32  |  Epsilon: 0.687  |  Time elapsed: 228.80s
+Episode # 600  |  Val. Score: -0.60  |  Avg. Val. Score: -0.33  |  Epsilon: 0.682  |  Time elapsed: 236.43s
+Checkpoint saved!
+Episode # 610  |  Val. Score: -0.50  |  Avg. Val. Score: -0.33  |  Epsilon: 0.678  |  Time elapsed: 242.58s
+Episode # 620  |  Val. Score: -0.60  |  Avg. Val. Score: -0.33  |  Epsilon: 0.674  |  Time elapsed: 249.56s
+Episode # 630  |  Val. Score: -0.50  |  Avg. Val. Score: -0.33  |  Epsilon: 0.670  |  Time elapsed: 255.90s
+Episode # 640  |  Val. Score: -0.90  |  Avg. Val. Score: -0.34  |  Epsilon: 0.666  |  Time elapsed: 262.75s
+Episode # 650  |  Val. Score: -0.70  |  Avg. Val. Score: -0.35  |  Epsilon: 0.662  |  Time elapsed: 270.80s
+Episode # 660  |  Val. Score: -0.60  |  Avg. Val. Score: -0.35  |  Epsilon: 0.658  |  Time elapsed: 277.76s
+Episode # 670  |  Val. Score: -0.90  |  Avg. Val. Score: -0.36  |  Epsilon: 0.653  |  Time elapsed: 285.32s
+Episode # 680  |  Val. Score: -0.50  |  Avg. Val. Score: -0.36  |  Epsilon: 0.649  |  Time elapsed: 291.02s
+Episode # 690  |  Val. Score: -0.90  |  Avg. Val. Score: -0.37  |  Epsilon: 0.645  |  Time elapsed: 297.72s
+Episode # 700  |  Val. Score: -0.40  |  Avg. Val. Score: -0.37  |  Epsilon: 0.642  |  Time elapsed: 303.02s
+Checkpoint saved!
+Episode # 710  |  Val. Score: -0.30  |  Avg. Val. Score: -0.37  |  Epsilon: 0.638  |  Time elapsed: 309.17s
+Episode # 720  |  Val. Score: -0.60  |  Avg. Val. Score: -0.37  |  Epsilon: 0.633  |  Time elapsed: 314.69s
+Episode # 730  |  Val. Score: -0.90  |  Avg. Val. Score: -0.38  |  Epsilon: 0.630  |  Time elapsed: 320.61s
+Episode # 740  |  Val. Score: -0.40  |  Avg. Val. Score: -0.38  |  Epsilon: 0.627  |  Time elapsed: 326.65s
+Episode # 750  |  Val. Score: -0.80  |  Avg. Val. Score: -0.39  |  Epsilon: 0.624  |  Time elapsed: 332.27s
+Episode # 760  |  Val. Score: -0.70  |  Avg. Val. Score: -0.39  |  Epsilon: 0.622  |  Time elapsed: 338.02s
+Episode # 770  |  Val. Score: -0.70  |  Avg. Val. Score: -0.39  |  Epsilon: 0.620  |  Time elapsed: 343.11s
+Episode # 780  |  Val. Score: -0.40  |  Avg. Val. Score: -0.39  |  Epsilon: 0.616  |  Time elapsed: 350.70s
+Episode # 790  |  Val. Score: -0.60  |  Avg. Val. Score: -0.40  |  Epsilon: 0.614  |  Time elapsed: 356.71s
+Episode # 800  |  Val. Score: -0.30  |  Avg. Val. Score: -0.40  |  Epsilon: 0.610  |  Time elapsed: 362.30s
+Checkpoint saved!
+Episode # 810  |  Val. Score: -0.60  |  Avg. Val. Score: -0.40  |  Epsilon: 0.608  |  Time elapsed: 367.26s
+Episode # 820  |  Val. Score: -0.50  |  Avg. Val. Score: -0.40  |  Epsilon: 0.605  |  Time elapsed: 373.16s
+Episode # 830  |  Val. Score: -0.70  |  Avg. Val. Score: -0.40  |  Epsilon: 0.603  |  Time elapsed: 378.77s
+Episode # 840  |  Val. Score: -0.60  |  Avg. Val. Score: -0.41  |  Epsilon: 0.601  |  Time elapsed: 383.34s
+Episode # 850  |  Val. Score: -0.70  |  Avg. Val. Score: -0.41  |  Epsilon: 0.597  |  Time elapsed: 389.73s
+Episode # 860  |  Val. Score: -0.70  |  Avg. Val. Score: -0.41  |  Epsilon: 0.594  |  Time elapsed: 395.63s
+Episode # 870  |  Val. Score: +0.00  |  Avg. Val. Score: -0.41  |  Epsilon: 0.593  |  Time elapsed: 399.91s
+Episode # 880  |  Val. Score: -0.60  |  Avg. Val. Score: -0.41  |  Epsilon: 0.589  |  Time elapsed: 408.90s
+Episode # 890  |  Val. Score: +0.40  |  Avg. Val. Score: -0.40  |  Epsilon: 0.587  |  Time elapsed: 413.51s
+Episode # 900  |  Val. Score: -0.50  |  Avg. Val. Score: -0.40  |  Epsilon: 0.584  |  Time elapsed: 420.71s
+Checkpoint saved!
+Episode # 910  |  Val. Score: -0.50  |  Avg. Val. Score: -0.40  |  Epsilon: 0.581  |  Time elapsed: 424.94s
+Episode # 920  |  Val. Score: -0.60  |  Avg. Val. Score: -0.41  |  Epsilon: 0.579  |  Time elapsed: 429.84s
+Episode # 930  |  Val. Score: -0.50  |  Avg. Val. Score: -0.41  |  Epsilon: 0.578  |  Time elapsed: 433.79s
+Episode # 940  |  Val. Score: -0.70  |  Avg. Val. Score: -0.41  |  Epsilon: 0.576  |  Time elapsed: 438.48s
+Episode # 950  |  Val. Score: -1.00  |  Avg. Val. Score: -0.42  |  Epsilon: 0.574  |  Time elapsed: 443.94s
+Episode # 960  |  Val. Score: -0.60  |  Avg. Val. Score: -0.42  |  Epsilon: 0.572  |  Time elapsed: 449.00s
+Episode # 970  |  Val. Score: +0.00  |  Avg. Val. Score: -0.41  |  Epsilon: 0.570  |  Time elapsed: 454.71s
+Episode # 980  |  Val. Score: -0.90  |  Avg. Val. Score: -0.42  |  Epsilon: 0.568  |  Time elapsed: 460.44s
+Episode # 990  |  Val. Score: -0.20  |  Avg. Val. Score: -0.42  |  Epsilon: 0.566  |  Time elapsed: 465.46s
+Episode #1000  |  Val. Score: -0.40  |  Avg. Val. Score: -0.42  |  Epsilon: 0.565  |  Time elapsed: 470.14s
+Checkpoint saved!
+Episode #1010  |  Val. Score: +0.00  |  Avg. Val. Score: -0.42  |  Epsilon: 0.563  |  Time elapsed: 476.81s
+Episode #1020  |  Val. Score: -0.80  |  Avg. Val. Score: -0.43  |  Epsilon: 0.560  |  Time elapsed: 483.52s
+Episode #1030  |  Val. Score: -0.70  |  Avg. Val. Score: -0.44  |  Epsilon: 0.557  |  Time elapsed: 488.91s
+Episode #1040  |  Val. Score: -0.80  |  Avg. Val. Score: -0.46  |  Epsilon: 0.554  |  Time elapsed: 495.85s
+Episode #1050  |  Val. Score: -0.20  |  Avg. Val. Score: -0.47  |  Epsilon: 0.553  |  Time elapsed: 500.97s
+Episode #1060  |  Val. Score: -0.10  |  Avg. Val. Score: -0.47  |  Epsilon: 0.550  |  Time elapsed: 509.85s
+Episode #1070  |  Val. Score: -0.30  |  Avg. Val. Score: -0.48  |  Epsilon: 0.546  |  Time elapsed: 516.24s
+Episode #1080  |  Val. Score: -0.20  |  Avg. Val. Score: -0.47  |  Epsilon: 0.543  |  Time elapsed: 521.12s
+Episode #1090  |  Val. Score: +0.30  |  Avg. Val. Score: -0.48  |  Epsilon: 0.539  |  Time elapsed: 527.44s
+Episode #1100  |  Val. Score: -0.60  |  Avg. Val. Score: -0.49  |  Epsilon: 0.538  |  Time elapsed: 531.08s
+Checkpoint saved!
+Episode #1110  |  Val. Score: -0.20  |  Avg. Val. Score: -0.49  |  Epsilon: 0.536  |  Time elapsed: 537.82s
+Episode #1120  |  Val. Score: -0.80  |  Avg. Val. Score: -0.50  |  Epsilon: 0.532  |  Time elapsed: 546.47s
+Episode #1130  |  Val. Score: -0.50  |  Avg. Val. Score: -0.50  |  Epsilon: 0.529  |  Time elapsed: 552.44s
+Episode #1140  |  Val. Score: -0.60  |  Avg. Val. Score: -0.51  |  Epsilon: 0.527  |  Time elapsed: 558.51s
+Episode #1150  |  Val. Score: -0.40  |  Avg. Val. Score: -0.50  |  Epsilon: 0.524  |  Time elapsed: 565.06s
+Episode #1160  |  Val. Score: -0.10  |  Avg. Val. Score: -0.51  |  Epsilon: 0.520  |  Time elapsed: 572.58s
+Episode #1170  |  Val. Score: -0.80  |  Avg. Val. Score: -0.51  |  Epsilon: 0.517  |  Time elapsed: 579.64s
+Episode #1180  |  Val. Score: -1.00  |  Avg. Val. Score: -0.53  |  Epsilon: 0.514  |  Time elapsed: 585.25s
+Episode #1190  |  Val. Score: -0.30  |  Avg. Val. Score: -0.53  |  Epsilon: 0.511  |  Time elapsed: 590.16s
+Episode #1200  |  Val. Score: +0.00  |  Avg. Val. Score: -0.53  |  Epsilon: 0.509  |  Time elapsed: 595.43s
+Checkpoint saved!
+Episode #1210  |  Val. Score: -0.50  |  Avg. Val. Score: -0.53  |  Epsilon: 0.508  |  Time elapsed: 601.08s
+Episode #1220  |  Val. Score: -0.80  |  Avg. Val. Score: -0.54  |  Epsilon: 0.504  |  Time elapsed: 606.34s
+Episode #1230  |  Val. Score: -0.70  |  Avg. Val. Score: -0.54  |  Epsilon: 0.502  |  Time elapsed: 613.39s
+Episode #1240  |  Val. Score: -0.60  |  Avg. Val. Score: -0.54  |  Epsilon: 0.498  |  Time elapsed: 621.77s
+Episode #1250  |  Val. Score: -0.40  |  Avg. Val. Score: -0.54  |  Epsilon: 0.495  |  Time elapsed: 628.79s
+Episode #1260  |  Val. Score: -0.50  |  Avg. Val. Score: -0.54  |  Epsilon: 0.492  |  Time elapsed: 633.70s
+Episode #1270  |  Val. Score: -0.70  |  Avg. Val. Score: -0.55  |  Epsilon: 0.489  |  Time elapsed: 639.49s
+Episode #1280  |  Val. Score: -0.30  |  Avg. Val. Score: -0.54  |  Epsilon: 0.486  |  Time elapsed: 644.55s
+Episode #1290  |  Val. Score: -0.70  |  Avg. Val. Score: -0.55  |  Epsilon: 0.484  |  Time elapsed: 649.28s
+Episode #1300  |  Val. Score: -0.30  |  Avg. Val. Score: -0.54  |  Epsilon: 0.481  |  Time elapsed: 654.84s
+Checkpoint saved!
+Episode #1310  |  Val. Score: -0.70  |  Avg. Val. Score: -0.55  |  Epsilon: 0.478  |  Time elapsed: 660.57s
+Episode #1320  |  Val. Score: -0.60  |  Avg. Val. Score: -0.55  |  Epsilon: 0.475  |  Time elapsed: 667.05s
+Episode #1330  |  Val. Score: -0.80  |  Avg. Val. Score: -0.55  |  Epsilon: 0.472  |  Time elapsed: 672.98s
+Episode #1340  |  Val. Score: -0.80  |  Avg. Val. Score: -0.55  |  Epsilon: 0.468  |  Time elapsed: 680.06s
+Episode #1350  |  Val. Score: -0.90  |  Avg. Val. Score: -0.55  |  Epsilon: 0.466  |  Time elapsed: 688.37s
+Episode #1360  |  Val. Score: -0.70  |  Avg. Val. Score: -0.55  |  Epsilon: 0.463  |  Time elapsed: 696.88s
+Episode #1370  |  Val. Score: -0.10  |  Avg. Val. Score: -0.54  |  Epsilon: 0.461  |  Time elapsed: 703.22s
+Episode #1380  |  Val. Score: -0.80  |  Avg. Val. Score: -0.54  |  Epsilon: 0.457  |  Time elapsed: 707.68s
+Episode #1390  |  Val. Score: -1.00  |  Avg. Val. Score: -0.54  |  Epsilon: 0.455  |  Time elapsed: 711.70s
+Episode #1400  |  Val. Score: -0.90  |  Avg. Val. Score: -0.55  |  Epsilon: 0.453  |  Time elapsed: 717.90s
+Checkpoint saved!
+Episode #1410  |  Val. Score: -0.90  |  Avg. Val. Score: -0.55  |  Epsilon: 0.449  |  Time elapsed: 726.51s
+Episode #1420  |  Val. Score: -0.50  |  Avg. Val. Score: -0.55  |  Epsilon: 0.447  |  Time elapsed: 734.65s
+Episode #1430  |  Val. Score: -0.60  |  Avg. Val. Score: -0.55  |  Epsilon: 0.444  |  Time elapsed: 742.48s
+Episode #1440  |  Val. Score: -0.70  |  Avg. Val. Score: -0.55  |  Epsilon: 0.442  |  Time elapsed: 750.05s
+Episode #1450  |  Val. Score: -0.50  |  Avg. Val. Score: -0.54  |  Epsilon: 0.440  |  Time elapsed: 757.43s
+Episode #1460  |  Val. Score: +0.10  |  Avg. Val. Score: -0.54  |  Epsilon: 0.437  |  Time elapsed: 764.18s
+Episode #1470  |  Val. Score: +0.10  |  Avg. Val. Score: -0.54  |  Epsilon: 0.434  |  Time elapsed: 770.72s
+Episode #1480  |  Val. Score: -0.40  |  Avg. Val. Score: -0.54  |  Epsilon: 0.432  |  Time elapsed: 777.25s
+Episode #1490  |  Val. Score: -0.70  |  Avg. Val. Score: -0.54  |  Epsilon: 0.430  |  Time elapsed: 783.45s
+Episode #1500  |  Val. Score: -0.10  |  Avg. Val. Score: -0.53  |  Epsilon: 0.428  |  Time elapsed: 789.68s
+Checkpoint saved!
+Episode #1510  |  Val. Score: -0.20  |  Avg. Val. Score: -0.53  |  Epsilon: 0.425  |  Time elapsed: 797.25s
+Episode #1520  |  Val. Score: -0.50  |  Avg. Val. Score: -0.52  |  Epsilon: 0.422  |  Time elapsed: 804.96s
+Episode #1530  |  Val. Score: +0.00  |  Avg. Val. Score: -0.53  |  Epsilon: 0.419  |  Time elapsed: 812.48s
+Episode #1540  |  Val. Score: +0.30  |  Avg. Val. Score: -0.52  |  Epsilon: 0.417  |  Time elapsed: 818.77s
+Episode #1550  |  Val. Score: -0.60  |  Avg. Val. Score: -0.52  |  Epsilon: 0.415  |  Time elapsed: 824.92s
+Episode #1560  |  Val. Score: +0.00  |  Avg. Val. Score: -0.51  |  Epsilon: 0.413  |  Time elapsed: 829.99s
+Episode #1570  |  Val. Score: -0.40  |  Avg. Val. Score: -0.51  |  Epsilon: 0.411  |  Time elapsed: 835.67s
+Episode #1580  |  Val. Score: -0.10  |  Avg. Val. Score: -0.50  |  Epsilon: 0.409  |  Time elapsed: 840.36s
+Episode #1590  |  Val. Score: -0.90  |  Avg. Val. Score: -0.50  |  Epsilon: 0.407  |  Time elapsed: 846.68s
+Episode #1600  |  Val. Score: -0.70  |  Avg. Val. Score: -0.50  |  Epsilon: 0.405  |  Time elapsed: 851.89s
+Checkpoint saved!
+Episode #1610  |  Val. Score: -0.80  |  Avg. Val. Score: -0.51  |  Epsilon: 0.403  |  Time elapsed: 857.06s
+Episode #1620  |  Val. Score: -0.50  |  Avg. Val. Score: -0.51  |  Epsilon: 0.402  |  Time elapsed: 861.88s
+Episode #1630  |  Val. Score: -0.90  |  Avg. Val. Score: -0.51  |  Epsilon: 0.400  |  Time elapsed: 867.18s
+Episode #1640  |  Val. Score: -0.80  |  Avg. Val. Score: -0.51  |  Epsilon: 0.399  |  Time elapsed: 872.99s
+Episode #1650  |  Val. Score: -0.20  |  Avg. Val. Score: -0.50  |  Epsilon: 0.397  |  Time elapsed: 880.29s
+Episode #1660  |  Val. Score: -0.70  |  Avg. Val. Score: -0.50  |  Epsilon: 0.395  |  Time elapsed: 886.27s
+Episode #1670  |  Val. Score: -0.60  |  Avg. Val. Score: -0.50  |  Epsilon: 0.393  |  Time elapsed: 893.23s
+Episode #1680  |  Val. Score: -0.10  |  Avg. Val. Score: -0.50  |  Epsilon: 0.391  |  Time elapsed: 902.15s
+Episode #1690  |  Val. Score: -0.70  |  Avg. Val. Score: -0.50  |  Epsilon: 0.388  |  Time elapsed: 907.99s
+Episode #1700  |  Val. Score: -0.70  |  Avg. Val. Score: -0.50  |  Epsilon: 0.386  |  Time elapsed: 913.57s
+Checkpoint saved!
+Episode #1710  |  Val. Score: -0.80  |  Avg. Val. Score: -0.50  |  Epsilon: 0.385  |  Time elapsed: 917.72s
+Episode #1720  |  Val. Score: -0.60  |  Avg. Val. Score: -0.50  |  Epsilon: 0.383  |  Time elapsed: 922.58s
+Episode #1730  |  Val. Score: -0.60  |  Avg. Val. Score: -0.50  |  Epsilon: 0.382  |  Time elapsed: 927.03s
+Episode #1740  |  Val. Score: -0.60  |  Avg. Val. Score: -0.50  |  Epsilon: 0.380  |  Time elapsed: 932.90s
+Episode #1750  |  Val. Score: -0.70  |  Avg. Val. Score: -0.50  |  Epsilon: 0.378  |  Time elapsed: 939.27s
+Episode #1760  |  Val. Score: -1.00  |  Avg. Val. Score: -0.50  |  Epsilon: 0.376  |  Time elapsed: 945.30s
+Episode #1770  |  Val. Score: -0.80  |  Avg. Val. Score: -0.51  |  Epsilon: 0.374  |  Time elapsed: 953.51s
+Episode #1780  |  Val. Score: -0.80  |  Avg. Val. Score: -0.51  |  Epsilon: 0.372  |  Time elapsed: 959.43s
+Episode #1790  |  Val. Score: -0.90  |  Avg. Val. Score: -0.51  |  Epsilon: 0.370  |  Time elapsed: 965.15s
+Episode #1800  |  Val. Score: -0.80  |  Avg. Val. Score: -0.52  |  Epsilon: 0.368  |  Time elapsed: 972.07s
+Checkpoint saved!
+Episode #1810  |  Val. Score: -0.70  |  Avg. Val. Score: -0.52  |  Epsilon: 0.367  |  Time elapsed: 977.00s
+Episode #1820  |  Val. Score: -0.70  |  Avg. Val. Score: -0.52  |  Epsilon: 0.364  |  Time elapsed: 984.38s
+Episode #1830  |  Val. Score: -0.80  |  Avg. Val. Score: -0.52  |  Epsilon: 0.362  |  Time elapsed: 992.45s
+Episode #1840  |  Val. Score: -0.70  |  Avg. Val. Score: -0.52  |  Epsilon: 0.360  |  Time elapsed: 998.64s
+Episode #1850  |  Val. Score: -0.40  |  Avg. Val. Score: -0.52  |  Epsilon: 0.358  |  Time elapsed: 1004.47s
+Episode #1860  |  Val. Score: -0.70  |  Avg. Val. Score: -0.52  |  Epsilon: 0.356  |  Time elapsed: 1010.15s
+Episode #1870  |  Val. Score: -0.80  |  Avg. Val. Score: -0.53  |  Epsilon: 0.354  |  Time elapsed: 1016.54s
+Episode #1880  |  Val. Score: -0.40  |  Avg. Val. Score: -0.53  |  Epsilon: 0.353  |  Time elapsed: 1021.40s
+Episode #1890  |  Val. Score: -0.50  |  Avg. Val. Score: -0.53  |  Epsilon: 0.350  |  Time elapsed: 1028.44s
+Episode #1900  |  Val. Score: +0.00  |  Avg. Val. Score: -0.53  |  Epsilon: 0.348  |  Time elapsed: 1034.42s
+Checkpoint saved!
+Episode #1910  |  Val. Score: -0.80  |  Avg. Val. Score: -0.53  |  Epsilon: 0.346  |  Time elapsed: 1040.72s
+Episode #1920  |  Val. Score: -0.40  |  Avg. Val. Score: -0.53  |  Epsilon: 0.343  |  Time elapsed: 1046.41s
+Episode #1930  |  Val. Score: -0.90  |  Avg. Val. Score: -0.53  |  Epsilon: 0.341  |  Time elapsed: 1053.18s
+Episode #1940  |  Val. Score: -0.80  |  Avg. Val. Score: -0.53  |  Epsilon: 0.339  |  Time elapsed: 1058.85s
+Episode #1950  |  Val. Score: -0.90  |  Avg. Val. Score: -0.53  |  Epsilon: 0.336  |  Time elapsed: 1065.21s
+Episode #1960  |  Val. Score: -0.60  |  Avg. Val. Score: -0.53  |  Epsilon: 0.334  |  Time elapsed: 1071.46s
+Episode #1970  |  Val. Score: -0.60  |  Avg. Val. Score: -0.54  |  Epsilon: 0.334  |  Time elapsed: 1076.20s
+Episode #1980  |  Val. Score: -0.50  |  Avg. Val. Score: -0.54  |  Epsilon: 0.331  |  Time elapsed: 1082.74s
+Episode #1990  |  Val. Score: -0.80  |  Avg. Val. Score: -0.54  |  Epsilon: 0.329  |  Time elapsed: 1089.95s
+Episode #2000  |  Val. Score: -0.60  |  Avg. Val. Score: -0.54  |  Epsilon: 0.328  |  Time elapsed: 1094.98s
+Checkpoint saved!
+Episode #2010  |  Val. Score: -0.30  |  Avg. Val. Score: -0.55  |  Epsilon: 0.326  |  Time elapsed: 1101.53s
+Episode #2020  |  Val. Score: -0.40  |  Avg. Val. Score: -0.54  |  Epsilon: 0.325  |  Time elapsed: 1106.30s
+Episode #2030  |  Val. Score: -0.70  |  Avg. Val. Score: -0.54  |  Epsilon: 0.322  |  Time elapsed: 1112.76s
+Episode #2040  |  Val. Score: -0.90  |  Avg. Val. Score: -0.54  |  Epsilon: 0.321  |  Time elapsed: 1118.34s
+Episode #2050  |  Val. Score: -0.80  |  Avg. Val. Score: -0.55  |  Epsilon: 0.319  |  Time elapsed: 1123.86s
+Episode #2060  |  Val. Score: -0.30  |  Avg. Val. Score: -0.55  |  Epsilon: 0.317  |  Time elapsed: 1129.33s
+Episode #2070  |  Val. Score: -0.50  |  Avg. Val. Score: -0.55  |  Epsilon: 0.315  |  Time elapsed: 1135.74s
+Episode #2080  |  Val. Score: -0.60  |  Avg. Val. Score: -0.56  |  Epsilon: 0.313  |  Time elapsed: 1141.54s
+Episode #2090  |  Val. Score: -0.80  |  Avg. Val. Score: -0.57  |  Epsilon: 0.312  |  Time elapsed: 1146.94s
+Episode #2100  |  Val. Score: -0.40  |  Avg. Val. Score: -0.57  |  Epsilon: 0.311  |  Time elapsed: 1152.75s
+Checkpoint saved!
+Episode #2110  |  Val. Score: -0.30  |  Avg. Val. Score: -0.57  |  Epsilon: 0.309  |  Time elapsed: 1157.69s
+Episode #2120  |  Val. Score: -0.90  |  Avg. Val. Score: -0.57  |  Epsilon: 0.307  |  Time elapsed: 1164.46s
+Episode #2130  |  Val. Score: -0.80  |  Avg. Val. Score: -0.57  |  Epsilon: 0.306  |  Time elapsed: 1171.56s
+Episode #2140  |  Val. Score: -0.60  |  Avg. Val. Score: -0.57  |  Epsilon: 0.304  |  Time elapsed: 1177.12s
+Episode #2150  |  Val. Score: -0.70  |  Avg. Val. Score: -0.57  |  Epsilon: 0.303  |  Time elapsed: 1182.39s
+Episode #2160  |  Val. Score: +0.10  |  Avg. Val. Score: -0.57  |  Epsilon: 0.301  |  Time elapsed: 1188.98s
+Episode #2170  |  Val. Score: -0.20  |  Avg. Val. Score: -0.57  |  Epsilon: 0.299  |  Time elapsed: 1195.14s
+Episode #2180  |  Val. Score: -0.50  |  Avg. Val. Score: -0.56  |  Epsilon: 0.298  |  Time elapsed: 1201.29s
+Episode #2190  |  Val. Score: -0.80  |  Avg. Val. Score: -0.57  |  Epsilon: 0.296  |  Time elapsed: 1206.50s
+Episode #2200  |  Val. Score: -0.50  |  Avg. Val. Score: -0.57  |  Epsilon: 0.296  |  Time elapsed: 1211.76s
+Checkpoint saved!
+Episode #2210  |  Val. Score: -0.30  |  Avg. Val. Score: -0.57  |  Epsilon: 0.294  |  Time elapsed: 1218.20s
+Episode #2220  |  Val. Score: -0.30  |  Avg. Val. Score: -0.56  |  Epsilon: 0.292  |  Time elapsed: 1224.54s
+Episode #2230  |  Val. Score: -0.20  |  Avg. Val. Score: -0.56  |  Epsilon: 0.290  |  Time elapsed: 1231.26s
+Episode #2240  |  Val. Score: -0.80  |  Avg. Val. Score: -0.56  |  Epsilon: 0.289  |  Time elapsed: 1238.37s
+Episode #2250  |  Val. Score: -0.70  |  Avg. Val. Score: -0.56  |  Epsilon: 0.287  |  Time elapsed: 1244.59s
+Episode #2260  |  Val. Score: -0.60  |  Avg. Val. Score: -0.57  |  Epsilon: 0.286  |  Time elapsed: 1250.29s
+Episode #2270  |  Val. Score: -0.80  |  Avg. Val. Score: -0.57  |  Epsilon: 0.284  |  Time elapsed: 1257.54s
+Episode #2280  |  Val. Score: -0.60  |  Avg. Val. Score: -0.57  |  Epsilon: 0.282  |  Time elapsed: 1263.64s
+Episode #2290  |  Val. Score: -0.60  |  Avg. Val. Score: -0.57  |  Epsilon: 0.280  |  Time elapsed: 1271.89s
+Episode #2300  |  Val. Score: -0.70  |  Avg. Val. Score: -0.57  |  Epsilon: 0.278  |  Time elapsed: 1279.59s
+Checkpoint saved!
+Episode #2310  |  Val. Score: -0.60  |  Avg. Val. Score: -0.57  |  Epsilon: 0.277  |  Time elapsed: 1285.60s
+Episode #2320  |  Val. Score: -0.80  |  Avg. Val. Score: -0.57  |  Epsilon: 0.276  |  Time elapsed: 1291.11s
+Episode #2330  |  Val. Score: -0.70  |  Avg. Val. Score: -0.57  |  Epsilon: 0.274  |  Time elapsed: 1295.65s
+Episode #2340  |  Val. Score: -0.70  |  Avg. Val. Score: -0.57  |  Epsilon: 0.272  |  Time elapsed: 1300.17s
+Episode #2350  |  Val. Score: -0.60  |  Avg. Val. Score: -0.57  |  Epsilon: 0.271  |  Time elapsed: 1304.29s
+Episode #2360  |  Val. Score: -0.90  |  Avg. Val. Score: -0.57  |  Epsilon: 0.269  |  Time elapsed: 1310.09s
+Episode #2370  |  Val. Score: -0.40  |  Avg. Val. Score: -0.57  |  Epsilon: 0.268  |  Time elapsed: 1315.53s
+Episode #2380  |  Val. Score: -0.80  |  Avg. Val. Score: -0.57  |  Epsilon: 0.267  |  Time elapsed: 1320.32s
+Episode #2390  |  Val. Score: -1.00  |  Avg. Val. Score: -0.57  |  Epsilon: 0.265  |  Time elapsed: 1326.46s
+Episode #2400  |  Val. Score: -0.80  |  Avg. Val. Score: -0.57  |  Epsilon: 0.264  |  Time elapsed: 1332.37s
+Checkpoint saved!
+Episode #2410  |  Val. Score: -0.60  |  Avg. Val. Score: -0.57  |  Epsilon: 0.263  |  Time elapsed: 1340.66s
+Episode #2420  |  Val. Score: -0.60  |  Avg. Val. Score: -0.57  |  Epsilon: 0.261  |  Time elapsed: 1347.05s
+Episode #2430  |  Val. Score: -0.40  |  Avg. Val. Score: -0.57  |  Epsilon: 0.260  |  Time elapsed: 1352.09s
+Episode #2440  |  Val. Score: -0.60  |  Avg. Val. Score: -0.57  |  Epsilon: 0.259  |  Time elapsed: 1357.29s
+Episode #2450  |  Val. Score: -0.40  |  Avg. Val. Score: -0.57  |  Epsilon: 0.257  |  Time elapsed: 1363.38s
+Episode #2460  |  Val. Score: -0.70  |  Avg. Val. Score: -0.58  |  Epsilon: 0.256  |  Time elapsed: 1368.55s
+Episode #2470  |  Val. Score: -0.70  |  Avg. Val. Score: -0.58  |  Epsilon: 0.255  |  Time elapsed: 1374.22s
+Episode #2480  |  Val. Score: -0.80  |  Avg. Val. Score: -0.59  |  Epsilon: 0.254  |  Time elapsed: 1379.54s
+Episode #2490  |  Val. Score: -0.80  |  Avg. Val. Score: -0.59  |  Epsilon: 0.252  |  Time elapsed: 1386.46s
+Episode #2500  |  Val. Score: -0.80  |  Avg. Val. Score: -0.59  |  Epsilon: 0.250  |  Time elapsed: 1392.68s
+Checkpoint saved!
+Episode #2510  |  Val. Score: -0.90  |  Avg. Val. Score: -0.60  |  Epsilon: 0.249  |  Time elapsed: 1398.99s
+Episode #2520  |  Val. Score: -0.90  |  Avg. Val. Score: -0.61  |  Epsilon: 0.247  |  Time elapsed: 1404.59s
+Episode #2530  |  Val. Score: -0.50  |  Avg. Val. Score: -0.61  |  Epsilon: 0.246  |  Time elapsed: 1409.29s
+Episode #2540  |  Val. Score: -0.60  |  Avg. Val. Score: -0.62  |  Epsilon: 0.245  |  Time elapsed: 1416.30s
+Episode #2550  |  Val. Score: -0.90  |  Avg. Val. Score: -0.62  |  Epsilon: 0.243  |  Time elapsed: 1422.58s
+Episode #2560  |  Val. Score: -0.80  |  Avg. Val. Score: -0.63  |  Epsilon: 0.242  |  Time elapsed: 1428.91s
+Episode #2570  |  Val. Score: -0.80  |  Avg. Val. Score: -0.63  |  Epsilon: 0.240  |  Time elapsed: 1436.52s
+Episode #2580  |  Val. Score: -0.80  |  Avg. Val. Score: -0.64  |  Epsilon: 0.239  |  Time elapsed: 1441.88s
+Episode #2590  |  Val. Score: -0.80  |  Avg. Val. Score: -0.64  |  Epsilon: 0.237  |  Time elapsed: 1449.42s
+Episode #2600  |  Val. Score: -1.00  |  Avg. Val. Score: -0.64  |  Epsilon: 0.235  |  Time elapsed: 1456.59s
+Checkpoint saved!
+Episode #2610  |  Val. Score: -0.80  |  Avg. Val. Score: -0.64  |  Epsilon: 0.234  |  Time elapsed: 1463.57s
+Episode #2620  |  Val. Score: -0.90  |  Avg. Val. Score: -0.65  |  Epsilon: 0.233  |  Time elapsed: 1470.05s
+Episode #2630  |  Val. Score: -0.90  |  Avg. Val. Score: -0.65  |  Epsilon: 0.231  |  Time elapsed: 1477.43s
+Episode #2640  |  Val. Score: -0.30  |  Avg. Val. Score: -0.64  |  Epsilon: 0.230  |  Time elapsed: 1482.85s
+Episode #2650  |  Val. Score: -1.00  |  Avg. Val. Score: -0.65  |  Epsilon: 0.228  |  Time elapsed: 1488.34s
+Episode #2660  |  Val. Score: -1.00  |  Avg. Val. Score: -0.65  |  Epsilon: 0.227  |  Time elapsed: 1494.19s
+Episode #2670  |  Val. Score: -0.40  |  Avg. Val. Score: -0.65  |  Epsilon: 0.225  |  Time elapsed: 1501.27s
+Episode #2680  |  Val. Score: -0.70  |  Avg. Val. Score: -0.66  |  Epsilon: 0.224  |  Time elapsed: 1506.81s
+Episode #2690  |  Val. Score: -1.00  |  Avg. Val. Score: -0.66  |  Epsilon: 0.222  |  Time elapsed: 1512.86s
+Episode #2700  |  Val. Score: -1.00  |  Avg. Val. Score: -0.66  |  Epsilon: 0.221  |  Time elapsed: 1519.23s
+Checkpoint saved!
+Episode #2710  |  Val. Score: -0.20  |  Avg. Val. Score: -0.66  |  Epsilon: 0.219  |  Time elapsed: 1525.82s
+Episode #2720  |  Val. Score: -0.30  |  Avg. Val. Score: -0.66  |  Epsilon: 0.218  |  Time elapsed: 1531.51s
+Episode #2730  |  Val. Score: -0.60  |  Avg. Val. Score: -0.65  |  Epsilon: 0.216  |  Time elapsed: 1538.10s
+Episode #2740  |  Val. Score: -1.00  |  Avg. Val. Score: -0.66  |  Epsilon: 0.215  |  Time elapsed: 1544.14s
+Episode #2750  |  Val. Score: -1.00  |  Avg. Val. Score: -0.66  |  Epsilon: 0.214  |  Time elapsed: 1550.27s
+Episode #2760  |  Val. Score: -0.80  |  Avg. Val. Score: -0.66  |  Epsilon: 0.213  |  Time elapsed: 1556.89s
+Episode #2770  |  Val. Score: -0.40  |  Avg. Val. Score: -0.66  |  Epsilon: 0.211  |  Time elapsed: 1564.61s
+Episode #2780  |  Val. Score: -1.00  |  Avg. Val. Score: -0.66  |  Epsilon: 0.210  |  Time elapsed: 1569.96s
+Episode #2790  |  Val. Score: -0.50  |  Avg. Val. Score: -0.65  |  Epsilon: 0.209  |  Time elapsed: 1576.74s
+Episode #2800  |  Val. Score: -0.80  |  Avg. Val. Score: -0.65  |  Epsilon: 0.208  |  Time elapsed: 1581.64s
+Checkpoint saved!
+Episode #2810  |  Val. Score: -0.60  |  Avg. Val. Score: -0.65  |  Epsilon: 0.207  |  Time elapsed: 1587.35s
+Episode #2820  |  Val. Score: -0.90  |  Avg. Val. Score: -0.66  |  Epsilon: 0.206  |  Time elapsed: 1593.49s
+Episode #2830  |  Val. Score: -0.60  |  Avg. Val. Score: -0.65  |  Epsilon: 0.205  |  Time elapsed: 1599.16s
+Episode #2840  |  Val. Score: -0.90  |  Avg. Val. Score: -0.66  |  Epsilon: 0.204  |  Time elapsed: 1604.21s
+Episode #2850  |  Val. Score: -0.70  |  Avg. Val. Score: -0.66  |  Epsilon: 0.202  |  Time elapsed: 1610.22s
+Episode #2860  |  Val. Score: -0.60  |  Avg. Val. Score: -0.66  |  Epsilon: 0.201  |  Time elapsed: 1616.21s
+Episode #2870  |  Val. Score: -0.90  |  Avg. Val. Score: -0.66  |  Epsilon: 0.200  |  Time elapsed: 1622.30s
+Episode #2880  |  Val. Score: -0.80  |  Avg. Val. Score: -0.66  |  Epsilon: 0.199  |  Time elapsed: 1629.33s
+Episode #2890  |  Val. Score: -0.60  |  Avg. Val. Score: -0.66  |  Epsilon: 0.197  |  Time elapsed: 1633.72s
+Episode #2900  |  Val. Score: -0.80  |  Avg. Val. Score: -0.67  |  Epsilon: 0.197  |  Time elapsed: 1637.63s
+Checkpoint saved!
+Episode #2910  |  Val. Score: -0.80  |  Avg. Val. Score: -0.67  |  Epsilon: 0.196  |  Time elapsed: 1642.36s
+Episode #2920  |  Val. Score: -0.80  |  Avg. Val. Score: -0.67  |  Epsilon: 0.194  |  Time elapsed: 1646.94s
+Episode #2930  |  Val. Score: -0.40  |  Avg. Val. Score: -0.67  |  Epsilon: 0.194  |  Time elapsed: 1651.18s
+Episode #2940  |  Val. Score: -0.60  |  Avg. Val. Score: -0.67  |  Epsilon: 0.192  |  Time elapsed: 1658.92s
+Episode #2950  |  Val. Score: -0.40  |  Avg. Val. Score: -0.66  |  Epsilon: 0.191  |  Time elapsed: 1665.91s
+Episode #2960  |  Val. Score: -0.90  |  Avg. Val. Score: -0.67  |  Epsilon: 0.190  |  Time elapsed: 1671.34s
+Episode #2970  |  Val. Score: -0.50  |  Avg. Val. Score: -0.67  |  Epsilon: 0.189  |  Time elapsed: 1678.87s
+Episode #2980  |  Val. Score: -0.90  |  Avg. Val. Score: -0.67  |  Epsilon: 0.188  |  Time elapsed: 1685.47s
+Episode #2990  |  Val. Score: -0.90  |  Avg. Val. Score: -0.67  |  Epsilon: 0.187  |  Time elapsed: 1691.50s
+Episode #3000  |  Val. Score: -0.90  |  Avg. Val. Score: -0.67  |  Epsilon: 0.186  |  Time elapsed: 1697.65s
+Checkpoint saved!
+Episode #3010  |  Val. Score: -0.80  |  Avg. Val. Score: -0.68  |  Epsilon: 0.184  |  Time elapsed: 1704.77s
+Episode #3020  |  Val. Score: -0.80  |  Avg. Val. Score: -0.68  |  Epsilon: 0.183  |  Time elapsed: 1711.16s
+Episode #3030  |  Val. Score: -0.60  |  Avg. Val. Score: -0.68  |  Epsilon: 0.182  |  Time elapsed: 1718.70s
+Episode #3040  |  Val. Score: -0.70  |  Avg. Val. Score: -0.68  |  Epsilon: 0.181  |  Time elapsed: 1726.02s
+Episode #3050  |  Val. Score: -0.80  |  Avg. Val. Score: -0.68  |  Epsilon: 0.180  |  Time elapsed: 1731.86s
+Episode #3060  |  Val. Score: -0.70  |  Avg. Val. Score: -0.68  |  Epsilon: 0.178  |  Time elapsed: 1739.34s
+Episode #3070  |  Val. Score: -0.80  |  Avg. Val. Score: -0.69  |  Epsilon: 0.177  |  Time elapsed: 1745.83s
+Episode #3080  |  Val. Score: -0.60  |  Avg. Val. Score: -0.69  |  Epsilon: 0.176  |  Time elapsed: 1752.91s
+Episode #3090  |  Val. Score: -0.70  |  Avg. Val. Score: -0.69  |  Epsilon: 0.175  |  Time elapsed: 1759.74s
+Episode #3100  |  Val. Score: -0.40  |  Avg. Val. Score: -0.69  |  Epsilon: 0.174  |  Time elapsed: 1766.97s
+Checkpoint saved!
+Episode #3110  |  Val. Score: -0.80  |  Avg. Val. Score: -0.69  |  Epsilon: 0.173  |  Time elapsed: 1773.78s
+Episode #3120  |  Val. Score: -0.80  |  Avg. Val. Score: -0.69  |  Epsilon: 0.171  |  Time elapsed: 1781.29s
+Episode #3130  |  Val. Score: -0.70  |  Avg. Val. Score: -0.69  |  Epsilon: 0.171  |  Time elapsed: 1788.14s
+Episode #3140  |  Val. Score: -1.00  |  Avg. Val. Score: -0.69  |  Epsilon: 0.170  |  Time elapsed: 1793.25s
+Episode #3150  |  Val. Score: -0.80  |  Avg. Val. Score: -0.69  |  Epsilon: 0.168  |  Time elapsed: 1802.52s
+Episode #3160  |  Val. Score: -0.70  |  Avg. Val. Score: -0.70  |  Epsilon: 0.168  |  Time elapsed: 1808.03s
+Episode #3170  |  Val. Score: -0.40  |  Avg. Val. Score: -0.70  |  Epsilon: 0.167  |  Time elapsed: 1818.85s
+Episode #3180  |  Val. Score: -0.70  |  Avg. Val. Score: -0.71  |  Epsilon: 0.166  |  Time elapsed: 1823.30s
+Episode #3190  |  Val. Score: -0.90  |  Avg. Val. Score: -0.71  |  Epsilon: 0.165  |  Time elapsed: 1827.52s
+Episode #3200  |  Val. Score: -0.80  |  Avg. Val. Score: -0.71  |  Epsilon: 0.164  |  Time elapsed: 1830.85s
+Checkpoint saved!
+Episode #3210  |  Val. Score: -0.60  |  Avg. Val. Score: -0.71  |  Epsilon: 0.163  |  Time elapsed: 1835.80s
+Episode #3220  |  Val. Score: -0.70  |  Avg. Val. Score: -0.72  |  Epsilon: 0.163  |  Time elapsed: 1842.94s
+Episode #3230  |  Val. Score: -0.90  |  Avg. Val. Score: -0.72  |  Epsilon: 0.162  |  Time elapsed: 1849.81s
+Episode #3240  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.161  |  Time elapsed: 1859.02s
+Episode #3250  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.160  |  Time elapsed: 1865.82s
+Episode #3260  |  Val. Score: -0.80  |  Avg. Val. Score: -0.73  |  Epsilon: 0.159  |  Time elapsed: 1873.09s
+Episode #3270  |  Val. Score: -0.80  |  Avg. Val. Score: -0.73  |  Epsilon: 0.158  |  Time elapsed: 1879.18s
+Episode #3280  |  Val. Score: -0.80  |  Avg. Val. Score: -0.73  |  Epsilon: 0.157  |  Time elapsed: 1885.04s
+Episode #3290  |  Val. Score: -0.80  |  Avg. Val. Score: -0.73  |  Epsilon: 0.156  |  Time elapsed: 1892.60s
+Episode #3300  |  Val. Score: -1.00  |  Avg. Val. Score: -0.73  |  Epsilon: 0.156  |  Time elapsed: 1898.32s
+Checkpoint saved!
+Episode #3310  |  Val. Score: -0.80  |  Avg. Val. Score: -0.73  |  Epsilon: 0.155  |  Time elapsed: 1904.67s
+Episode #3320  |  Val. Score: -0.80  |  Avg. Val. Score: -0.73  |  Epsilon: 0.154  |  Time elapsed: 1912.34s
+Episode #3330  |  Val. Score: -1.00  |  Avg. Val. Score: -0.74  |  Epsilon: 0.153  |  Time elapsed: 1920.52s
+Episode #3340  |  Val. Score: -0.80  |  Avg. Val. Score: -0.74  |  Epsilon: 0.152  |  Time elapsed: 1927.53s
+Episode #3350  |  Val. Score: -0.90  |  Avg. Val. Score: -0.74  |  Epsilon: 0.152  |  Time elapsed: 1932.28s
+Episode #3360  |  Val. Score: -0.40  |  Avg. Val. Score: -0.74  |  Epsilon: 0.151  |  Time elapsed: 1937.35s
+Episode #3370  |  Val. Score: -0.60  |  Avg. Val. Score: -0.74  |  Epsilon: 0.150  |  Time elapsed: 1944.02s
+Episode #3380  |  Val. Score: -0.70  |  Avg. Val. Score: -0.74  |  Epsilon: 0.150  |  Time elapsed: 1950.20s
+Episode #3390  |  Val. Score: -0.70  |  Avg. Val. Score: -0.73  |  Epsilon: 0.149  |  Time elapsed: 1956.47s
+Episode #3400  |  Val. Score: -0.60  |  Avg. Val. Score: -0.73  |  Epsilon: 0.149  |  Time elapsed: 1961.54s
+Checkpoint saved!
+Episode #3410  |  Val. Score: -0.80  |  Avg. Val. Score: -0.73  |  Epsilon: 0.148  |  Time elapsed: 1964.90s
+Episode #3420  |  Val. Score: -0.70  |  Avg. Val. Score: -0.74  |  Epsilon: 0.148  |  Time elapsed: 1967.86s
+Episode #3430  |  Val. Score: -1.00  |  Avg. Val. Score: -0.74  |  Epsilon: 0.147  |  Time elapsed: 1971.62s
+Episode #3440  |  Val. Score: -0.20  |  Avg. Val. Score: -0.74  |  Epsilon: 0.147  |  Time elapsed: 1975.15s
+Episode #3450  |  Val. Score: -0.50  |  Avg. Val. Score: -0.74  |  Epsilon: 0.146  |  Time elapsed: 1979.85s
+Episode #3460  |  Val. Score: -0.60  |  Avg. Val. Score: -0.74  |  Epsilon: 0.146  |  Time elapsed: 1982.93s
+Episode #3470  |  Val. Score: -0.70  |  Avg. Val. Score: -0.74  |  Epsilon: 0.145  |  Time elapsed: 1987.32s
+Episode #3480  |  Val. Score: -0.90  |  Avg. Val. Score: -0.74  |  Epsilon: 0.145  |  Time elapsed: 1993.86s
+Episode #3490  |  Val. Score: -0.30  |  Avg. Val. Score: -0.73  |  Epsilon: 0.144  |  Time elapsed: 1999.66s
+Episode #3500  |  Val. Score: -0.60  |  Avg. Val. Score: -0.73  |  Epsilon: 0.144  |  Time elapsed: 2004.95s
+Checkpoint saved!
+Episode #3510  |  Val. Score: -0.60  |  Avg. Val. Score: -0.73  |  Epsilon: 0.143  |  Time elapsed: 2011.86s
+Episode #3520  |  Val. Score: -0.60  |  Avg. Val. Score: -0.73  |  Epsilon: 0.143  |  Time elapsed: 2017.87s
+Episode #3530  |  Val. Score: -0.80  |  Avg. Val. Score: -0.73  |  Epsilon: 0.142  |  Time elapsed: 2024.55s
+Episode #3540  |  Val. Score: -0.60  |  Avg. Val. Score: -0.73  |  Epsilon: 0.142  |  Time elapsed: 2029.19s
+Episode #3550  |  Val. Score: -0.30  |  Avg. Val. Score: -0.72  |  Epsilon: 0.141  |  Time elapsed: 2035.09s
+Episode #3560  |  Val. Score: -0.20  |  Avg. Val. Score: -0.72  |  Epsilon: 0.141  |  Time elapsed: 2040.21s
+Episode #3570  |  Val. Score: -0.70  |  Avg. Val. Score: -0.72  |  Epsilon: 0.141  |  Time elapsed: 2044.18s
+Episode #3580  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.140  |  Time elapsed: 2047.29s
+Episode #3590  |  Val. Score: -0.90  |  Avg. Val. Score: -0.72  |  Epsilon: 0.140  |  Time elapsed: 2051.78s
+Episode #3600  |  Val. Score: -0.40  |  Avg. Val. Score: -0.71  |  Epsilon: 0.139  |  Time elapsed: 2055.20s
+Checkpoint saved!
+Episode #3610  |  Val. Score: -0.30  |  Avg. Val. Score: -0.71  |  Epsilon: 0.139  |  Time elapsed: 2058.24s
+Episode #3620  |  Val. Score: -0.20  |  Avg. Val. Score: -0.70  |  Epsilon: 0.138  |  Time elapsed: 2062.58s
+Episode #3630  |  Val. Score: -0.20  |  Avg. Val. Score: -0.69  |  Epsilon: 0.138  |  Time elapsed: 2065.65s
+Episode #3640  |  Val. Score: -0.70  |  Avg. Val. Score: -0.70  |  Epsilon: 0.137  |  Time elapsed: 2069.13s
+Episode #3650  |  Val. Score: -0.70  |  Avg. Val. Score: -0.69  |  Epsilon: 0.137  |  Time elapsed: 2072.69s
+Episode #3660  |  Val. Score: -0.60  |  Avg. Val. Score: -0.69  |  Epsilon: 0.137  |  Time elapsed: 2076.33s
+Episode #3670  |  Val. Score: -0.20  |  Avg. Val. Score: -0.69  |  Epsilon: 0.136  |  Time elapsed: 2081.11s
+Episode #3680  |  Val. Score: -0.60  |  Avg. Val. Score: -0.69  |  Epsilon: 0.136  |  Time elapsed: 2085.93s
+Episode #3690  |  Val. Score: -0.20  |  Avg. Val. Score: -0.68  |  Epsilon: 0.136  |  Time elapsed: 2091.16s
+Episode #3700  |  Val. Score: -0.50  |  Avg. Val. Score: -0.67  |  Epsilon: 0.135  |  Time elapsed: 2095.43s
+Checkpoint saved!
+Episode #3710  |  Val. Score: -0.60  |  Avg. Val. Score: -0.68  |  Epsilon: 0.135  |  Time elapsed: 2098.90s
+Episode #3720  |  Val. Score: -0.30  |  Avg. Val. Score: -0.68  |  Epsilon: 0.134  |  Time elapsed: 2102.61s
+Episode #3730  |  Val. Score: -0.40  |  Avg. Val. Score: -0.68  |  Epsilon: 0.133  |  Time elapsed: 2107.19s
+Episode #3740  |  Val. Score: -0.50  |  Avg. Val. Score: -0.67  |  Epsilon: 0.133  |  Time elapsed: 2114.49s
+Episode #3750  |  Val. Score: -0.40  |  Avg. Val. Score: -0.66  |  Epsilon: 0.132  |  Time elapsed: 2122.09s
+Episode #3760  |  Val. Score: -0.80  |  Avg. Val. Score: -0.66  |  Epsilon: 0.132  |  Time elapsed: 2129.58s
+Episode #3770  |  Val. Score: -0.30  |  Avg. Val. Score: -0.66  |  Epsilon: 0.131  |  Time elapsed: 2136.38s
+Episode #3780  |  Val. Score: -0.30  |  Avg. Val. Score: -0.66  |  Epsilon: 0.131  |  Time elapsed: 2140.86s
+Episode #3790  |  Val. Score: -0.80  |  Avg. Val. Score: -0.66  |  Epsilon: 0.130  |  Time elapsed: 2150.07s
+Episode #3800  |  Val. Score: +0.00  |  Avg. Val. Score: -0.65  |  Epsilon: 0.130  |  Time elapsed: 2158.54s
+Checkpoint saved!
+Episode #3810  |  Val. Score: -0.90  |  Avg. Val. Score: -0.65  |  Epsilon: 0.129  |  Time elapsed: 2165.95s
+Episode #3820  |  Val. Score: -0.30  |  Avg. Val. Score: -0.65  |  Epsilon: 0.128  |  Time elapsed: 2171.53s
+Episode #3830  |  Val. Score: -0.60  |  Avg. Val. Score: -0.65  |  Epsilon: 0.128  |  Time elapsed: 2176.08s
+Episode #3840  |  Val. Score: -1.00  |  Avg. Val. Score: -0.65  |  Epsilon: 0.127  |  Time elapsed: 2183.87s
+Episode #3850  |  Val. Score: -0.80  |  Avg. Val. Score: -0.65  |  Epsilon: 0.127  |  Time elapsed: 2190.14s
+Episode #3860  |  Val. Score: +0.00  |  Avg. Val. Score: -0.64  |  Epsilon: 0.126  |  Time elapsed: 2197.62s
+Episode #3870  |  Val. Score: -0.70  |  Avg. Val. Score: -0.64  |  Epsilon: 0.126  |  Time elapsed: 2205.09s
+Episode #3880  |  Val. Score: -0.80  |  Avg. Val. Score: -0.64  |  Epsilon: 0.125  |  Time elapsed: 2210.78s
+Episode #3890  |  Val. Score: -0.40  |  Avg. Val. Score: -0.64  |  Epsilon: 0.125  |  Time elapsed: 2216.34s
+Episode #3900  |  Val. Score: -0.40  |  Avg. Val. Score: -0.64  |  Epsilon: 0.124  |  Time elapsed: 2219.98s
+Checkpoint saved!
+Episode #3910  |  Val. Score: -1.00  |  Avg. Val. Score: -0.64  |  Epsilon: 0.124  |  Time elapsed: 2225.32s
+Episode #3920  |  Val. Score: -0.60  |  Avg. Val. Score: -0.64  |  Epsilon: 0.123  |  Time elapsed: 2231.80s
+Episode #3930  |  Val. Score: -0.80  |  Avg. Val. Score: -0.64  |  Epsilon: 0.123  |  Time elapsed: 2237.42s
+Episode #3940  |  Val. Score: -0.60  |  Avg. Val. Score: -0.64  |  Epsilon: 0.122  |  Time elapsed: 2242.98s
+Episode #3950  |  Val. Score: -0.80  |  Avg. Val. Score: -0.64  |  Epsilon: 0.122  |  Time elapsed: 2249.29s
+Episode #3960  |  Val. Score: -0.40  |  Avg. Val. Score: -0.64  |  Epsilon: 0.121  |  Time elapsed: 2255.24s
+Episode #3970  |  Val. Score: -0.70  |  Avg. Val. Score: -0.64  |  Epsilon: 0.121  |  Time elapsed: 2260.03s
+Episode #3980  |  Val. Score: -0.50  |  Avg. Val. Score: -0.64  |  Epsilon: 0.120  |  Time elapsed: 2267.45s
+Episode #3990  |  Val. Score: -0.30  |  Avg. Val. Score: -0.63  |  Epsilon: 0.120  |  Time elapsed: 2274.09s
+Episode #4000  |  Val. Score: -0.70  |  Avg. Val. Score: -0.63  |  Epsilon: 0.119  |  Time elapsed: 2281.32s
+Checkpoint saved!
+Episode #4010  |  Val. Score: -0.70  |  Avg. Val. Score: -0.63  |  Epsilon: 0.119  |  Time elapsed: 2287.76s
+Episode #4020  |  Val. Score: -0.90  |  Avg. Val. Score: -0.63  |  Epsilon: 0.118  |  Time elapsed: 2294.95s
+Episode #4030  |  Val. Score: -0.60  |  Avg. Val. Score: -0.63  |  Epsilon: 0.118  |  Time elapsed: 2299.32s
+Episode #4040  |  Val. Score: -0.90  |  Avg. Val. Score: -0.63  |  Epsilon: 0.118  |  Time elapsed: 2304.32s
+Episode #4050  |  Val. Score: +0.00  |  Avg. Val. Score: -0.62  |  Epsilon: 0.118  |  Time elapsed: 2308.66s
+Episode #4060  |  Val. Score: -0.90  |  Avg. Val. Score: -0.62  |  Epsilon: 0.117  |  Time elapsed: 2314.43s
+Episode #4070  |  Val. Score: -0.70  |  Avg. Val. Score: -0.62  |  Epsilon: 0.117  |  Time elapsed: 2319.67s
+Episode #4080  |  Val. Score: -1.00  |  Avg. Val. Score: -0.63  |  Epsilon: 0.116  |  Time elapsed: 2324.20s
+Episode #4090  |  Val. Score: -0.60  |  Avg. Val. Score: -0.63  |  Epsilon: 0.116  |  Time elapsed: 2327.85s
+Episode #4100  |  Val. Score: -0.70  |  Avg. Val. Score: -0.63  |  Epsilon: 0.116  |  Time elapsed: 2331.69s
+Checkpoint saved!
+Episode #4110  |  Val. Score: -0.60  |  Avg. Val. Score: -0.63  |  Epsilon: 0.115  |  Time elapsed: 2334.75s
+Episode #4120  |  Val. Score: -1.00  |  Avg. Val. Score: -0.63  |  Epsilon: 0.115  |  Time elapsed: 2338.17s
+Episode #4130  |  Val. Score: -0.60  |  Avg. Val. Score: -0.63  |  Epsilon: 0.114  |  Time elapsed: 2342.63s
+Episode #4140  |  Val. Score: -0.80  |  Avg. Val. Score: -0.63  |  Epsilon: 0.114  |  Time elapsed: 2346.50s
+Episode #4150  |  Val. Score: -0.60  |  Avg. Val. Score: -0.62  |  Epsilon: 0.114  |  Time elapsed: 2349.81s
+Episode #4160  |  Val. Score: -0.60  |  Avg. Val. Score: -0.62  |  Epsilon: 0.114  |  Time elapsed: 2352.97s
+Episode #4170  |  Val. Score: -1.00  |  Avg. Val. Score: -0.63  |  Epsilon: 0.113  |  Time elapsed: 2356.13s
+Episode #4180  |  Val. Score: -0.90  |  Avg. Val. Score: -0.63  |  Epsilon: 0.113  |  Time elapsed: 2359.01s
+Episode #4190  |  Val. Score: -1.00  |  Avg. Val. Score: -0.63  |  Epsilon: 0.113  |  Time elapsed: 2362.91s
+Episode #4200  |  Val. Score: -0.70  |  Avg. Val. Score: -0.63  |  Epsilon: 0.112  |  Time elapsed: 2365.50s
+Checkpoint saved!
+Episode #4210  |  Val. Score: -1.00  |  Avg. Val. Score: -0.64  |  Epsilon: 0.112  |  Time elapsed: 2369.55s
+Episode #4220  |  Val. Score: -1.00  |  Avg. Val. Score: -0.64  |  Epsilon: 0.112  |  Time elapsed: 2372.64s
+Episode #4230  |  Val. Score: -0.70  |  Avg. Val. Score: -0.64  |  Epsilon: 0.112  |  Time elapsed: 2375.29s
+Episode #4240  |  Val. Score: -0.50  |  Avg. Val. Score: -0.63  |  Epsilon: 0.111  |  Time elapsed: 2378.53s
+Episode #4250  |  Val. Score: -0.80  |  Avg. Val. Score: -0.63  |  Epsilon: 0.111  |  Time elapsed: 2382.93s
+Episode #4260  |  Val. Score: -0.70  |  Avg. Val. Score: -0.63  |  Epsilon: 0.111  |  Time elapsed: 2387.15s
+Episode #4270  |  Val. Score: -1.00  |  Avg. Val. Score: -0.64  |  Epsilon: 0.111  |  Time elapsed: 2393.22s
+Episode #4280  |  Val. Score: -0.60  |  Avg. Val. Score: -0.63  |  Epsilon: 0.110  |  Time elapsed: 2397.59s
+Episode #4290  |  Val. Score: -0.70  |  Avg. Val. Score: -0.63  |  Epsilon: 0.110  |  Time elapsed: 2402.56s
+Episode #4300  |  Val. Score: -0.70  |  Avg. Val. Score: -0.63  |  Epsilon: 0.110  |  Time elapsed: 2408.80s
+Checkpoint saved!
+Episode #4310  |  Val. Score: -0.70  |  Avg. Val. Score: -0.63  |  Epsilon: 0.110  |  Time elapsed: 2413.39s
+Episode #4320  |  Val. Score: -0.30  |  Avg. Val. Score: -0.62  |  Epsilon: 0.110  |  Time elapsed: 2418.05s
+Episode #4330  |  Val. Score: -0.60  |  Avg. Val. Score: -0.62  |  Epsilon: 0.109  |  Time elapsed: 2423.27s
+Episode #4340  |  Val. Score: -0.80  |  Avg. Val. Score: -0.62  |  Epsilon: 0.109  |  Time elapsed: 2427.09s
+Episode #4350  |  Val. Score: -0.70  |  Avg. Val. Score: -0.62  |  Epsilon: 0.109  |  Time elapsed: 2430.23s
+Episode #4360  |  Val. Score: -0.90  |  Avg. Val. Score: -0.62  |  Epsilon: 0.108  |  Time elapsed: 2435.57s
+Episode #4370  |  Val. Score: -0.20  |  Avg. Val. Score: -0.62  |  Epsilon: 0.108  |  Time elapsed: 2439.94s
+Episode #4380  |  Val. Score: -0.80  |  Avg. Val. Score: -0.62  |  Epsilon: 0.108  |  Time elapsed: 2443.75s
+Episode #4390  |  Val. Score: -1.00  |  Avg. Val. Score: -0.62  |  Epsilon: 0.108  |  Time elapsed: 2448.14s
+Episode #4400  |  Val. Score: -0.90  |  Avg. Val. Score: -0.62  |  Epsilon: 0.107  |  Time elapsed: 2452.38s
+Checkpoint saved!
+Episode #4410  |  Val. Score: -0.80  |  Avg. Val. Score: -0.62  |  Epsilon: 0.107  |  Time elapsed: 2458.04s
+Episode #4420  |  Val. Score: -1.00  |  Avg. Val. Score: -0.63  |  Epsilon: 0.106  |  Time elapsed: 2463.74s
+Episode #4430  |  Val. Score: -0.80  |  Avg. Val. Score: -0.63  |  Epsilon: 0.106  |  Time elapsed: 2467.26s
+Episode #4440  |  Val. Score: -0.80  |  Avg. Val. Score: -0.63  |  Epsilon: 0.106  |  Time elapsed: 2472.35s
+Episode #4450  |  Val. Score: -0.50  |  Avg. Val. Score: -0.63  |  Epsilon: 0.106  |  Time elapsed: 2475.84s
+Episode #4460  |  Val. Score: -0.60  |  Avg. Val. Score: -0.63  |  Epsilon: 0.105  |  Time elapsed: 2480.53s
+Episode #4470  |  Val. Score: -0.80  |  Avg. Val. Score: -0.63  |  Epsilon: 0.105  |  Time elapsed: 2484.01s
+Episode #4480  |  Val. Score: -0.90  |  Avg. Val. Score: -0.63  |  Epsilon: 0.105  |  Time elapsed: 2488.03s
+Episode #4490  |  Val. Score: -0.60  |  Avg. Val. Score: -0.64  |  Epsilon: 0.105  |  Time elapsed: 2491.48s
+Episode #4500  |  Val. Score: -0.70  |  Avg. Val. Score: -0.64  |  Epsilon: 0.105  |  Time elapsed: 2495.13s
+Checkpoint saved!
+Episode #4510  |  Val. Score: -0.70  |  Avg. Val. Score: -0.64  |  Epsilon: 0.105  |  Time elapsed: 2498.76s
+Episode #4520  |  Val. Score: -0.40  |  Avg. Val. Score: -0.64  |  Epsilon: 0.105  |  Time elapsed: 2502.94s
+Episode #4530  |  Val. Score: -0.60  |  Avg. Val. Score: -0.63  |  Epsilon: 0.104  |  Time elapsed: 2507.11s
+Episode #4540  |  Val. Score: -0.80  |  Avg. Val. Score: -0.64  |  Epsilon: 0.104  |  Time elapsed: 2511.26s
+Episode #4550  |  Val. Score: -0.50  |  Avg. Val. Score: -0.64  |  Epsilon: 0.104  |  Time elapsed: 2514.95s
+Episode #4560  |  Val. Score: -0.50  |  Avg. Val. Score: -0.64  |  Epsilon: 0.104  |  Time elapsed: 2520.35s
+Episode #4570  |  Val. Score: -1.00  |  Avg. Val. Score: -0.64  |  Epsilon: 0.104  |  Time elapsed: 2526.11s
+Episode #4580  |  Val. Score: -0.70  |  Avg. Val. Score: -0.64  |  Epsilon: 0.104  |  Time elapsed: 2529.85s
+Episode #4590  |  Val. Score: -0.60  |  Avg. Val. Score: -0.64  |  Epsilon: 0.103  |  Time elapsed: 2535.60s
+Episode #4600  |  Val. Score: -0.70  |  Avg. Val. Score: -0.64  |  Epsilon: 0.103  |  Time elapsed: 2541.30s
+Checkpoint saved!
+Episode #4610  |  Val. Score: -0.80  |  Avg. Val. Score: -0.65  |  Epsilon: 0.103  |  Time elapsed: 2546.09s
+Episode #4620  |  Val. Score: -0.50  |  Avg. Val. Score: -0.65  |  Epsilon: 0.103  |  Time elapsed: 2549.91s
+Episode #4630  |  Val. Score: -0.90  |  Avg. Val. Score: -0.66  |  Epsilon: 0.103  |  Time elapsed: 2553.40s
+Episode #4640  |  Val. Score: -0.80  |  Avg. Val. Score: -0.66  |  Epsilon: 0.103  |  Time elapsed: 2558.14s
+Episode #4650  |  Val. Score: -0.70  |  Avg. Val. Score: -0.66  |  Epsilon: 0.103  |  Time elapsed: 2561.52s
+Episode #4660  |  Val. Score: -0.50  |  Avg. Val. Score: -0.66  |  Epsilon: 0.103  |  Time elapsed: 2565.23s
+Episode #4670  |  Val. Score: -0.50  |  Avg. Val. Score: -0.66  |  Epsilon: 0.103  |  Time elapsed: 2568.34s
+Episode #4680  |  Val. Score: -0.20  |  Avg. Val. Score: -0.66  |  Epsilon: 0.103  |  Time elapsed: 2571.42s
+Episode #4690  |  Val. Score: -0.80  |  Avg. Val. Score: -0.66  |  Epsilon: 0.103  |  Time elapsed: 2574.98s
+Episode #4700  |  Val. Score: -0.80  |  Avg. Val. Score: -0.67  |  Epsilon: 0.103  |  Time elapsed: 2577.88s
+Checkpoint saved!
+Episode #4710  |  Val. Score: -0.70  |  Avg. Val. Score: -0.67  |  Epsilon: 0.103  |  Time elapsed: 2581.33s
+Episode #4720  |  Val. Score: -1.00  |  Avg. Val. Score: -0.67  |  Epsilon: 0.103  |  Time elapsed: 2584.73s
+Episode #4730  |  Val. Score: -0.80  |  Avg. Val. Score: -0.68  |  Epsilon: 0.102  |  Time elapsed: 2588.71s
+Episode #4740  |  Val. Score: -0.60  |  Avg. Val. Score: -0.68  |  Epsilon: 0.102  |  Time elapsed: 2592.57s
+Episode #4750  |  Val. Score: -0.40  |  Avg. Val. Score: -0.68  |  Epsilon: 0.102  |  Time elapsed: 2595.97s
+Episode #4760  |  Val. Score: -1.00  |  Avg. Val. Score: -0.68  |  Epsilon: 0.102  |  Time elapsed: 2600.63s
+Episode #4770  |  Val. Score: -0.60  |  Avg. Val. Score: -0.68  |  Epsilon: 0.102  |  Time elapsed: 2605.57s
+Episode #4780  |  Val. Score: -0.50  |  Avg. Val. Score: -0.69  |  Epsilon: 0.102  |  Time elapsed: 2608.99s
+Episode #4790  |  Val. Score: -0.50  |  Avg. Val. Score: -0.68  |  Epsilon: 0.102  |  Time elapsed: 2612.50s
+Episode #4800  |  Val. Score: -0.30  |  Avg. Val. Score: -0.69  |  Epsilon: 0.102  |  Time elapsed: 2615.39s
+Checkpoint saved!
+Episode #4810  |  Val. Score: -0.80  |  Avg. Val. Score: -0.69  |  Epsilon: 0.101  |  Time elapsed: 2619.92s
+Episode #4820  |  Val. Score: -0.70  |  Avg. Val. Score: -0.69  |  Epsilon: 0.101  |  Time elapsed: 2623.35s
+Episode #4830  |  Val. Score: -0.90  |  Avg. Val. Score: -0.69  |  Epsilon: 0.101  |  Time elapsed: 2628.39s
+Episode #4840  |  Val. Score: -0.60  |  Avg. Val. Score: -0.69  |  Epsilon: 0.101  |  Time elapsed: 2632.49s
+Episode #4850  |  Val. Score: -0.60  |  Avg. Val. Score: -0.69  |  Epsilon: 0.101  |  Time elapsed: 2635.88s
+Episode #4860  |  Val. Score: -0.60  |  Avg. Val. Score: -0.69  |  Epsilon: 0.101  |  Time elapsed: 2640.96s
+Episode #4870  |  Val. Score: -0.80  |  Avg. Val. Score: -0.69  |  Epsilon: 0.101  |  Time elapsed: 2645.67s
+Episode #4880  |  Val. Score: -0.70  |  Avg. Val. Score: -0.69  |  Epsilon: 0.101  |  Time elapsed: 2648.88s
+Episode #4890  |  Val. Score: -0.80  |  Avg. Val. Score: -0.70  |  Epsilon: 0.101  |  Time elapsed: 2654.75s
+Episode #4900  |  Val. Score: -0.70  |  Avg. Val. Score: -0.70  |  Epsilon: 0.100  |  Time elapsed: 2658.32s
+Checkpoint saved!
+Episode #4910  |  Val. Score: -0.50  |  Avg. Val. Score: -0.69  |  Epsilon: 0.100  |  Time elapsed: 2662.02s
+Episode #4920  |  Val. Score: -0.80  |  Avg. Val. Score: -0.70  |  Epsilon: 0.100  |  Time elapsed: 2667.72s
+Episode #4930  |  Val. Score: -0.70  |  Avg. Val. Score: -0.70  |  Epsilon: 0.100  |  Time elapsed: 2672.01s
+Episode #4940  |  Val. Score: -0.80  |  Avg. Val. Score: -0.70  |  Epsilon: 0.100  |  Time elapsed: 2675.94s
+Episode #4950  |  Val. Score: -1.00  |  Avg. Val. Score: -0.70  |  Epsilon: 0.100  |  Time elapsed: 2679.42s
+Episode #4960  |  Val. Score: -0.80  |  Avg. Val. Score: -0.70  |  Epsilon: 0.100  |  Time elapsed: 2683.00s
+Episode #4970  |  Val. Score: -0.80  |  Avg. Val. Score: -0.70  |  Epsilon: 0.100  |  Time elapsed: 2686.54s
+Episode #4980  |  Val. Score: -0.80  |  Avg. Val. Score: -0.71  |  Epsilon: 0.100  |  Time elapsed: 2689.43s
+Episode #4990  |  Val. Score: -0.80  |  Avg. Val. Score: -0.71  |  Epsilon: 0.100  |  Time elapsed: 2693.54s
+Episode #5000  |  Val. Score: -0.50  |  Avg. Val. Score: -0.71  |  Epsilon: 0.099  |  Time elapsed: 2697.52s
+Checkpoint saved!
+Episode #5010  |  Val. Score: -0.80  |  Avg. Val. Score: -0.71  |  Epsilon: 0.099  |  Time elapsed: 2701.01s
+Episode #5020  |  Val. Score: -0.80  |  Avg. Val. Score: -0.71  |  Epsilon: 0.099  |  Time elapsed: 2703.85s
+Episode #5030  |  Val. Score: -0.80  |  Avg. Val. Score: -0.71  |  Epsilon: 0.099  |  Time elapsed: 2707.21s
+Episode #5040  |  Val. Score: -0.80  |  Avg. Val. Score: -0.71  |  Epsilon: 0.099  |  Time elapsed: 2710.20s
+Episode #5050  |  Val. Score: -0.90  |  Avg. Val. Score: -0.72  |  Epsilon: 0.099  |  Time elapsed: 2713.57s
+Episode #5060  |  Val. Score: -0.90  |  Avg. Val. Score: -0.72  |  Epsilon: 0.099  |  Time elapsed: 2716.68s
+Episode #5070  |  Val. Score: -0.70  |  Avg. Val. Score: -0.72  |  Epsilon: 0.099  |  Time elapsed: 2719.99s
+Episode #5080  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.099  |  Time elapsed: 2723.74s
+Episode #5090  |  Val. Score: -0.60  |  Avg. Val. Score: -0.72  |  Epsilon: 0.099  |  Time elapsed: 2727.16s
+Episode #5100  |  Val. Score: -0.60  |  Avg. Val. Score: -0.72  |  Epsilon: 0.099  |  Time elapsed: 2731.43s
+Checkpoint saved!
+Episode #5110  |  Val. Score: -0.70  |  Avg. Val. Score: -0.72  |  Epsilon: 0.099  |  Time elapsed: 2736.91s
+Episode #5120  |  Val. Score: -1.00  |  Avg. Val. Score: -0.72  |  Epsilon: 0.099  |  Time elapsed: 2741.17s
+Episode #5130  |  Val. Score: -0.90  |  Avg. Val. Score: -0.72  |  Epsilon: 0.099  |  Time elapsed: 2745.63s
+Episode #5140  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.099  |  Time elapsed: 2749.26s
+Episode #5150  |  Val. Score: -0.60  |  Avg. Val. Score: -0.72  |  Epsilon: 0.099  |  Time elapsed: 2752.31s
+Episode #5160  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2756.28s
+Episode #5170  |  Val. Score: -0.50  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2759.10s
+Episode #5180  |  Val. Score: -1.00  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2762.53s
+Episode #5190  |  Val. Score: -1.00  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2765.41s
+Episode #5200  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2768.61s
+Checkpoint saved!
+Episode #5210  |  Val. Score: -1.00  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2771.32s
+Episode #5220  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2775.22s
+Episode #5230  |  Val. Score: -0.70  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2778.90s
+Episode #5240  |  Val. Score: -0.90  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2782.23s
+Episode #5250  |  Val. Score: -0.60  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2785.99s
+Episode #5260  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2788.76s
+Episode #5270  |  Val. Score: -0.70  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2793.33s
+Episode #5280  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2797.59s
+Episode #5290  |  Val. Score: -0.60  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2801.11s
+Episode #5300  |  Val. Score: -0.60  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2803.76s
+Checkpoint saved!
+Episode #5310  |  Val. Score: -0.60  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2807.18s
+Episode #5320  |  Val. Score: -0.70  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2810.25s
+Episode #5330  |  Val. Score: -0.60  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2812.92s
+Episode #5340  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2815.80s
+Episode #5350  |  Val. Score: -0.50  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2819.25s
+Episode #5360  |  Val. Score: -0.90  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2822.96s
+Episode #5370  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2826.34s
+Episode #5380  |  Val. Score: -0.60  |  Avg. Val. Score: -0.72  |  Epsilon: 0.098  |  Time elapsed: 2829.51s
+Episode #5390  |  Val. Score: -0.70  |  Avg. Val. Score: -0.72  |  Epsilon: 0.097  |  Time elapsed: 2834.30s
+Episode #5400  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.097  |  Time elapsed: 2837.93s
+Checkpoint saved!
+Episode #5410  |  Val. Score: -0.60  |  Avg. Val. Score: -0.72  |  Epsilon: 0.097  |  Time elapsed: 2841.49s
+Episode #5420  |  Val. Score: -0.60  |  Avg. Val. Score: -0.71  |  Epsilon: 0.097  |  Time elapsed: 2846.16s
+Episode #5430  |  Val. Score: -0.80  |  Avg. Val. Score: -0.71  |  Epsilon: 0.097  |  Time elapsed: 2851.52s
+Episode #5440  |  Val. Score: -1.00  |  Avg. Val. Score: -0.71  |  Epsilon: 0.097  |  Time elapsed: 2856.21s
+Episode #5450  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.097  |  Time elapsed: 2859.58s
+Episode #5460  |  Val. Score: -0.70  |  Avg. Val. Score: -0.72  |  Epsilon: 0.097  |  Time elapsed: 2862.90s
+Episode #5470  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2867.64s
+Episode #5480  |  Val. Score: -0.70  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2870.49s
+Episode #5490  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2873.97s
+Episode #5500  |  Val. Score: -0.40  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2876.90s
+Checkpoint saved!
+Episode #5510  |  Val. Score: -0.50  |  Avg. Val. Score: -0.71  |  Epsilon: 0.096  |  Time elapsed: 2880.18s
+Episode #5520  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2883.54s
+Episode #5530  |  Val. Score: -0.90  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2886.48s
+Episode #5540  |  Val. Score: -1.00  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2890.03s
+Episode #5550  |  Val. Score: -0.70  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2893.65s
+Episode #5560  |  Val. Score: -0.50  |  Avg. Val. Score: -0.73  |  Epsilon: 0.096  |  Time elapsed: 2897.13s
+Episode #5570  |  Val. Score: -0.40  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2900.55s
+Episode #5580  |  Val. Score: -0.50  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2903.82s
+Episode #5590  |  Val. Score: -1.00  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2908.48s
+Episode #5600  |  Val. Score: -0.60  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2911.67s
+Checkpoint saved!
+Episode #5610  |  Val. Score: -0.30  |  Avg. Val. Score: -0.71  |  Epsilon: 0.096  |  Time elapsed: 2915.30s
+Episode #5620  |  Val. Score: -1.00  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2919.38s
+Episode #5630  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2924.19s
+Episode #5640  |  Val. Score: -0.70  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2927.55s
+Episode #5650  |  Val. Score: -1.00  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2931.08s
+Episode #5660  |  Val. Score: -0.80  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2934.02s
+Episode #5670  |  Val. Score: -1.00  |  Avg. Val. Score: -0.73  |  Epsilon: 0.096  |  Time elapsed: 2937.35s
+Episode #5680  |  Val. Score: -1.00  |  Avg. Val. Score: -0.74  |  Epsilon: 0.096  |  Time elapsed: 2940.06s
+Episode #5690  |  Val. Score: -0.80  |  Avg. Val. Score: -0.74  |  Epsilon: 0.096  |  Time elapsed: 2943.41s
+Episode #5700  |  Val. Score: -0.70  |  Avg. Val. Score: -0.74  |  Epsilon: 0.096  |  Time elapsed: 2947.32s
+Checkpoint saved!
+Episode #5710  |  Val. Score: -0.60  |  Avg. Val. Score: -0.73  |  Epsilon: 0.096  |  Time elapsed: 2950.35s
+Episode #5720  |  Val. Score: -0.50  |  Avg. Val. Score: -0.73  |  Epsilon: 0.096  |  Time elapsed: 2954.36s
+Episode #5730  |  Val. Score: -0.20  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2957.46s
+Episode #5740  |  Val. Score: -0.70  |  Avg. Val. Score: -0.72  |  Epsilon: 0.096  |  Time elapsed: 2960.83s
+Episode #5750  |  Val. Score: -0.80  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 2964.71s
+Episode #5760  |  Val. Score: -0.50  |  Avg. Val. Score: -0.72  |  Epsilon: 0.095  |  Time elapsed: 2968.60s
+Episode #5770  |  Val. Score: -0.60  |  Avg. Val. Score: -0.72  |  Epsilon: 0.095  |  Time elapsed: 2972.64s
+Episode #5780  |  Val. Score: -0.80  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 2976.63s
+Episode #5790  |  Val. Score: -0.80  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 2981.54s
+Episode #5800  |  Val. Score: -0.70  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 2985.58s
+Checkpoint saved!
+Episode #5810  |  Val. Score: -0.80  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 2988.62s
+Episode #5820  |  Val. Score: -0.90  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 2992.01s
+Episode #5830  |  Val. Score: -0.90  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 2994.88s
+Episode #5840  |  Val. Score: -1.00  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 2998.55s
+Episode #5850  |  Val. Score: -0.60  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3001.47s
+Episode #5860  |  Val. Score: -0.90  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3004.22s
+Episode #5870  |  Val. Score: -0.80  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3007.45s
+Episode #5880  |  Val. Score: -1.00  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3010.85s
+Episode #5890  |  Val. Score: -1.00  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3013.91s
+Episode #5900  |  Val. Score: -0.60  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3017.60s
+Checkpoint saved!
+Episode #5910  |  Val. Score: -0.90  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3020.59s
+Episode #5920  |  Val. Score: -1.00  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3023.38s
+Episode #5930  |  Val. Score: -1.00  |  Avg. Val. Score: -0.76  |  Epsilon: 0.095  |  Time elapsed: 3027.44s
+Episode #5940  |  Val. Score: -0.70  |  Avg. Val. Score: -0.76  |  Epsilon: 0.095  |  Time elapsed: 3030.53s
+Episode #5950  |  Val. Score: -0.80  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3032.82s
+Episode #5960  |  Val. Score: -0.80  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3035.89s
+Episode #5970  |  Val. Score: -0.50  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3038.02s
+Episode #5980  |  Val. Score: -0.70  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3040.74s
+Episode #5990  |  Val. Score: -0.80  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3043.75s
+Episode #6000  |  Val. Score: -0.90  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3046.31s
+Checkpoint saved!
+Episode #6010  |  Val. Score: -0.60  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3049.12s
+Episode #6020  |  Val. Score: -1.00  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3052.06s
+Episode #6030  |  Val. Score: -0.70  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3056.14s
+Episode #6040  |  Val. Score: -0.80  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3059.39s
+Episode #6050  |  Val. Score: -0.60  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3062.64s
+Episode #6060  |  Val. Score: -0.80  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3065.55s
+Episode #6070  |  Val. Score: -1.00  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3068.98s
+Episode #6080  |  Val. Score: -0.90  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3071.86s
+Episode #6090  |  Val. Score: -0.60  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3074.64s
+Episode #6100  |  Val. Score: -1.00  |  Avg. Val. Score: -0.76  |  Epsilon: 0.095  |  Time elapsed: 3078.16s
+Checkpoint saved!
+Episode #6110  |  Val. Score: -0.50  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3080.98s
+Episode #6120  |  Val. Score: -0.50  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3083.59s
+Episode #6130  |  Val. Score: -0.80  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3087.14s
+Episode #6140  |  Val. Score: -0.80  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3090.24s
+Episode #6150  |  Val. Score: -0.60  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3092.95s
+Episode #6160  |  Val. Score: -0.90  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3096.10s
+Episode #6170  |  Val. Score: -0.90  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3100.07s
+Episode #6180  |  Val. Score: -0.20  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3103.09s
+Episode #6190  |  Val. Score: -0.90  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3106.01s
+Episode #6200  |  Val. Score: -0.80  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3110.15s
+Checkpoint saved!
+Episode #6210  |  Val. Score: -0.80  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3113.69s
+Episode #6220  |  Val. Score: -0.80  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3117.06s
+Episode #6230  |  Val. Score: -1.00  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3121.26s
+Episode #6240  |  Val. Score: -1.00  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3124.84s
+Episode #6250  |  Val. Score: -0.80  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3129.50s
+Episode #6260  |  Val. Score: -0.60  |  Avg. Val. Score: -0.75  |  Epsilon: 0.095  |  Time elapsed: 3132.58s
+Episode #6270  |  Val. Score: -0.60  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3136.15s
+Episode #6280  |  Val. Score: -0.80  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3139.16s
+Episode #6290  |  Val. Score: -0.40  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3142.54s
+Episode #6300  |  Val. Score: -0.80  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3145.44s
+Checkpoint saved!
+Episode #6310  |  Val. Score: -0.20  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3148.39s
+Episode #6320  |  Val. Score: -0.40  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3151.74s
+Episode #6330  |  Val. Score: -0.30  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3154.77s
+Episode #6340  |  Val. Score: -0.70  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 3157.84s
+Episode #6350  |  Val. Score: -0.70  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3161.60s
+Episode #6360  |  Val. Score: -1.00  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3165.79s
+Episode #6370  |  Val. Score: -1.00  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3169.40s
+Episode #6380  |  Val. Score: -0.60  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3174.18s
+Episode #6390  |  Val. Score: -0.80  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3177.39s
+Episode #6400  |  Val. Score: -0.40  |  Avg. Val. Score: -0.74  |  Epsilon: 0.095  |  Time elapsed: 3180.88s
+Checkpoint saved!
+Episode #6410  |  Val. Score: -0.50  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 3184.55s
+Episode #6420  |  Val. Score: -0.60  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 3187.56s
+Episode #6430  |  Val. Score: -0.70  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 3190.54s
+Episode #6440  |  Val. Score: -0.60  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 3193.92s
+Episode #6450  |  Val. Score: -0.80  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 3196.74s
+Episode #6460  |  Val. Score: -0.80  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 3199.61s
+Episode #6470  |  Val. Score: -0.70  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 3202.89s
+Episode #6480  |  Val. Score: -0.60  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 3205.66s
+Episode #6490  |  Val. Score: -0.80  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 3208.60s
+Episode #6500  |  Val. Score: -0.60  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 3211.79s
+Checkpoint saved!
+Episode #6510  |  Val. Score: -0.60  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 3214.63s
+Episode #6520  |  Val. Score: -0.70  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 3217.42s
+Episode #6530  |  Val. Score: -0.50  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 3220.61s
+Episode #6540  |  Val. Score: -0.60  |  Avg. Val. Score: -0.72  |  Epsilon: 0.095  |  Time elapsed: 3224.13s
+Episode #6550  |  Val. Score: -1.00  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 3227.50s
+Episode #6560  |  Val. Score: -0.60  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 3232.32s
+Episode #6570  |  Val. Score: -0.40  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 3236.24s
+Episode #6580  |  Val. Score: -0.40  |  Avg. Val. Score: -0.73  |  Epsilon: 0.095  |  Time elapsed: 3239.68s
+Episode #6590  |  Val. Score: -0.60  |  Avg. Val. Score: -0.72  |  Epsilon: 0.095  |  Time elapsed: 3243.83s
+Episode #6600  |  Val. Score: -0.30  |  Avg. Val. Score: -0.72  |  Epsilon: 0.095  |  Time elapsed: 3247.01s
+Checkpoint saved!
+Episode #6610  |  Val. Score: -0.40  |  Avg. Val. Score: -0.72  |  Epsilon: 0.095  |  Time elapsed: 3250.11s
+Episode #6620  |  Val. Score: +0.00  |  Avg. Val. Score: -0.71  |  Epsilon: 0.095  |  Time elapsed: 3254.16s
+Episode #6630  |  Val. Score: -0.80  |  Avg. Val. Score: -0.71  |  Epsilon: 0.095  |  Time elapsed: 3257.19s
+Episode #6640  |  Val. Score: -0.40  |  Avg. Val. Score: -0.71  |  Epsilon: 0.095  |  Time elapsed: 3261.59s
+Episode #6650  |  Val. Score: -0.70  |  Avg. Val. Score: -0.70  |  Epsilon: 0.095  |  Time elapsed: 3265.83s
+Episode #6660  |  Val. Score: -0.80  |  Avg. Val. Score: -0.70  |  Epsilon: 0.095  |  Time elapsed: 3268.70s
+Episode #6670  |  Val. Score: -0.20  |  Avg. Val. Score: -0.70  |  Epsilon: 0.095  |  Time elapsed: 3271.73s
+Episode #6680  |  Val. Score: -0.40  |  Avg. Val. Score: -0.69  |  Epsilon: 0.095  |  Time elapsed: 3274.88s
+Episode #6690  |  Val. Score: -0.80  |  Avg. Val. Score: -0.69  |  Epsilon: 0.095  |  Time elapsed: 3278.35s
+Episode #6700  |  Val. Score: -0.80  |  Avg. Val. Score: -0.69  |  Epsilon: 0.095  |  Time elapsed: 3281.24s
+Checkpoint saved!
+Episode #6710  |  Val. Score: -0.80  |  Avg. Val. Score: -0.69  |  Epsilon: 0.095  |  Time elapsed: 3284.22s
+Episode #6720  |  Val. Score: -0.20  |  Avg. Val. Score: -0.69  |  Epsilon: 0.095  |  Time elapsed: 3288.69s
+Episode #6730  |  Val. Score: -0.20  |  Avg. Val. Score: -0.69  |  Epsilon: 0.095  |  Time elapsed: 3293.00s
+Episode #6740  |  Val. Score: -0.60  |  Avg. Val. Score: -0.69  |  Epsilon: 0.095  |  Time elapsed: 3296.39s
+Episode #6750  |  Val. Score: -0.40  |  Avg. Val. Score: -0.69  |  Epsilon: 0.095  |  Time elapsed: 3299.40s
+Episode #6760  |  Val. Score: -0.40  |  Avg. Val. Score: -0.68  |  Epsilon: 0.095  |  Time elapsed: 3303.39s
+Episode #6770  |  Val. Score: -0.40  |  Avg. Val. Score: -0.68  |  Epsilon: 0.095  |  Time elapsed: 3307.02s
+Episode #6780  |  Val. Score: -0.40  |  Avg. Val. Score: -0.68  |  Epsilon: 0.095  |  Time elapsed: 3310.49s
+Episode #6790  |  Val. Score: -0.40  |  Avg. Val. Score: -0.67  |  Epsilon: 0.095  |  Time elapsed: 3314.77s
+Episode #6800  |  Val. Score: +0.30  |  Avg. Val. Score: -0.66  |  Epsilon: 0.095  |  Time elapsed: 3319.06s
+Checkpoint saved!
+Episode #6810  |  Val. Score: -0.20  |  Avg. Val. Score: -0.66  |  Epsilon: 0.095  |  Time elapsed: 3322.94s
+Episode #6820  |  Val. Score: -0.40  |  Avg. Val. Score: -0.65  |  Epsilon: 0.095  |  Time elapsed: 3327.02s
+Episode #6830  |  Val. Score: -0.20  |  Avg. Val. Score: -0.65  |  Epsilon: 0.095  |  Time elapsed: 3330.64s
+Episode #6840  |  Val. Score: -0.30  |  Avg. Val. Score: -0.64  |  Epsilon: 0.095  |  Time elapsed: 3333.59s
+Episode #6850  |  Val. Score: -0.60  |  Avg. Val. Score: -0.64  |  Epsilon: 0.094  |  Time elapsed: 3337.62s
+Episode #6860  |  Val. Score: -0.80  |  Avg. Val. Score: -0.64  |  Epsilon: 0.094  |  Time elapsed: 3341.15s
+Episode #6870  |  Val. Score: +0.30  |  Avg. Val. Score: -0.63  |  Epsilon: 0.094  |  Time elapsed: 3344.05s
+Episode #6880  |  Val. Score: -0.20  |  Avg. Val. Score: -0.62  |  Epsilon: 0.094  |  Time elapsed: 3346.87s
+Episode #6890  |  Val. Score: -0.60  |  Avg. Val. Score: -0.62  |  Epsilon: 0.094  |  Time elapsed: 3350.59s
+Episode #6900  |  Val. Score: -0.30  |  Avg. Val. Score: -0.61  |  Epsilon: 0.094  |  Time elapsed: 3353.47s
+Checkpoint saved!
+Episode #6910  |  Val. Score: -0.20  |  Avg. Val. Score: -0.61  |  Epsilon: 0.094  |  Time elapsed: 3356.43s
+Episode #6920  |  Val. Score: -0.60  |  Avg. Val. Score: -0.60  |  Epsilon: 0.094  |  Time elapsed: 3359.84s
+Episode #6930  |  Val. Score: -0.20  |  Avg. Val. Score: -0.59  |  Epsilon: 0.094  |  Time elapsed: 3363.15s
+Episode #6940  |  Val. Score: -0.20  |  Avg. Val. Score: -0.59  |  Epsilon: 0.094  |  Time elapsed: 3366.53s
+Episode #6950  |  Val. Score: +0.00  |  Avg. Val. Score: -0.58  |  Epsilon: 0.094  |  Time elapsed: 3370.14s
+Episode #6960  |  Val. Score: -0.60  |  Avg. Val. Score: -0.58  |  Epsilon: 0.094  |  Time elapsed: 3373.35s
+Episode #6970  |  Val. Score: -0.60  |  Avg. Val. Score: -0.58  |  Epsilon: 0.094  |  Time elapsed: 3376.42s
+Episode #6980  |  Val. Score: -0.30  |  Avg. Val. Score: -0.57  |  Epsilon: 0.094  |  Time elapsed: 3380.79s
+Episode #6990  |  Val. Score: -0.20  |  Avg. Val. Score: -0.57  |  Epsilon: 0.094  |  Time elapsed: 3384.19s
+Episode #7000  |  Val. Score: -0.50  |  Avg. Val. Score: -0.57  |  Epsilon: 0.094  |  Time elapsed: 3387.71s
+Checkpoint saved!
+Episode #7010  |  Val. Score: -0.40  |  Avg. Val. Score: -0.56  |  Epsilon: 0.094  |  Time elapsed: 3391.32s
+Episode #7020  |  Val. Score: +0.20  |  Avg. Val. Score: -0.55  |  Epsilon: 0.094  |  Time elapsed: 3394.97s
+Episode #7030  |  Val. Score: -0.40  |  Avg. Val. Score: -0.55  |  Epsilon: 0.094  |  Time elapsed: 3398.33s
+Episode #7040  |  Val. Score: +0.00  |  Avg. Val. Score: -0.54  |  Epsilon: 0.094  |  Time elapsed: 3401.35s
+Episode #7050  |  Val. Score: +0.00  |  Avg. Val. Score: -0.53  |  Epsilon: 0.094  |  Time elapsed: 3404.47s
+Episode #7060  |  Val. Score: -0.50  |  Avg. Val. Score: -0.53  |  Epsilon: 0.094  |  Time elapsed: 3408.04s
+Episode #7070  |  Val. Score: -0.60  |  Avg. Val. Score: -0.53  |  Epsilon: 0.094  |  Time elapsed: 3411.67s
+Episode #7080  |  Val. Score: -0.30  |  Avg. Val. Score: -0.52  |  Epsilon: 0.094  |  Time elapsed: 3414.69s
+Episode #7090  |  Val. Score: -0.30  |  Avg. Val. Score: -0.52  |  Epsilon: 0.094  |  Time elapsed: 3417.73s
+Episode #7100  |  Val. Score: -0.40  |  Avg. Val. Score: -0.51  |  Epsilon: 0.094  |  Time elapsed: 3421.22s
+Checkpoint saved!
+Episode #7110  |  Val. Score: +0.00  |  Avg. Val. Score: -0.51  |  Epsilon: 0.094  |  Time elapsed: 3424.52s
+Episode #7120  |  Val. Score: +0.00  |  Avg. Val. Score: -0.50  |  Epsilon: 0.094  |  Time elapsed: 3428.87s
+Episode #7130  |  Val. Score: -0.80  |  Avg. Val. Score: -0.50  |  Epsilon: 0.094  |  Time elapsed: 3433.30s
+Episode #7140  |  Val. Score: +0.30  |  Avg. Val. Score: -0.49  |  Epsilon: 0.094  |  Time elapsed: 3435.50s
+Episode #7150  |  Val. Score: -0.70  |  Avg. Val. Score: -0.49  |  Epsilon: 0.094  |  Time elapsed: 3437.71s
+Episode #7160  |  Val. Score: -0.70  |  Avg. Val. Score: -0.49  |  Epsilon: 0.094  |  Time elapsed: 3440.19s
+Episode #7170  |  Val. Score: -0.80  |  Avg. Val. Score: -0.49  |  Epsilon: 0.094  |  Time elapsed: 3442.23s
+Episode #7180  |  Val. Score: -0.50  |  Avg. Val. Score: -0.49  |  Epsilon: 0.094  |  Time elapsed: 3444.66s
+Episode #7190  |  Val. Score: -0.60  |  Avg. Val. Score: -0.49  |  Epsilon: 0.094  |  Time elapsed: 3446.68s
+Episode #7200  |  Val. Score: -0.30  |  Avg. Val. Score: -0.48  |  Epsilon: 0.094  |  Time elapsed: 3448.70s
+Checkpoint saved!
+Episode #7210  |  Val. Score: -0.30  |  Avg. Val. Score: -0.48  |  Epsilon: 0.094  |  Time elapsed: 3451.53s
+Episode #7220  |  Val. Score: -0.40  |  Avg. Val. Score: -0.47  |  Epsilon: 0.094  |  Time elapsed: 3453.95s
+Episode #7230  |  Val. Score: +0.00  |  Avg. Val. Score: -0.46  |  Epsilon: 0.094  |  Time elapsed: 3455.97s
+Episode #7240  |  Val. Score: -0.10  |  Avg. Val. Score: -0.46  |  Epsilon: 0.094  |  Time elapsed: 3458.39s
+Episode #7250  |  Val. Score: -0.60  |  Avg. Val. Score: -0.45  |  Epsilon: 0.094  |  Time elapsed: 3460.42s
+Episode #7260  |  Val. Score: -0.20  |  Avg. Val. Score: -0.45  |  Epsilon: 0.094  |  Time elapsed: 3462.88s
+Episode #7270  |  Val. Score: -0.20  |  Avg. Val. Score: -0.45  |  Epsilon: 0.094  |  Time elapsed: 3465.35s
+Episode #7280  |  Val. Score: -0.20  |  Avg. Val. Score: -0.44  |  Epsilon: 0.094  |  Time elapsed: 3467.84s
+Episode #7290  |  Val. Score: -0.80  |  Avg. Val. Score: -0.44  |  Epsilon: 0.093  |  Time elapsed: 3471.02s
+Episode #7300  |  Val. Score: -0.10  |  Avg. Val. Score: -0.44  |  Epsilon: 0.093  |  Time elapsed: 3473.47s
+Checkpoint saved!
+Episode #7310  |  Val. Score: -0.60  |  Avg. Val. Score: -0.44  |  Epsilon: 0.093  |  Time elapsed: 3475.91s
+Episode #7320  |  Val. Score: -0.40  |  Avg. Val. Score: -0.44  |  Epsilon: 0.093  |  Time elapsed: 3478.32s
+Episode #7330  |  Val. Score: -0.60  |  Avg. Val. Score: -0.44  |  Epsilon: 0.093  |  Time elapsed: 3480.73s
+Episode #7340  |  Val. Score: -0.80  |  Avg. Val. Score: -0.45  |  Epsilon: 0.093  |  Time elapsed: 3483.14s
+Episode #7350  |  Val. Score: -0.20  |  Avg. Val. Score: -0.44  |  Epsilon: 0.093  |  Time elapsed: 3485.56s
+Episode #7360  |  Val. Score: -0.60  |  Avg. Val. Score: -0.44  |  Epsilon: 0.093  |  Time elapsed: 3488.74s
+Episode #7370  |  Val. Score: -0.60  |  Avg. Val. Score: -0.43  |  Epsilon: 0.093  |  Time elapsed: 3491.16s
+Episode #7380  |  Val. Score: +0.10  |  Avg. Val. Score: -0.43  |  Epsilon: 0.093  |  Time elapsed: 3493.98s
+Episode #7390  |  Val. Score: +0.00  |  Avg. Val. Score: -0.42  |  Epsilon: 0.093  |  Time elapsed: 3496.01s
+Episode #7400  |  Val. Score: -0.10  |  Avg. Val. Score: -0.41  |  Epsilon: 0.093  |  Time elapsed: 3498.41s
+Checkpoint saved!
+Episode #7410  |  Val. Score: -0.60  |  Avg. Val. Score: -0.41  |  Epsilon: 0.092  |  Time elapsed: 3500.44s
+Episode #7420  |  Val. Score: -0.30  |  Avg. Val. Score: -0.41  |  Epsilon: 0.092  |  Time elapsed: 3503.21s
+Episode #7430  |  Val. Score: -0.20  |  Avg. Val. Score: -0.41  |  Epsilon: 0.092  |  Time elapsed: 3505.22s
+Episode #7440  |  Val. Score: +0.00  |  Avg. Val. Score: -0.40  |  Epsilon: 0.092  |  Time elapsed: 3507.23s
+Episode #7450  |  Val. Score: -0.40  |  Avg. Val. Score: -0.40  |  Epsilon: 0.092  |  Time elapsed: 3509.60s
+Episode #7460  |  Val. Score: +0.10  |  Avg. Val. Score: -0.39  |  Epsilon: 0.092  |  Time elapsed: 3511.62s
+Episode #7470  |  Val. Score: -0.10  |  Avg. Val. Score: -0.38  |  Epsilon: 0.092  |  Time elapsed: 3513.63s
+Episode #7480  |  Val. Score: -0.50  |  Avg. Val. Score: -0.38  |  Epsilon: 0.092  |  Time elapsed: 3516.05s
+Episode #7490  |  Val. Score: -0.50  |  Avg. Val. Score: -0.38  |  Epsilon: 0.092  |  Time elapsed: 3518.46s
+Episode #7500  |  Val. Score: -0.80  |  Avg. Val. Score: -0.38  |  Epsilon: 0.092  |  Time elapsed: 3520.46s
+Checkpoint saved!
+Episode #7510  |  Val. Score: -0.70  |  Avg. Val. Score: -0.38  |  Epsilon: 0.092  |  Time elapsed: 3522.48s
+Episode #7520  |  Val. Score: -0.10  |  Avg. Val. Score: -0.38  |  Epsilon: 0.092  |  Time elapsed: 3525.24s
+Episode #7530  |  Val. Score: -0.20  |  Avg. Val. Score: -0.37  |  Epsilon: 0.092  |  Time elapsed: 3527.62s
+Episode #7540  |  Val. Score: -0.30  |  Avg. Val. Score: -0.37  |  Epsilon: 0.092  |  Time elapsed: 3529.62s
+Episode #7550  |  Val. Score: -0.40  |  Avg. Val. Score: -0.36  |  Epsilon: 0.092  |  Time elapsed: 3531.62s
+Episode #7560  |  Val. Score: -0.40  |  Avg. Val. Score: -0.36  |  Epsilon: 0.092  |  Time elapsed: 3534.01s
+Episode #7570  |  Val. Score: -0.40  |  Avg. Val. Score: -0.36  |  Epsilon: 0.092  |  Time elapsed: 3536.44s
+Episode #7580  |  Val. Score: -0.20  |  Avg. Val. Score: -0.36  |  Epsilon: 0.092  |  Time elapsed: 3538.50s
+Episode #7590  |  Val. Score: +0.00  |  Avg. Val. Score: -0.35  |  Epsilon: 0.092  |  Time elapsed: 3540.54s
+Episode #7600  |  Val. Score: +0.00  |  Avg. Val. Score: -0.35  |  Epsilon: 0.092  |  Time elapsed: 3542.92s
+Checkpoint saved!
+Episode #7610  |  Val. Score: +0.00  |  Avg. Val. Score: -0.35  |  Epsilon: 0.092  |  Time elapsed: 3544.93s
+Episode #7620  |  Val. Score: -0.60  |  Avg. Val. Score: -0.35  |  Epsilon: 0.092  |  Time elapsed: 3546.92s
+Episode #7630  |  Val. Score: -0.70  |  Avg. Val. Score: -0.35  |  Epsilon: 0.092  |  Time elapsed: 3549.31s
+Episode #7640  |  Val. Score: -0.80  |  Avg. Val. Score: -0.35  |  Epsilon: 0.092  |  Time elapsed: 3551.33s
+Episode #7650  |  Val. Score: -0.20  |  Avg. Val. Score: -0.35  |  Epsilon: 0.092  |  Time elapsed: 3553.33s
+Episode #7660  |  Val. Score: -0.10  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3555.73s
+Episode #7670  |  Val. Score: -0.20  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3558.11s
+Episode #7680  |  Val. Score: +0.10  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3560.13s
+Episode #7690  |  Val. Score: -0.90  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3562.52s
+Episode #7700  |  Val. Score: -0.20  |  Avg. Val. Score: -0.33  |  Epsilon: 0.092  |  Time elapsed: 3564.51s
+Checkpoint saved!
+Episode #7710  |  Val. Score: -0.70  |  Avg. Val. Score: -0.33  |  Epsilon: 0.092  |  Time elapsed: 3566.88s
+Episode #7720  |  Val. Score: -0.20  |  Avg. Val. Score: -0.33  |  Epsilon: 0.092  |  Time elapsed: 3568.90s
+Episode #7730  |  Val. Score: -0.40  |  Avg. Val. Score: -0.33  |  Epsilon: 0.092  |  Time elapsed: 3570.89s
+Episode #7740  |  Val. Score: -0.20  |  Avg. Val. Score: -0.33  |  Epsilon: 0.092  |  Time elapsed: 3573.29s
+Episode #7750  |  Val. Score: -0.60  |  Avg. Val. Score: -0.33  |  Epsilon: 0.092  |  Time elapsed: 3575.29s
+Episode #7760  |  Val. Score: -0.40  |  Avg. Val. Score: -0.33  |  Epsilon: 0.092  |  Time elapsed: 3577.28s
+Episode #7770  |  Val. Score: -0.50  |  Avg. Val. Score: -0.33  |  Epsilon: 0.092  |  Time elapsed: 3579.67s
+Episode #7780  |  Val. Score: -0.40  |  Avg. Val. Score: -0.33  |  Epsilon: 0.092  |  Time elapsed: 3581.67s
+Episode #7790  |  Val. Score: -0.40  |  Avg. Val. Score: -0.33  |  Epsilon: 0.092  |  Time elapsed: 3583.67s
+Episode #7800  |  Val. Score: -0.20  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3586.03s
+Checkpoint saved!
+Episode #7810  |  Val. Score: +0.30  |  Avg. Val. Score: -0.33  |  Epsilon: 0.092  |  Time elapsed: 3588.47s
+Episode #7820  |  Val. Score: -0.40  |  Avg. Val. Score: -0.33  |  Epsilon: 0.092  |  Time elapsed: 3590.46s
+Episode #7830  |  Val. Score: -0.40  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3592.83s
+Episode #7840  |  Val. Score: -0.40  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3594.81s
+Episode #7850  |  Val. Score: -0.30  |  Avg. Val. Score: -0.33  |  Epsilon: 0.092  |  Time elapsed: 3596.80s
+Episode #7860  |  Val. Score: -1.00  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3599.14s
+Episode #7870  |  Val. Score: +0.00  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3601.15s
+Episode #7880  |  Val. Score: -0.30  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3603.15s
+Episode #7890  |  Val. Score: -0.80  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3605.91s
+Episode #7900  |  Val. Score: -0.30  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3607.91s
+Checkpoint saved!
+Episode #7910  |  Val. Score: -0.40  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3610.33s
+Episode #7920  |  Val. Score: -0.40  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3612.74s
+Episode #7930  |  Val. Score: -0.40  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3614.75s
+Episode #7940  |  Val. Score: -0.20  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3616.74s
+Episode #7950  |  Val. Score: -0.30  |  Avg. Val. Score: -0.35  |  Epsilon: 0.092  |  Time elapsed: 3619.10s
+Episode #7960  |  Val. Score: +0.00  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3621.50s
+Episode #7970  |  Val. Score: -0.50  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3623.50s
+Episode #7980  |  Val. Score: +0.40  |  Avg. Val. Score: -0.33  |  Epsilon: 0.092  |  Time elapsed: 3625.50s
+Episode #7990  |  Val. Score: -0.60  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3627.89s
+Episode #8000  |  Val. Score: -0.40  |  Avg. Val. Score: -0.34  |  Epsilon: 0.092  |  Time elapsed: 3630.25s
+Checkpoint saved!
+Episode #8010  |  Val. Score: -0.30  |  Avg. Val. Score: -0.33  |  Epsilon: 0.092  |  Time elapsed: 3632.24s
+Episode #8020  |  Val. Score: -0.50  |  Avg. Val. Score: -0.34  |  Epsilon: 0.091  |  Time elapsed: 3635.39s
+Episode #8030  |  Val. Score: -0.50  |  Avg. Val. Score: -0.34  |  Epsilon: 0.091  |  Time elapsed: 3637.77s
+Episode #8040  |  Val. Score: -0.60  |  Avg. Val. Score: -0.35  |  Epsilon: 0.091  |  Time elapsed: 3639.77s
+Episode #8050  |  Val. Score: -0.20  |  Avg. Val. Score: -0.35  |  Epsilon: 0.091  |  Time elapsed: 3642.55s
+Episode #8060  |  Val. Score: +0.00  |  Avg. Val. Score: -0.35  |  Epsilon: 0.091  |  Time elapsed: 3645.36s
+Episode #8070  |  Val. Score: -0.40  |  Avg. Val. Score: -0.34  |  Epsilon: 0.091  |  Time elapsed: 3648.17s
+Episode #8080  |  Val. Score: -0.10  |  Avg. Val. Score: -0.34  |  Epsilon: 0.091  |  Time elapsed: 3650.53s
+Episode #8090  |  Val. Score: -0.40  |  Avg. Val. Score: -0.34  |  Epsilon: 0.091  |  Time elapsed: 3652.50s
+Episode #8100  |  Val. Score: +0.10  |  Avg. Val. Score: -0.34  |  Epsilon: 0.091  |  Time elapsed: 3654.48s
+Checkpoint saved!
+Episode #8110  |  Val. Score: +0.20  |  Avg. Val. Score: -0.33  |  Epsilon: 0.090  |  Time elapsed: 3657.65s
+Episode #8120  |  Val. Score: -0.80  |  Avg. Val. Score: -0.34  |  Epsilon: 0.090  |  Time elapsed: 3659.64s
+Episode #8130  |  Val. Score: +0.10  |  Avg. Val. Score: -0.33  |  Epsilon: 0.090  |  Time elapsed: 3662.03s
+Episode #8140  |  Val. Score: -0.60  |  Avg. Val. Score: -0.34  |  Epsilon: 0.090  |  Time elapsed: 3664.02s
+Episode #8150  |  Val. Score: -0.30  |  Avg. Val. Score: -0.34  |  Epsilon: 0.090  |  Time elapsed: 3666.40s
+Episode #8160  |  Val. Score: -0.80  |  Avg. Val. Score: -0.34  |  Epsilon: 0.090  |  Time elapsed: 3669.94s
+Episode #8170  |  Val. Score: -0.20  |  Avg. Val. Score: -0.33  |  Epsilon: 0.090  |  Time elapsed: 3673.08s
+Episode #8180  |  Val. Score: +0.20  |  Avg. Val. Score: -0.33  |  Epsilon: 0.090  |  Time elapsed: 3675.07s
+Episode #8190  |  Val. Score: -0.30  |  Avg. Val. Score: -0.32  |  Epsilon: 0.089  |  Time elapsed: 3679.00s
+Episode #8200  |  Val. Score: -0.70  |  Avg. Val. Score: -0.33  |  Epsilon: 0.089  |  Time elapsed: 3680.98s
+Checkpoint saved!
+Episode #8210  |  Val. Score: -0.60  |  Avg. Val. Score: -0.33  |  Epsilon: 0.089  |  Time elapsed: 3683.04s
+Episode #8220  |  Val. Score: -0.50  |  Avg. Val. Score: -0.33  |  Epsilon: 0.089  |  Time elapsed: 3686.03s
+Episode #8230  |  Val. Score: -0.90  |  Avg. Val. Score: -0.34  |  Epsilon: 0.089  |  Time elapsed: 3689.28s
+Episode #8240  |  Val. Score: -0.60  |  Avg. Val. Score: -0.35  |  Epsilon: 0.089  |  Time elapsed: 3691.71s
+Episode #8250  |  Val. Score: -0.60  |  Avg. Val. Score: -0.35  |  Epsilon: 0.089  |  Time elapsed: 3694.15s
+Episode #8260  |  Val. Score: -0.20  |  Avg. Val. Score: -0.35  |  Epsilon: 0.089  |  Time elapsed: 3696.62s
+Episode #8270  |  Val. Score: -0.60  |  Avg. Val. Score: -0.35  |  Epsilon: 0.089  |  Time elapsed: 3699.37s
+Episode #8280  |  Val. Score: -0.10  |  Avg. Val. Score: -0.35  |  Epsilon: 0.089  |  Time elapsed: 3689.56s
+Episode #8290  |  Val. Score: -0.40  |  Avg. Val. Score: -0.34  |  Epsilon: 0.089  |  Time elapsed: 3691.99s
+Episode #8300  |  Val. Score: -0.40  |  Avg. Val. Score: -0.35  |  Epsilon: 0.089  |  Time elapsed: 3694.45s
+Checkpoint saved!
+Episode #8310  |  Val. Score: -0.80  |  Avg. Val. Score: -0.35  |  Epsilon: 0.089  |  Time elapsed: 3696.96s
+Episode #8320  |  Val. Score: -0.60  |  Avg. Val. Score: -0.35  |  Epsilon: 0.088  |  Time elapsed: 3699.84s
+Episode #8330  |  Val. Score: -0.20  |  Avg. Val. Score: -0.35  |  Epsilon: 0.088  |  Time elapsed: 3703.08s
+Episode #8340  |  Val. Score: -0.70  |  Avg. Val. Score: -0.35  |  Epsilon: 0.088  |  Time elapsed: 3705.89s
+Episode #8350  |  Val. Score: +0.00  |  Avg. Val. Score: -0.34  |  Epsilon: 0.088  |  Time elapsed: 3709.15s
+Episode #8360  |  Val. Score: +0.00  |  Avg. Val. Score: -0.34  |  Epsilon: 0.087  |  Time elapsed: 3712.36s
+Episode #8370  |  Val. Score: -0.50  |  Avg. Val. Score: -0.34  |  Epsilon: 0.087  |  Time elapsed: 3715.20s
+Episode #8380  |  Val. Score: -0.50  |  Avg. Val. Score: -0.34  |  Epsilon: 0.087  |  Time elapsed: 3717.59s
+Episode #8390  |  Val. Score: -0.60  |  Avg. Val. Score: -0.35  |  Epsilon: 0.087  |  Time elapsed: 3721.18s
+Episode #8400  |  Val. Score: -0.20  |  Avg. Val. Score: -0.35  |  Epsilon: 0.086  |  Time elapsed: 3725.17s
+Checkpoint saved!
+Episode #8410  |  Val. Score: +0.00  |  Avg. Val. Score: -0.35  |  Epsilon: 0.086  |  Time elapsed: 3728.39s
+Episode #8420  |  Val. Score: +0.50  |  Avg. Val. Score: -0.34  |  Epsilon: 0.086  |  Time elapsed: 3731.20s
+Episode #8430  |  Val. Score: -0.50  |  Avg. Val. Score: -0.34  |  Epsilon: 0.086  |  Time elapsed: 3734.40s
+Episode #8440  |  Val. Score: +0.00  |  Avg. Val. Score: -0.34  |  Epsilon: 0.086  |  Time elapsed: 3737.22s
+Episode #8450  |  Val. Score: -0.50  |  Avg. Val. Score: -0.34  |  Epsilon: 0.086  |  Time elapsed: 3739.29s
+Episode #8460  |  Val. Score: -0.20  |  Avg. Val. Score: -0.34  |  Epsilon: 0.085  |  Time elapsed: 3741.71s
+Episode #8470  |  Val. Score: -0.60  |  Avg. Val. Score: -0.35  |  Epsilon: 0.085  |  Time elapsed: 3744.90s
+Episode #8480  |  Val. Score: +0.10  |  Avg. Val. Score: -0.34  |  Epsilon: 0.085  |  Time elapsed: 3748.94s
+Episode #8490  |  Val. Score: -0.60  |  Avg. Val. Score: -0.34  |  Epsilon: 0.084  |  Time elapsed: 3752.94s
+Episode #8500  |  Val. Score: -0.20  |  Avg. Val. Score: -0.34  |  Epsilon: 0.084  |  Time elapsed: 3756.17s
+Checkpoint saved!
+Episode #8510  |  Val. Score: -0.40  |  Avg. Val. Score: -0.34  |  Epsilon: 0.083  |  Time elapsed: 3761.13s
+Episode #8520  |  Val. Score: -0.40  |  Avg. Val. Score: -0.34  |  Epsilon: 0.083  |  Time elapsed: 3765.58s
+Episode #8530  |  Val. Score: -0.30  |  Avg. Val. Score: -0.34  |  Epsilon: 0.082  |  Time elapsed: 3770.42s
+Episode #8540  |  Val. Score: -0.30  |  Avg. Val. Score: -0.34  |  Epsilon: 0.082  |  Time elapsed: 3774.44s
+Episode #8550  |  Val. Score: -0.40  |  Avg. Val. Score: -0.34  |  Epsilon: 0.081  |  Time elapsed: 3778.93s
+Episode #8560  |  Val. Score: -0.20  |  Avg. Val. Score: -0.34  |  Epsilon: 0.081  |  Time elapsed: 3783.00s
+Episode #8570  |  Val. Score: -0.60  |  Avg. Val. Score: -0.34  |  Epsilon: 0.080  |  Time elapsed: 3787.41s
+Episode #8580  |  Val. Score: -0.20  |  Avg. Val. Score: -0.34  |  Epsilon: 0.080  |  Time elapsed: 3791.82s
+Episode #8590  |  Val. Score: -0.30  |  Avg. Val. Score: -0.34  |  Epsilon: 0.079  |  Time elapsed: 3795.85s
+Episode #8600  |  Val. Score: -0.80  |  Avg. Val. Score: -0.35  |  Epsilon: 0.079  |  Time elapsed: 3800.27s
+Checkpoint saved!
+Episode #8610  |  Val. Score: -0.40  |  Avg. Val. Score: -0.35  |  Epsilon: 0.078  |  Time elapsed: 3805.05s
+Episode #8620  |  Val. Score: +0.10  |  Avg. Val. Score: -0.35  |  Epsilon: 0.077  |  Time elapsed: 3809.84s
+Episode #8630  |  Val. Score: -0.40  |  Avg. Val. Score: -0.34  |  Epsilon: 0.077  |  Time elapsed: 3814.85s
+Episode #8640  |  Val. Score: -0.20  |  Avg. Val. Score: -0.34  |  Epsilon: 0.076  |  Time elapsed: 3820.37s
+Episode #8650  |  Val. Score: -0.50  |  Avg. Val. Score: -0.34  |  Epsilon: 0.076  |  Time elapsed: 3824.95s
+Episode #8660  |  Val. Score: -0.20  |  Avg. Val. Score: -0.34  |  Epsilon: 0.075  |  Time elapsed: 3828.29s
+Episode #8670  |  Val. Score: -0.40  |  Avg. Val. Score: -0.34  |  Epsilon: 0.075  |  Time elapsed: 3831.63s
+Episode #8680  |  Val. Score: -0.30  |  Avg. Val. Score: -0.35  |  Epsilon: 0.074  |  Time elapsed: 3835.66s
+Episode #8690  |  Val. Score: -0.60  |  Avg. Val. Score: -0.34  |  Epsilon: 0.074  |  Time elapsed: 3839.66s
+Episode #8700  |  Val. Score: -0.70  |  Avg. Val. Score: -0.35  |  Epsilon: 0.074  |  Time elapsed: 3842.85s
+Checkpoint saved!
+Episode #8710  |  Val. Score: -0.40  |  Avg. Val. Score: -0.35  |  Epsilon: 0.073  |  Time elapsed: 3846.47s
+Episode #8720  |  Val. Score: +0.00  |  Avg. Val. Score: -0.34  |  Epsilon: 0.073  |  Time elapsed: 3849.69s
+Episode #8730  |  Val. Score: -0.70  |  Avg. Val. Score: -0.35  |  Epsilon: 0.072  |  Time elapsed: 3853.25s
+Episode #8740  |  Val. Score: -0.40  |  Avg. Val. Score: -0.35  |  Epsilon: 0.072  |  Time elapsed: 3856.82s
+Episode #8750  |  Val. Score: -1.00  |  Avg. Val. Score: -0.35  |  Epsilon: 0.072  |  Time elapsed: 3859.99s
+Episode #8760  |  Val. Score: +0.10  |  Avg. Val. Score: -0.35  |  Epsilon: 0.071  |  Time elapsed: 3863.58s
+Episode #8770  |  Val. Score: -0.30  |  Avg. Val. Score: -0.35  |  Epsilon: 0.071  |  Time elapsed: 3867.17s
+Episode #8780  |  Val. Score: -0.20  |  Avg. Val. Score: -0.34  |  Epsilon: 0.070  |  Time elapsed: 3871.49s
+Episode #8790  |  Val. Score: -0.20  |  Avg. Val. Score: -0.34  |  Epsilon: 0.070  |  Time elapsed: 3875.05s
+Episode #8800  |  Val. Score: -0.40  |  Avg. Val. Score: -0.34  |  Epsilon: 0.069  |  Time elapsed: 3879.38s
+Checkpoint saved!
+Episode #8810  |  Val. Score: -0.50  |  Avg. Val. Score: -0.35  |  Epsilon: 0.069  |  Time elapsed: 3882.95s
+Episode #8820  |  Val. Score: -0.30  |  Avg. Val. Score: -0.35  |  Epsilon: 0.069  |  Time elapsed: 3887.36s
+Episode #8830  |  Val. Score: -0.60  |  Avg. Val. Score: -0.35  |  Epsilon: 0.068  |  Time elapsed: 3891.71s
+Episode #8840  |  Val. Score: -0.40  |  Avg. Val. Score: -0.35  |  Epsilon: 0.068  |  Time elapsed: 3895.69s
+Episode #8850  |  Val. Score: -0.60  |  Avg. Val. Score: -0.36  |  Epsilon: 0.067  |  Time elapsed: 3899.73s
+Episode #8860  |  Val. Score: -0.10  |  Avg. Val. Score: -0.35  |  Epsilon: 0.067  |  Time elapsed: 3904.12s
+Episode #8870  |  Val. Score: +0.30  |  Avg. Val. Score: -0.35  |  Epsilon: 0.066  |  Time elapsed: 3908.55s
+Episode #8880  |  Val. Score: +0.10  |  Avg. Val. Score: -0.34  |  Epsilon: 0.066  |  Time elapsed: 3912.12s
+Episode #8890  |  Val. Score: -0.50  |  Avg. Val. Score: -0.34  |  Epsilon: 0.066  |  Time elapsed: 3916.07s
+Episode #8900  |  Val. Score: -0.10  |  Avg. Val. Score: -0.34  |  Epsilon: 0.065  |  Time elapsed: 3920.05s
+Checkpoint saved!
+Episode #8910  |  Val. Score: -0.20  |  Avg. Val. Score: -0.33  |  Epsilon: 0.065  |  Time elapsed: 3924.86s
+Episode #8920  |  Val. Score: +0.20  |  Avg. Val. Score: -0.33  |  Epsilon: 0.064  |  Time elapsed: 3928.11s
+Episode #8930  |  Val. Score: +0.00  |  Avg. Val. Score: -0.32  |  Epsilon: 0.064  |  Time elapsed: 3931.68s
+Episode #8940  |  Val. Score: -0.20  |  Avg. Val. Score: -0.32  |  Epsilon: 0.064  |  Time elapsed: 3935.64s
+Episode #8950  |  Val. Score: +0.00  |  Avg. Val. Score: -0.32  |  Epsilon: 0.063  |  Time elapsed: 3939.19s
+Episode #8960  |  Val. Score: +0.20  |  Avg. Val. Score: -0.32  |  Epsilon: 0.063  |  Time elapsed: 3942.75s
+Episode #8970  |  Val. Score: -0.50  |  Avg. Val. Score: -0.32  |  Epsilon: 0.062  |  Time elapsed: 3945.92s
+Episode #8980  |  Val. Score: -0.60  |  Avg. Val. Score: -0.33  |  Epsilon: 0.062  |  Time elapsed: 3949.88s
+Episode #8990  |  Val. Score: -0.40  |  Avg. Val. Score: -0.33  |  Epsilon: 0.062  |  Time elapsed: 3953.45s
+Episode #9000  |  Val. Score: -0.40  |  Avg. Val. Score: -0.33  |  Epsilon: 0.061  |  Time elapsed: 3956.62s
+Checkpoint saved!
+Episode #9010  |  Val. Score: -0.60  |  Avg. Val. Score: -0.33  |  Epsilon: 0.061  |  Time elapsed: 3960.99s
+Episode #9020  |  Val. Score: -0.60  |  Avg. Val. Score: -0.33  |  Epsilon: 0.061  |  Time elapsed: 3964.92s
+Episode #9030  |  Val. Score: -0.20  |  Avg. Val. Score: -0.33  |  Epsilon: 0.060  |  Time elapsed: 3968.51s
+Episode #9040  |  Val. Score: -0.20  |  Avg. Val. Score: -0.32  |  Epsilon: 0.060  |  Time elapsed: 3972.56s
+Episode #9050  |  Val. Score: -0.80  |  Avg. Val. Score: -0.33  |  Epsilon: 0.060  |  Time elapsed: 3975.76s
+Episode #9060  |  Val. Score: +0.00  |  Avg. Val. Score: -0.33  |  Epsilon: 0.059  |  Time elapsed: 3980.50s
+Episode #9070  |  Val. Score: -0.40  |  Avg. Val. Score: -0.33  |  Epsilon: 0.059  |  Time elapsed: 3984.86s
+Episode #9080  |  Val. Score: -0.50  |  Avg. Val. Score: -0.33  |  Epsilon: 0.058  |  Time elapsed: 3988.44s
+Episode #9090  |  Val. Score: -0.60  |  Avg. Val. Score: -0.34  |  Epsilon: 0.058  |  Time elapsed: 3992.02s
+Episode #9100  |  Val. Score: -0.30  |  Avg. Val. Score: -0.34  |  Epsilon: 0.058  |  Time elapsed: 3996.38s
+Checkpoint saved!
+Episode #9110  |  Val. Score: -0.60  |  Avg. Val. Score: -0.35  |  Epsilon: 0.057  |  Time elapsed: 3999.94s
+Episode #9120  |  Val. Score: +0.00  |  Avg. Val. Score: -0.34  |  Epsilon: 0.057  |  Time elapsed: 4003.89s
+Episode #9130  |  Val. Score: -0.40  |  Avg. Val. Score: -0.34  |  Epsilon: 0.057  |  Time elapsed: 4007.48s
+Episode #9140  |  Val. Score: +0.20  |  Avg. Val. Score: -0.34  |  Epsilon: 0.056  |  Time elapsed: 4011.47s
+Episode #9150  |  Val. Score: +0.20  |  Avg. Val. Score: -0.33  |  Epsilon: 0.056  |  Time elapsed: 4015.45s
+Episode #9160  |  Val. Score: +0.00  |  Avg. Val. Score: -0.32  |  Epsilon: 0.056  |  Time elapsed: 4019.37s
+Episode #9170  |  Val. Score: -0.60  |  Avg. Val. Score: -0.33  |  Epsilon: 0.055  |  Time elapsed: 4022.93s
+Episode #9180  |  Val. Score: +0.00  |  Avg. Val. Score: -0.33  |  Epsilon: 0.055  |  Time elapsed: 4027.33s
+Episode #9190  |  Val. Score: -0.60  |  Avg. Val. Score: -0.33  |  Epsilon: 0.055  |  Time elapsed: 4030.91s
+Episode #9200  |  Val. Score: -0.50  |  Avg. Val. Score: -0.33  |  Epsilon: 0.054  |  Time elapsed: 4034.87s
+Checkpoint saved!
+Episode #9210  |  Val. Score: -0.10  |  Avg. Val. Score: -0.33  |  Epsilon: 0.054  |  Time elapsed: 4039.20s
+Episode #9220  |  Val. Score: -0.20  |  Avg. Val. Score: -0.32  |  Epsilon: 0.053  |  Time elapsed: 4043.54s
+Episode #9230  |  Val. Score: -0.60  |  Avg. Val. Score: -0.32  |  Epsilon: 0.053  |  Time elapsed: 4047.90s
+Episode #9240  |  Val. Score: -0.10  |  Avg. Val. Score: -0.32  |  Epsilon: 0.053  |  Time elapsed: 4051.92s
+Episode #9250  |  Val. Score: -0.40  |  Avg. Val. Score: -0.31  |  Epsilon: 0.052  |  Time elapsed: 4056.62s
+Episode #9260  |  Val. Score: -0.20  |  Avg. Val. Score: -0.31  |  Epsilon: 0.052  |  Time elapsed: 4060.97s
+Episode #9270  |  Val. Score: -0.10  |  Avg. Val. Score: -0.31  |  Epsilon: 0.052  |  Time elapsed: 4064.94s
+Episode #9280  |  Val. Score: -0.60  |  Avg. Val. Score: -0.31  |  Epsilon: 0.051  |  Time elapsed: 4068.90s
+Episode #9290  |  Val. Score: -0.20  |  Avg. Val. Score: -0.31  |  Epsilon: 0.051  |  Time elapsed: 4073.61s
+Episode #9300  |  Val. Score: -0.20  |  Avg. Val. Score: -0.31  |  Epsilon: 0.051  |  Time elapsed: 4077.57s
+Checkpoint saved!
+Episode #9310  |  Val. Score: -0.40  |  Avg. Val. Score: -0.30  |  Epsilon: 0.050  |  Time elapsed: 4081.15s
+Episode #9320  |  Val. Score: -0.40  |  Avg. Val. Score: -0.30  |  Epsilon: 0.050  |  Time elapsed: 4085.52s
+Episode #9330  |  Val. Score: +0.40  |  Avg. Val. Score: -0.30  |  Epsilon: 0.050  |  Time elapsed: 4089.50s
+Episode #9340  |  Val. Score: -0.20  |  Avg. Val. Score: -0.29  |  Epsilon: 0.049  |  Time elapsed: 4094.24s
+Episode #9350  |  Val. Score: -0.80  |  Avg. Val. Score: -0.30  |  Epsilon: 0.049  |  Time elapsed: 4098.58s
+Episode #9360  |  Val. Score: -0.40  |  Avg. Val. Score: -0.30  |  Epsilon: 0.049  |  Time elapsed: 4102.93s
+Episode #9370  |  Val. Score: -0.50  |  Avg. Val. Score: -0.30  |  Epsilon: 0.048  |  Time elapsed: 4107.27s
+Episode #9380  |  Val. Score: +0.10  |  Avg. Val. Score: -0.30  |  Epsilon: 0.048  |  Time elapsed: 4110.84s
+Episode #9390  |  Val. Score: +0.20  |  Avg. Val. Score: -0.29  |  Epsilon: 0.048  |  Time elapsed: 4114.80s
+Episode #9400  |  Val. Score: -0.40  |  Avg. Val. Score: -0.29  |  Epsilon: 0.047  |  Time elapsed: 4119.17s
+Checkpoint saved!
+Episode #9410  |  Val. Score: -0.50  |  Avg. Val. Score: -0.30  |  Epsilon: 0.047  |  Time elapsed: 4123.54s
+Episode #9420  |  Val. Score: -0.60  |  Avg. Val. Score: -0.31  |  Epsilon: 0.047  |  Time elapsed: 4127.11s
+Episode #9430  |  Val. Score: -0.20  |  Avg. Val. Score: -0.30  |  Epsilon: 0.047  |  Time elapsed: 4130.67s
+Episode #9440  |  Val. Score: -0.40  |  Avg. Val. Score: -0.31  |  Epsilon: 0.046  |  Time elapsed: 4134.27s
+Episode #9450  |  Val. Score: -0.40  |  Avg. Val. Score: -0.31  |  Epsilon: 0.046  |  Time elapsed: 4137.44s
+Episode #9460  |  Val. Score: -0.50  |  Avg. Val. Score: -0.31  |  Epsilon: 0.046  |  Time elapsed: 4141.03s
+Episode #9470  |  Val. Score: -0.60  |  Avg. Val. Score: -0.31  |  Epsilon: 0.046  |  Time elapsed: 4144.97s
+Episode #9480  |  Val. Score: -0.30  |  Avg. Val. Score: -0.32  |  Epsilon: 0.046  |  Time elapsed: 4147.76s
+Episode #9490  |  Val. Score: -0.30  |  Avg. Val. Score: -0.31  |  Epsilon: 0.045  |  Time elapsed: 4150.96s
+Episode #9500  |  Val. Score: -0.30  |  Avg. Val. Score: -0.31  |  Epsilon: 0.045  |  Time elapsed: 4154.94s
+Checkpoint saved!
+Episode #9510  |  Val. Score: -0.40  |  Avg. Val. Score: -0.31  |  Epsilon: 0.045  |  Time elapsed: 4158.91s
+Episode #9520  |  Val. Score: -0.80  |  Avg. Val. Score: -0.32  |  Epsilon: 0.045  |  Time elapsed: 4162.97s
+Episode #9530  |  Val. Score: -0.60  |  Avg. Val. Score: -0.32  |  Epsilon: 0.045  |  Time elapsed: 4166.90s
+Episode #9540  |  Val. Score: -0.20  |  Avg. Val. Score: -0.32  |  Epsilon: 0.044  |  Time elapsed: 4170.84s
+Episode #9550  |  Val. Score: -0.60  |  Avg. Val. Score: -0.32  |  Epsilon: 0.044  |  Time elapsed: 4174.80s
+Episode #9560  |  Val. Score: -0.60  |  Avg. Val. Score: -0.33  |  Epsilon: 0.044  |  Time elapsed: 4177.15s
+Episode #9570  |  Val. Score: -0.20  |  Avg. Val. Score: -0.32  |  Epsilon: 0.044  |  Time elapsed: 4179.92s
+Episode #9580  |  Val. Score: -0.40  |  Avg. Val. Score: -0.32  |  Epsilon: 0.044  |  Time elapsed: 4183.86s
+Episode #9590  |  Val. Score: -0.40  |  Avg. Val. Score: -0.32  |  Epsilon: 0.043  |  Time elapsed: 4187.80s
+Episode #9600  |  Val. Score: -0.40  |  Avg. Val. Score: -0.32  |  Epsilon: 0.043  |  Time elapsed: 4192.16s
+Checkpoint saved!
+Episode #9610  |  Val. Score: -0.60  |  Avg. Val. Score: -0.32  |  Epsilon: 0.043  |  Time elapsed: 4196.52s
+Episode #9620  |  Val. Score: -0.40  |  Avg. Val. Score: -0.33  |  Epsilon: 0.043  |  Time elapsed: 4199.68s
+Episode #9630  |  Val. Score: +0.00  |  Avg. Val. Score: -0.32  |  Epsilon: 0.043  |  Time elapsed: 4203.24s
+Episode #9640  |  Val. Score: -0.40  |  Avg. Val. Score: -0.33  |  Epsilon: 0.043  |  Time elapsed: 4206.03s
+Episode #9650  |  Val. Score: -0.60  |  Avg. Val. Score: -0.33  |  Epsilon: 0.042  |  Time elapsed: 4209.59s
+Episode #9660  |  Val. Score: -0.20  |  Avg. Val. Score: -0.33  |  Epsilon: 0.042  |  Time elapsed: 4213.16s
+Episode #9670  |  Val. Score: -0.20  |  Avg. Val. Score: -0.32  |  Epsilon: 0.042  |  Time elapsed: 4216.72s
+Episode #9680  |  Val. Score: +0.20  |  Avg. Val. Score: -0.32  |  Epsilon: 0.042  |  Time elapsed: 4220.66s
+Episode #9690  |  Val. Score: -0.60  |  Avg. Val. Score: -0.32  |  Epsilon: 0.042  |  Time elapsed: 4224.63s
+Episode #9700  |  Val. Score: -0.40  |  Avg. Val. Score: -0.32  |  Epsilon: 0.041  |  Time elapsed: 4228.99s
+Checkpoint saved!
+Episode #9710  |  Val. Score: -0.60  |  Avg. Val. Score: -0.32  |  Epsilon: 0.041  |  Time elapsed: 4233.72s
+Episode #9720  |  Val. Score: -0.60  |  Avg. Val. Score: -0.32  |  Epsilon: 0.041  |  Time elapsed: 4237.27s
+Episode #9730  |  Val. Score: +0.10  |  Avg. Val. Score: -0.32  |  Epsilon: 0.041  |  Time elapsed: 4240.82s
+Episode #9740  |  Val. Score: -0.20  |  Avg. Val. Score: -0.31  |  Epsilon: 0.041  |  Time elapsed: 4243.59s
+Episode #9750  |  Val. Score: -0.60  |  Avg. Val. Score: -0.31  |  Epsilon: 0.040  |  Time elapsed: 4247.53s
+Episode #9760  |  Val. Score: -0.10  |  Avg. Val. Score: -0.31  |  Epsilon: 0.040  |  Time elapsed: 4250.70s
+Episode #9770  |  Val. Score: -0.20  |  Avg. Val. Score: -0.31  |  Epsilon: 0.040  |  Time elapsed: 4253.87s
+Episode #9780  |  Val. Score: +0.00  |  Avg. Val. Score: -0.31  |  Epsilon: 0.040  |  Time elapsed: 4257.82s
+Episode #9790  |  Val. Score: -0.50  |  Avg. Val. Score: -0.31  |  Epsilon: 0.040  |  Time elapsed: 4261.37s
+Episode #9800  |  Val. Score: -0.20  |  Avg. Val. Score: -0.31  |  Epsilon: 0.040  |  Time elapsed: 4265.32s
+Checkpoint saved!
+Episode #9810  |  Val. Score: -0.40  |  Avg. Val. Score: -0.31  |  Epsilon: 0.039  |  Time elapsed: 4269.70s
+Episode #9820  |  Val. Score: -0.40  |  Avg. Val. Score: -0.31  |  Epsilon: 0.039  |  Time elapsed: 4273.67s
+Episode #9830  |  Val. Score: -0.20  |  Avg. Val. Score: -0.31  |  Epsilon: 0.039  |  Time elapsed: 4277.64s
+Episode #9840  |  Val. Score: -0.60  |  Avg. Val. Score: -0.31  |  Epsilon: 0.039  |  Time elapsed: 4280.41s
+Episode #9850  |  Val. Score: -0.90  |  Avg. Val. Score: -0.31  |  Epsilon: 0.038  |  Time elapsed: 4284.82s
+Episode #9860  |  Val. Score: -0.80  |  Avg. Val. Score: -0.32  |  Epsilon: 0.038  |  Time elapsed: 4288.79s
+Episode #9870  |  Val. Score: -0.30  |  Avg. Val. Score: -0.32  |  Epsilon: 0.038  |  Time elapsed: 4292.37s
+Episode #9880  |  Val. Score: +0.40  |  Avg. Val. Score: -0.32  |  Epsilon: 0.038  |  Time elapsed: 4296.35s
+Episode #9890  |  Val. Score: -0.50  |  Avg. Val. Score: -0.32  |  Epsilon: 0.038  |  Time elapsed: 4299.53s
+Episode #9900  |  Val. Score: -0.40  |  Avg. Val. Score: -0.32  |  Epsilon: 0.038  |  Time elapsed: 4302.69s
+Checkpoint saved!
+Episode #9910  |  Val. Score: -0.30  |  Avg. Val. Score: -0.33  |  Epsilon: 0.038  |  Time elapsed: 4305.47s
+Episode #9920  |  Val. Score: -0.80  |  Avg. Val. Score: -0.33  |  Epsilon: 0.037  |  Time elapsed: 4308.62s
+Episode #9930  |  Val. Score: -0.50  |  Avg. Val. Score: -0.34  |  Epsilon: 0.037  |  Time elapsed: 4312.96s
+Episode #9940  |  Val. Score: -0.30  |  Avg. Val. Score: -0.34  |  Epsilon: 0.037  |  Time elapsed: 4316.53s
+Episode #9950  |  Val. Score: -0.60  |  Avg. Val. Score: -0.35  |  Epsilon: 0.037  |  Time elapsed: 4320.88s
+Episode #9960  |  Val. Score: +0.00  |  Avg. Val. Score: -0.35  |  Epsilon: 0.037  |  Time elapsed: 4325.56s
+Episode #9970  |  Val. Score: -0.80  |  Avg. Val. Score: -0.35  |  Epsilon: 0.036  |  Time elapsed: 4329.12s
+Episode #9980  |  Val. Score: -0.30  |  Avg. Val. Score: -0.35  |  Epsilon: 0.036  |  Time elapsed: 4333.47s
+Episode #9990  |  Val. Score: -0.20  |  Avg. Val. Score: -0.35  |  Epsilon: 0.036  |  Time elapsed: 4337.45s
+Episode #10000  |  Val. Score: -0.40  |  Avg. Val. Score: -0.35  |  Epsilon: 0.036  |  Time elapsed: 4341.41s
+Checkpoint saved!
+Model saved!

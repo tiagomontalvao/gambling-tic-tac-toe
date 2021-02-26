@@ -13,19 +13,20 @@ BUFFER_SIZE = int(1e6)    # replay buffer size
 BATCH_SIZE = 1024         # minibatch size
 GAMMA = 1                 # discount factor
 TAU = 1e-3                # for soft update of target parameters
-LR_ACTOR = 1e-3           # learning rate of the actor
-LR_CRITIC = 1e-3          # learning rate of the critic
+LR_ACTOR = 1e-4           # learning rate of the actor
+LR_CRITIC = 1e-4          # learning rate of the critic
 WEIGHT_DECAY = 0          # L2 weight decay
-UPDATE_EVERY = 15         # how often to update the network
+UPDATE_EVERY = 5          # how often to update the network
 N_UPDATES_PER_STEP = 10   # number of updates to perform at each learning step
 CLIP_GRAD_NORM = 5        # Value of gradient to clip while training
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
+
 class DDPGAgent():
     """Interacts with and learns from the environment."""
 
-    def __init__(self, state_size, bid_action_size, board_action_size, seed=None, checkpoint_path=None, initial_checkpoint=None):
+    def __init__(self, state_size, bid_action_size, board_action_size, seed=None, checkpoint_path=None, initial_checkpoint_path=None):
         """Initialize an Agent object.
 
         Params
@@ -43,14 +44,24 @@ class DDPGAgent():
         random.seed(seed)
 
         # Actor Network (w/ Target Network)
-        self.actor_local = Actor(state_size, bid_action_size, board_action_size, fc1_units=400, fc2_units=300, seed=seed).to(device)
-        self.actor_target = Actor(state_size, bid_action_size, board_action_size, fc1_units=400, fc2_units=300, seed=seed).to(device)
-        self.actor_optimizer = optim.Adam(self.actor_local.parameters(), lr=LR_ACTOR)
+        self.actor_local = Actor(state_size, bid_action_size, board_action_size,
+                                 fc1_units=400, fc2_units=300, seed=seed).to(device)
+        self.actor_target = Actor(state_size, bid_action_size, board_action_size,
+                                  fc1_units=400, fc2_units=300, seed=seed).to(device)
+        # Make target network equal to local network
+        self.hard_update(self.actor_local, self.actor_target)
+        self.actor_optimizer = optim.Adam(
+            self.actor_local.parameters(), lr=LR_ACTOR)
 
         # Critic Network (w/ Target Network)
-        self.critic_local = Critic(state_size, self.action_size, fcs1_units=400, fc2_units=300, seed=seed).to(device)
-        self.critic_target = Critic(state_size, self.action_size, fcs1_units=400, fc2_units=300, seed=seed).to(device)
-        self.critic_optimizer = optim.Adam(self.critic_local.parameters(), lr=LR_CRITIC, weight_decay=WEIGHT_DECAY)
+        self.critic_local = Critic(
+            state_size, self.action_size, fcs1_units=400, fc2_units=300, seed=seed).to(device)
+        self.critic_target = Critic(
+            state_size, self.action_size, fcs1_units=400, fc2_units=300, seed=seed).to(device)
+        # Make target network equal to local network
+        self.hard_update(self.critic_local, self.critic_target)
+        self.critic_optimizer = optim.Adam(
+            self.critic_local.parameters(), lr=LR_CRITIC, weight_decay=WEIGHT_DECAY)
 
         # Lists of losses to keep track of trainin loss
         self.actor_losses = []
@@ -69,8 +80,9 @@ class DDPGAgent():
         self.checkpoint_path = checkpoint_path
 
         # Load model if initial checkpoint exists
-        if initial_checkpoint:
-            self.load_model(initial_checkpoint)
+        if initial_checkpoint_path is not None:
+            print('initial_checkpoint_path: %s' % initial_checkpoint_path)
+            self.load_model(initial_checkpoint_path)
 
     def step(self, state, action, reward, next_state, done):
         """Save experience in replay memory, and use random sample from buffer to learn."""
@@ -128,7 +140,8 @@ class DDPGAgent():
         self.critic_optimizer.zero_grad()
         critic_loss.backward()
         # Gradient clipping to avoid exploding gradient
-        torch.nn.utils.clip_grad_norm_(self.critic_local.parameters(), CLIP_GRAD_NORM)
+        torch.nn.utils.clip_grad_norm_(
+            self.critic_local.parameters(), CLIP_GRAD_NORM)
         self.critic_optimizer.step()
 
         # ---------------------------- update actor ---------------------------- #
@@ -139,6 +152,8 @@ class DDPGAgent():
         # Minimize the loss
         self.actor_optimizer.zero_grad()
         actor_loss.backward()
+        torch.nn.utils.clip_grad_norm_(
+            self.actor_local.parameters(), CLIP_GRAD_NORM)
         self.actor_optimizer.step()
 
         # ----------------------- update target networks ----------------------- #
@@ -156,7 +171,19 @@ class DDPGAgent():
             tau (float): interpolation parameter
         """
         for target_param, local_param in zip(target_model.parameters(), local_model.parameters()):
-            target_param.data.copy_(tau*local_param.data + (1.0-tau)*target_param.data)
+            target_param.data.copy_(
+                tau*local_param.data + (1.0-tau)*target_param.data)
+
+    def hard_update(self, local_model, target_model):
+        """Hard update model parameters.
+        θ_target = θ_local
+
+        Inputs:
+            local_model (PyTorch model): weights will be copied from
+            target_model (PyTorch model): weights will be copied to
+        """
+        for target_param, local_param in zip(target_model.parameters(), local_model.parameters()):
+            target_param.data.copy_(local_param.data)
 
     def load_model(self, checkpoint_path=None):
         """Load model's checkpoint"""
@@ -198,10 +225,15 @@ class DDPGAgent():
             'critic_losses': self.critic_losses
         }
 
+    def print_lr(self):
+        print('LR_ACTOR:', LR_ACTOR)
+        print('LR_CRITIC:', LR_CRITIC)
+
+
 class OUNoise:
     """Ornstein-Uhlenbeck process."""
 
-    def __init__(self, size, seed, mu=0., theta=0.2, sigma=0.025):
+    def __init__(self, size, seed, mu=0., theta=0.2, sigma=0.1):
         """Initialize parameters and noise process."""
         self.mu = mu * np.ones(size)
         self.theta = theta
@@ -216,9 +248,11 @@ class OUNoise:
     def sample(self):
         """Update internal state and return it as a noise sample."""
         x = self.state
-        dx = self.theta * (self.mu - x) + self.sigma * np.random.standard_normal(x.shape)
+        dx = self.theta * (self.mu - x) + self.sigma * \
+            np.random.standard_normal(x.shape)
         self.state = x + dx
         return self.state
+
 
 class ReplayBuffer:
     """Fixed-size buffer to store experience tuples."""
@@ -232,7 +266,8 @@ class ReplayBuffer:
         """
         self.memory = deque(maxlen=buffer_size)  # internal memory (deque)
         self.batch_size = batch_size
-        self.experience = namedtuple("Experience", field_names=["state", "action", "reward", "next_state", "done"])
+        self.experience = namedtuple("Experience", field_names=[
+                                     "state", "action", "reward", "next_state", "done"])
         random.seed(seed)
 
     def add(self, state, action, reward, next_state, done):
@@ -244,13 +279,25 @@ class ReplayBuffer:
         """Randomly sample a batch of experiences from memory."""
         experiences = random.sample(self.memory, k=self.batch_size)
 
-        states = torch.from_numpy(np.vstack([e.state for e in experiences if e is not None])).float().to(device)
-        actions = torch.from_numpy(np.vstack([e.action for e in experiences if e is not None])).float().to(device)
-        rewards = torch.from_numpy(np.vstack([e.reward for e in experiences if e is not None])).float().to(device)
-        next_states = torch.from_numpy(np.vstack([e.next_state for e in experiences if e is not None])).float().to(device)
-        dones = torch.from_numpy(np.vstack([e.done for e in experiences if e is not None]).astype(np.uint8)).float().to(device)
+        states = torch.from_numpy(
+            np.vstack([e.state for e in experiences if e is not None])).float().to(device)
+        actions = torch.from_numpy(
+            np.vstack([e.action for e in experiences if e is not None])).float().to(device)
+        rewards = torch.from_numpy(
+            np.vstack([e.reward for e in experiences if e is not None])).float().to(device)
+        next_states = torch.from_numpy(np.vstack(
+            [e.next_state for e in experiences if e is not None])).float().to(device)
+        dones = torch.from_numpy(np.vstack(
+            [e.done for e in experiences if e is not None]).astype(np.uint8)).float().to(device)
 
         return (states, actions, rewards, next_states, dones)
+
+    def pop(self):
+        """Remove last item from buffer"""
+        item = None
+        if len(self.memory) > 0:
+            item = self.memory.pop()
+        return item
 
     def __len__(self):
         """Return the current size of internal memory."""

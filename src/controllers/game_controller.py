@@ -14,7 +14,7 @@ from views.console_game_view import ConsoleGameView
 from utils import get_reward_from_winner, print_not_train_or_eval, is_windows
 
 INITIAL_COINS = [100, 100]
-MAX_EQUAL_BIDS = 3
+DEBUG = False
 
 
 class GameController:
@@ -22,8 +22,9 @@ class GameController:
         self.game = Game()
         self.view = ConsoleGameView(self.game.get_clone())
 
-    def init_game(self):
-        self.players = [self._select_player(player) for player in range(2)]
+    def init_game(self, drl_checkpoint_path=None):
+        self.players = [self._select_player(
+            player, drl_checkpoint_path=drl_checkpoint_path) for player in range(2)]
 
         keys = Move.KEYS \
             if any(self.players[i].__class__.__name__ == 'HumanPlayer' for i in range(2)) \
@@ -32,24 +33,20 @@ class GameController:
         self.view.update_view(keys=keys)
         return self.run_episode(train_mode=False)
 
-    def reset_game(self):
+    def reset_game(self, drl_checkpoint_path=None):
         self.game.reset()
         self.view = ConsoleGameView(self.game.get_clone())
-        self.init_game()
+        self.init_game(drl_checkpoint_path=drl_checkpoint_path)
 
-    def run_episode(self, train_mode=False, eval_mode=False, train_args=None):
-        equal_bids = 0
+    def run_episode(self, train_mode=False, eval_mode=False):
         finished, winner = self.game.game_finished()
         game_clone = self.game.get_clone()
         while not finished:
-            if equal_bids == MAX_EQUAL_BIDS:
-                break
-
             bids = []
             for player in range(2):
                 while True:
                     print_not_train_or_eval(
-                        f'Player {self.players[player].__class__.__name__}({ConsoleGameView.PLAYERS[player]}) bidding...',
+                        f'{self._player_str(player)} bidding...',
                         train_mode=train_mode, eval_mode=eval_mode)
                     bid = self.players[player].get_bid(game_clone)
                     if self.game.validate_bid(bid, player):
@@ -59,33 +56,29 @@ class GameController:
                         f'Invalid bid value of {bid}. It should be in the range [0, {game_clone.coins[player]}]...',
                         train_mode=train_mode, eval_mode=eval_mode)
 
+            if DEBUG and (train_mode or eval_mode):
+                print('Bids: {}, {}'.format(bids[0], bids[1]))
+                print('Board moves: {}, {}'.format(self.players[0].get_board_move(
+                    game_clone), self.players[1].get_board_move(game_clone)))
+
             if bids[0] == bids[1] and self.game.coins[0] == self.game.coins[1]:
-                equal_bids += 1
-                if equal_bids < MAX_EQUAL_BIDS:
-                    print_not_train_or_eval(
-                        f'Equal bids with equal coins. Retry #{equal_bids}/{MAX_EQUAL_BIDS-1}', train_mode=train_mode, eval_mode=eval_mode)
-                continue
+                player_bid_winner = np.random.randint(2)
+                print_not_train_or_eval(
+                    f'Equal bids with equal coins. Randomly chosen player: {self._player_str(player_bid_winner)}', train_mode=train_mode, eval_mode=eval_mode)
             else:
-                equal_bids = 0
                 if bids[0] > bids[1] or (bids[0] == bids[1] and self.game.coins[0] > self.game.coins[1]):
                     player_bid_winner = 0
                 else:
                     player_bid_winner = 1
 
-            if train_mode:
-                self._update_train_args(train_args)
-                for player in range(2):
-                    # if self.players[player].__class__.__name__ == "DRLPlayer":
-                    self.players[player].update_epsilon(train_args['eps'])
-
             for player in range(2):
                 print_not_train_or_eval(
-                    f'Player {self.players[player].__class__.__name__}({ConsoleGameView.PLAYERS[player]}) bid: {bids[player]}',
+                    f'{self._player_str(player)} bid: {bids[player]}',
                     end='  |  ', train_mode=train_mode, eval_mode=eval_mode)
             print_not_train_or_eval(train_mode=train_mode, eval_mode=eval_mode)
 
             print_not_train_or_eval(
-                f'Player {self.players[player_bid_winner].__class__.__name__}({ConsoleGameView.PLAYERS[player_bid_winner]}) won the bet',
+                f'{self._player_str(player_bid_winner)} won the bet',
                 train_mode=train_mode, eval_mode=eval_mode)
 
             # update players coins
@@ -100,7 +93,8 @@ class GameController:
             while move not in valid_moves:
                 print_not_train_or_eval(
                     f'Invalid board move: ({move.x}, {move.y}). Try again', train_mode=train_mode, eval_mode=eval_mode)
-                move = self.players[player_bid_winner].get_board_move(game_clone)
+                move = self.players[player_bid_winner].get_board_move(
+                    game_clone)
 
             # make board move
             self.game.play(move, player_bid_winner)
@@ -128,12 +122,16 @@ class GameController:
     def _end_game(self, winner, train_mode, eval_mode):
         print_not_train_or_eval('', train_mode=train_mode, eval_mode=eval_mode)
         if winner is None:
-            print_not_train_or_eval('Game ended in a tie', train_mode=train_mode, eval_mode=eval_mode)
+            print_not_train_or_eval(
+                'Game ended in a tie', train_mode=train_mode, eval_mode=eval_mode)
         else:
-            print_not_train_or_eval('Player ' + self.players[winner].__class__.__name__ +
-                            '(' + ConsoleGameView.PLAYERS[winner] + ') won', train_mode=train_mode, eval_mode=eval_mode)
+            print_not_train_or_eval(
+                f'{self._player_str(winner)} won', train_mode=train_mode, eval_mode=eval_mode)
 
-    def _select_player(self, player):
+    def _player_str(self, player):
+        return f'Player {1+player} {self.players[player].__class__.__name__}({ConsoleGameView.PLAYERS[player]})'
+
+    def _select_player(self, player, drl_checkpoint_path=None):
         players = glob.glob('./models/players/*_player.py')
         # filter abstract base player
         players = [
@@ -147,8 +145,18 @@ class GameController:
         chosen_player = input("Input desired player number: ")
         module_globals = {}
         exec(open(players[int(chosen_player)]).read(), module_globals)
-        return module_globals[list(module_globals.keys())[len(module_globals.keys()) - 1]](player, self.game.get_clone())
-
-    def _update_train_args(self, train_args):
-        train_args['eps'] = max(train_args['eps_end'],
-                                train_args['eps'] * train_args['eps_decay'])
+        player_class = module_globals[list(module_globals.keys())[
+            len(module_globals.keys()) - 1]]
+        player_kwargs = {}
+        print(
+            f'player_class.__name__ = {player_class.__name__}')
+        if player_class.__name__ == 'DRLPlayer':
+            print(
+                f"player_kwargs['initial_checkpoint_path'] = drl_checkpoint_path = {drl_checkpoint_path}")
+            if drl_checkpoint_path is None:
+                drl_checkpoint_path = input(
+                    f'Enter model checkpoint or leave it the default (../checkpoints/model.pt): ')
+                if drl_checkpoint_path == '':
+                    drl_checkpoint_path = '../checkpoints/model.pt'
+            player_kwargs['initial_checkpoint_path'] = drl_checkpoint_path
+        return player_class(player, self.game.get_clone(), **player_kwargs)
