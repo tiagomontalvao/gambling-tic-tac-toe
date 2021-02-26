@@ -7,3 +7,4 @@ v6 -> selfplay sum_coins
 v7 -> random sum_coins
 v8 -> semirandom sum_coins
 v9 -> semirandom curr_coins
+v10 -> semirandom curr_coins network sizes from 2 layers (400,300) to 3 layers (256,256,256)

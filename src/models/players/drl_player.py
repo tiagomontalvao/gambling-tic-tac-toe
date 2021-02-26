@@ -113,12 +113,12 @@ class DRLPlayer(BasePlayer):
         # Denormalize bid
 
         # Relative to total coins
-        bid = int(round(action[0].item() * self.sum_coins))
-        bid = np.clip(bid, 0, self.curr_coins)
+        # bid = int(round(action[0].item() * self.sum_coins))
+        # bid = np.clip(bid, 0, self.curr_coins)
 
         # Relative to current coins
-        # bid = int(round(action[0].item() * self.curr_coins))
-        # bid = np.clip(bid, 0, self.curr_coins)
+        bid = int(round(action[0].item() * self.curr_coins))
+        bid = np.clip(bid, 0, self.curr_coins)
 
         # Epsilon-greedy choice of action when self.train_mode=True
         action_probs = action[1:]

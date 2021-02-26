@@ -34,3 +34,68 @@ DONE:
 - Add -0.05 to every move so that agent tries to finish the game earlier
 - Remove equal bid moves from replay buffer
     - Equals bids now incur in randomly choosing a player to play, so there is no more problem with this 
+
+============================================================================================================
+
+Parte escrita:
+
+Título:
+APLICANDO MODELOS DE APRENDIZADO POR REFORÇO PROFUNDO EM UM JOGO ADVERSÁRIO
+
+Capítulos:
+
+1. INTRODUÇÃO
+- Histórico da área
+	- ML
+	- DL
+	- RL
+		- Atari
+- Problema abordado
+- Objetivos do trabalho
+
+2. CONCEITOS BÁSICOS
+- ML: Supervised x Unsupervised x Reinforcement
+- Cadeias de Markov
+- Métricas de avaliação
+
+3. MODELAGEM
+- Markov Decision Processes
+- Q-Learning
+- Redes Neurais
+- DQN
+- DDPG
+- Adaptação para o problema
+
+4. EXPERIMENTOS
+- GitHub
+- Tecnologias
+- Hiperparâmetros escolhidos
+	- LR
+	- Tamanho da rede
+	- Rewards por movimento e final
+	- Gamma
+	- Batch Size
+	- Gradient Clipping (http://proceedings.mlr.press/v28/pascanu13.pdf)
+- Resultados obtidos
+- Desafios
+	- Implementação do modelo
+		- Complexo
+		- Bugs
+		- Self play não convergia -> talvez deixar muito mais tempo treinando
+	- Tempo para iterar o modelo
+		- GPU
+		- Duração de cada treinamento
+		- Comentar quantas versões foram treinadas 
+	- Tuning de hiperparâmetros
+	- Natureza do problema
+		- Diferença abrupta em pequenas variações do bid_value
+
+5. CONCLUSÃO
+- Lições aprendidas
+- Trabalhos futuros
+	- Poderia colocar lógicas fixas, mas achei melhor explorar o potencial do modelo estatístico
+	- Explorar diferentes arquiteturas
+		- entradas de coins e board diferentes vs iguais
+		- profundidade da rede
+		- largura da rede
+		- usar camada convolucional para processar o board
