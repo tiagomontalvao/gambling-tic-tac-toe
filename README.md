@@ -3,6 +3,8 @@ Description of how it works found here: https://blogs.ams.org/mathgradblog/2011/
 Basically, here are the rules:
 
 1. Each person has a set amount of coins, say $100 each.
-2. The players then bid for the next move.
-3. The loser of the bidding gets to make the first bid on the next move.
-4. The game is over when one player has three in a row.
+2. Before each move, both players place a secret bet out of the coins they have.
+3. Then they reveal what amount they have bet.
+4. The player with the bigger bet pays his bet amount to the other player.
+5. The player that won the bet and paid, can now make a move on the board.
+6. Repeat.
