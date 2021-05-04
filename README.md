@@ -1,5 +1,5 @@
 Reinforcement learning agent that learns to play the gambling version of tic-tac-toe.
-Description of how it works found here: https://blogs.ams.org/mathgradblog/2011/02/25/gambling-tic-tac-toe/
+Description of how it works found here: https://qr.ae/pGhz5i
 Basically, here are the rules:
 
 1. Each person has a set amount of coins, say $100 each.
